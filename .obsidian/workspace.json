@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "48c1e4d5aa9399eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a894a3ee98a36b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a57e6cb3bc56f02",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "52e1fe6843e34c73",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "bb8193be816ef656",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "7822fe7b8ef2b0d2",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "42f10fde66dfb72e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebDevelopment.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2dd6130b027e1f1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebDevelopment.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "65d9f3a890c514df",
+    "type": "split",
+    "children": [
+      {
+        "id": "fb143aa405f6b4f8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "50d7da485c9e45c0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f5f886e768f8a0ea",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "812472274cd9a77b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "87af50d9d6ef758c",
+    "type": "split",
+    "children": [
+      {
+        "id": "facb45db3007951d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9c0c80fe32f782bf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "WebDevelopment.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cabc3342b412caf8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "WebDevelopment.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0f881a925a2ea1ae",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0f545cca7c34a5c1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "WebDevelopment.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "2dd6130b027e1f1c",
+  "lastOpenFiles": [
+    "Blender.md",
+    "Index.md",
+    "WebDevelopment.md",
+    "WebsitesCollection.md",
+    "ToLearn.md",
+    "GameDevelopment.md",
+    "WebDevelopment/WebDevelopment.md",
+    "WebDevelopment/Untitled.md",
+    "WebDevelopment/FrontEnd.md",
+    "WebDevelopment/BackEnd.md"
+  ]
+}
