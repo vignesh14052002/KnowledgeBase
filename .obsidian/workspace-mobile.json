@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WebDevelopment.md",
+                "file": "WebsitesCollection.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "WebDevelopment.md",
+            "file": "WebsitesCollection.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "WebDevelopment.md",
+            "file": "WebsitesCollection.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "WebDevelopment.md"
+            "file": "WebsitesCollection.md"
           }
         }
       }
@@ -123,7 +123,8 @@
   },
   "active": "dc017dceeb82988f",
   "lastOpenFiles": [
-    "WebsitesCollection.md",
-    "WebDevelopment.md"
+    "WebDevelopment.md",
+    "ToLearn.md",
+    "WebsitesCollection.md"
   ]
 }

@@ -1,5 +1,5 @@
 #tolearn 
-https://www.youtube.com/playlist?list=PLzg3FkRs7fcRt7D4D9w9dPyc2e7Eqvrw9
+
 
 python
 	itertools

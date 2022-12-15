@@ -1,6 +1,9 @@
 My Websites:
-https://vikinodejsapp.herokuapp.com/
-https://vignesh2002.pythonanywhere.com/
+
+[Django website](https://vignesh2002.pythonanywhere.com/)
+[React portfolio](https://vignesh14052002.github.io/portfolio/) 
+[pwa portfolio](https://vignesh14052002.github.io/frontend/portfolio/index.html) 
+
 
 Chrome extension:
 project naptha
