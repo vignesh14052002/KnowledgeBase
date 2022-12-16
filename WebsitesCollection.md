@@ -4,12 +4,23 @@ My Websites:
 [React portfolio](https://vignesh14052002.github.io/portfolio/) 
 [pwa portfolio](https://vignesh14052002.github.io/frontend/portfolio/index.html) 
 
+My social media:
+
+[Github](https://github.com/vignesh14052002)
+[linkedin](https://www.linkedin.com/in/vignesh-a-ba83841b0/)
+[twitter]( https://twitter.com/vignesharivazh2?t=gchEupg5YT5Vbbpo9lPNbg&s=08)
+[instagram](https://www.instagram.com/_._av.__/)
+[Reddit](https://www.reddit.com/user/vignesh-2002)
+[StackOverflow](https://stackoverflow.com/users/13218335/vignesh)
+
+
+Interesting:
 
 Chrome extension:
 project naptha
 Panic button
 
-Interesting:
+websites
 https://pointerpointer.com/
 http://koalastothemax.com/
 roadmap.sh

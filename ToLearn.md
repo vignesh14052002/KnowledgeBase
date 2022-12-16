@@ -1,22 +1,41 @@
 #tolearn 
 
+## Languages
 
-python
-	itertools
-c
-	all keywords
-	indepth printf scanf
-linux
-	commands
-	file systems
- 
+### python
+- itertools
+### javascript
+- Closure
+- Prototype
+- Eventloop
+- Microtask
+- Promise
+- Callback
+- Async/await
 
-doubt
-	dat files
-	ddos attack
+## OS
 
-web 
-	API
-	html/css depth
-	mongodb
-	ssh
+### windows
+- registery
+### linux
+- commands
+- file systems
+
+### Web
+- xss
+- ssh
+- design principles like MVC
+
+# Explore
+#explore
+- webp
+- gzip
+- Digital ocean
+- wpa vs wpa2
+- dat files
+- Docker
+
+# Doubts
+#doubts 
+- how DallE , chatgpt works?
+- 

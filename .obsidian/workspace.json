@@ -4,67 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "6a894a3ee98a36b5",
+        "id": "4e486bcf1eeb2a9b",
         "type": "tabs",
         "children": [
           {
-            "id": "5a57e6cb3bc56f02",
+            "id": "d3cf15e33fd1e1d7",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           },
           {
-            "id": "52e1fe6843e34c73",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "bb8193be816ef656",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "7822fe7b8ef2b0d2",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "42f10fde66dfb72e",
+            "id": "bd1631247d6b5dec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WebDevelopment.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2dd6130b027e1f1c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WebDevelopment.md",
+                "file": "ToLearn.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -130,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WebDevelopment.md",
+                "file": "ToLearn.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WebDevelopment.md",
+                "file": "ToLearn.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WebDevelopment.md"
+                "file": "ToLearn.md"
               }
             }
           }
@@ -181,17 +145,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2dd6130b027e1f1c",
+  "active": "bd1631247d6b5dec",
   "lastOpenFiles": [
-    "Blender.md",
-    "Index.md",
-    "WebDevelopment.md",
-    "WebsitesCollection.md",
+    "TO DO.md",
     "ToLearn.md",
-    "GameDevelopment.md",
-    "WebDevelopment/WebDevelopment.md",
-    "WebDevelopment/Untitled.md",
-    "WebDevelopment/FrontEnd.md",
-    "WebDevelopment/BackEnd.md"
+    "2022-12-16.md",
+    "WebsitesCollection.md",
+    "WebDevelopment.md",
+    "Blender.md",
+    "Goals.md",
+    "Index.md",
+    "temp.md",
+    "GameDevelopment.md"
   ]
 }
