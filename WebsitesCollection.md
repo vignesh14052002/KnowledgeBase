@@ -12,8 +12,8 @@ My social media:
 [instagram](https://www.instagram.com/_._av.__/)
 [Reddit](https://www.reddit.com/user/vignesh-2002)
 [StackOverflow](https://stackoverflow.com/users/13218335/vignesh)
-
-
+[Discord](https://discordapp.com/users/1053652408271634432)
+[facebook](https://www.facebook.com/vignesh.rock.98622/) 
 Interesting:
 
 Chrome extension:

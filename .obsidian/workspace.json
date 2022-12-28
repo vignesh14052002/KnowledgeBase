@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ToLearn.md",
+                "file": "WebDevelopment.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ToLearn.md",
+                "file": "WebDevelopment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ToLearn.md",
+                "file": "WebDevelopment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ToLearn.md"
+                "file": "WebDevelopment.md"
               }
             }
           }
@@ -145,15 +145,25 @@
     "width": 300,
     "collapsed": true
   },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
   "active": "bd1631247d6b5dec",
   "lastOpenFiles": [
-    "TO DO.md",
     "ToLearn.md",
-    "2022-12-16.md",
-    "WebsitesCollection.md",
     "WebDevelopment.md",
-    "Blender.md",
+    "WebsitesCollection.md",
     "Goals.md",
+    "TO DO.md",
+    "2022-12-16.md",
+    "Blender.md",
     "Index.md",
     "temp.md",
     "GameDevelopment.md"
