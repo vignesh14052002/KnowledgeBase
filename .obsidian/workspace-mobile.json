@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Goals.md",
-                "mode": "source",
+                "file": "ToLearn.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Goals.md",
+            "file": "ToLearn.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Goals.md",
+            "file": "ToLearn.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Goals.md"
+            "file": "ToLearn.md"
           }
         }
       }
@@ -123,12 +123,13 @@
   },
   "active": "dc017dceeb82988f",
   "lastOpenFiles": [
+    "Finance.md",
+    "TO DO.md",
+    "ToLearn.md",
     "Goals.md",
     "WebsitesCollection.md",
     "WebDevelopment.md",
     "temp.md",
-    "Index.md",
-    "Finance.md",
-    "ToLearn.md"
+    "Index.md"
   ]
 }
