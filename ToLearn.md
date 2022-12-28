@@ -23,7 +23,7 @@
 
 ### Web
 - xss
-- ssh
+- ssh 
 - design principles like MVC
 
 # Explore
