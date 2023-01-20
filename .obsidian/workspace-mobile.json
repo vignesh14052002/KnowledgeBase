@@ -14,8 +14,8 @@
               "type": "markdown",
               "state": {
                 "file": "ToLearn.md",
-                "mode": "preview",
-                "source": false
+                "mode": "source",
+                "source": true
               }
             }
           }
@@ -123,13 +123,14 @@
   },
   "active": "dc017dceeb82988f",
   "lastOpenFiles": [
-    "Finance.md",
+    "AI.md",
     "TO DO.md",
     "ToLearn.md",
-    "Goals.md",
     "WebsitesCollection.md",
+    "Index.md",
+    "Finance.md",
     "WebDevelopment.md",
-    "temp.md",
-    "Index.md"
+    "Goals.md",
+    "temp.md"
   ]
 }

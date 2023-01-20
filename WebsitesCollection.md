@@ -1,8 +1,9 @@
 My Websites:
 
 [Django website](https://vignesh2002.pythonanywhere.com/)
-[React portfolio](https://vignesh14052002.github.io/portfolio/) 
+[React portfolio](https://vignesh14052002.github.io/portfolio)
 [pwa portfolio](https://vignesh14052002.github.io/frontend/portfolio/index.html) 
+https://vignesh14052002.github.io/
 
 My social media:
 
