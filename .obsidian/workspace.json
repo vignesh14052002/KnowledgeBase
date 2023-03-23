@@ -26,9 +26,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5db1830a0adb119f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebDevelopment.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -155,17 +167,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bd1631247d6b5dec",
+  "active": "5db1830a0adb119f",
   "lastOpenFiles": [
-    "ToLearn.md",
+    "Soliton.md",
     "WebDevelopment.md",
-    "WebsitesCollection.md",
-    "Goals.md",
-    "TO DO.md",
-    "2022-12-16.md",
-    "Blender.md",
-    "Index.md",
+    "GameDevelopment.md",
+    "ImageProcessing.md",
+    "Sem-8.md",
+    "Software Testing.md",
     "temp.md",
-    "GameDevelopment.md"
+    "ToLearn.md",
+    "TO DO.md",
+    "AI.md",
+    "WebsitesCollection.md",
+    "Ask.md",
+    "Blender.md",
+    "Finance.md",
+    "Goals.md",
+    "Index.md",
+    "2022-12-16.md"
   ]
 }
