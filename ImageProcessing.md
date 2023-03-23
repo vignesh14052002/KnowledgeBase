@@ -1,0 +1,1 @@
+Color dodge blend mode to remove watermark [tutorial](https://www.instagram.com/reel/CnkA70cqIVn/?igshid=YmMyMTA2M2Y=) 

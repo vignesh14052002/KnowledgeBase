@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ToLearn.md",
+                "file": "Software Testing.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "ToLearn.md",
+            "file": "Software Testing.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "ToLearn.md",
+            "file": "Software Testing.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,23 +114,35 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "ToLearn.md"
+            "file": "Software Testing.md"
           }
         }
       }
     ],
     "currentTab": 0
   },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
   "active": "dc017dceeb82988f",
   "lastOpenFiles": [
-    "AI.md",
-    "TO DO.md",
-    "ToLearn.md",
     "WebsitesCollection.md",
-    "Index.md",
-    "Finance.md",
+    "Software Testing.md",
+    "temp.md",
+    "ToLearn.md",
+    "Ask.md",
     "WebDevelopment.md",
+    "TO DO.md",
+    "Sem-8.md",
+    "Finance.md",
     "Goals.md",
-    "temp.md"
+    "ImageProcessing.md"
   ]
 }
