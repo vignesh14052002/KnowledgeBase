@@ -1,5 +1,3 @@
-Try 
-- adobe ai audio system 
 
 Learn 
 - Recurrent neural networks 
@@ -8,7 +6,9 @@ Learn
 - Transformers neural networks 
 - BERT,GPT,T5 
 - Word embedding 
+- back propagation
 
 Foreign terms 
 - cross entropy error 
 - vanishing gradient 
+

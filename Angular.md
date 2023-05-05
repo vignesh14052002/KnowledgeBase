@@ -1,0 +1,6 @@
+- @injectable
+- [(...)] 
+- constructor vs ngonInit
+- Observables 
+- why child routes if path match is set to full
+- onchanges vs docheck

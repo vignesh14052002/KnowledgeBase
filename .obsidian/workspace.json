@@ -33,14 +33,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WebDevelopment.md",
+                "file": "ToLearn.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9ea5aa23a61aab87",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebsitesCollection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fda2b42503045f62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -85,6 +109,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "b44b81b80372703f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -106,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WebDevelopment.md",
+                "file": "AI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WebDevelopment.md",
+                "file": "AI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WebDevelopment.md"
+                "file": "AI.md"
               }
             }
           }
@@ -154,8 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 281.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,20 +198,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5db1830a0adb119f",
+  "active": "fda2b42503045f62",
   "lastOpenFiles": [
+    "ventures.md",
+    "AI.md",
+    "WebsitesCollection.md",
+    "Angular.md",
     "Soliton.md",
+    "Ask.md",
+    "ToLearn.md",
     "WebDevelopment.md",
-    "GameDevelopment.md",
     "ImageProcessing.md",
+    "TO DO.md",
+    "GameDevelopment.md",
     "Sem-8.md",
     "Software Testing.md",
     "temp.md",
-    "ToLearn.md",
-    "TO DO.md",
-    "AI.md",
-    "WebsitesCollection.md",
-    "Ask.md",
     "Blender.md",
     "Finance.md",
     "Goals.md",
