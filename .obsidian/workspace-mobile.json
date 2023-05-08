@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software Testing.md",
+                "file": "AI.md",
                 "mode": "source",
                 "source": true
               }
@@ -71,6 +71,14 @@
           "type": "starred",
           "state": {}
         }
+      },
+      {
+        "id": "471c4ea7812bacbc",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
       }
     ],
     "currentTab": 0
@@ -85,7 +93,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Software Testing.md",
+            "file": "AI.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +110,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Software Testing.md",
+            "file": "AI.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +122,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Software Testing.md"
+            "file": "AI.md"
           }
         }
       }
@@ -133,16 +141,19 @@
   },
   "active": "dc017dceeb82988f",
   "lastOpenFiles": [
-    "WebsitesCollection.md",
+    "ventures.md",
+    "AI.md",
+    "Angular.md",
+    "TO DO.md",
+    "ImageProcessing.md",
     "Software Testing.md",
+    "WebsitesCollection.md",
     "temp.md",
     "ToLearn.md",
     "Ask.md",
     "WebDevelopment.md",
-    "TO DO.md",
     "Sem-8.md",
     "Finance.md",
-    "Goals.md",
-    "ImageProcessing.md"
+    "Goals.md"
   ]
 }
