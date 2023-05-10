@@ -6,6 +6,7 @@ TO Raghul
 	- Problem in running deepspeed example (config file not found)
 	- Problem in using small dataset (error in line 349 , numsamples)
 	- Deepspeed using 100% of GPU 
+	- whats peekimon by sujeeth and how it is related to naveen's AI idea
 	
 
 
