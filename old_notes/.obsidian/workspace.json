@@ -57,14 +57,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI.md",
+                "file": "ventures.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bf6e4d1429d51513",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AutoGPT output.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "63f0ac9460a7c02b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Angular.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9b6141508053dd7a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebsitesCollection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "810299ad1f7d0c17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebsitesCollection.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -138,7 +186,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI.md",
+                "file": "WebsitesCollection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +203,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI.md",
+                "file": "WebsitesCollection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +226,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI.md"
+                "file": "WebsitesCollection.md"
               }
             }
           }
@@ -198,21 +246,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fda2b42503045f62",
+  "active": "810299ad1f7d0c17",
   "lastOpenFiles": [
-    "ventures.md",
-    "AI.md",
-    "WebsitesCollection.md",
-    "Angular.md",
-    "Soliton.md",
     "Ask.md",
+    "WebsitesCollection.md",
+    "ventures.md",
     "ToLearn.md",
+    "AI.md",
+    "AutoGPT output.md",
+    "Software Testing.md",
+    "Soliton.md",
+    "TO DO.md",
+    "Angular.md",
     "WebDevelopment.md",
     "ImageProcessing.md",
-    "TO DO.md",
     "GameDevelopment.md",
     "Sem-8.md",
-    "Software Testing.md",
     "temp.md",
     "Blender.md",
     "Finance.md",
