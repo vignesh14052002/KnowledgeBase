@@ -51,3 +51,27 @@
 [Sundar Pichai Google IO interview](https://youtu.be/8sxAcYnZFAk?si=yGIAacCMgjWUksXi)
 
 - AI applications needs to be made in a way it will not be included in the underlying model in future.
+
+## OpenSource Projects
+### opendevin
+- Checkout Slack 
+- Code execution in sandbox 
+- Check if api key is exposed in dev tools
+- Codeact agent will collect relevant code chunks
+
+### Memory management
+- Microsoft copilot chat - create long term and short term memory from the current conversation
+- [memary](https://github.com/kingjulio8238/memary)
+- memgpt
+
+### Explore Frameworks
+- dspy
+
+### Github Copilot
+use/build Extension on top of gihub copilot
+
+### Action Items
+- see gemini pricing
+- see what's new in agent protocol
+- inspect opensource repos - llama-index, langchain
+- explore different AI memory management systems - memgpt

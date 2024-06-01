@@ -5,3 +5,9 @@
 - Learn Testing
 
 
+
+# Action Items
+- see llamaindex linkedin posts
+- Github copilot – see latest features 
+- see reddit r/productivity
+- see weekly post in r/developersindia

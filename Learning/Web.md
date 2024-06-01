@@ -29,3 +29,7 @@
 - 26:44, try anchor and target in portfolio website
 - Popover Anchor positions
   - Inset-area, position-try-options
+
+
+### Vscode web 
+- Click dot in github/azure repo to open in web

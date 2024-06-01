@@ -17,3 +17,7 @@
 
 - Subreddit: [Developers India](https://www.reddit.com/r/developersindia/)
   - Must read: [Thread Collections](https://wiki.developersindia.in/)
+  - [Ideas in CS that you admire](https://www.reddit.com/r/developersIndia/comments/1czbgfj/what_are_some_ideas_in_computer_science_that_you/)
+    - Computer Architecture
+    - Theory of Automata
+    - [Google doc differential synchronisation](https://www.youtube.com/watch?v=S2Hp_1jqpY8)

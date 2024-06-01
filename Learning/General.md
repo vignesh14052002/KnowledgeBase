@@ -31,8 +31,7 @@
 
 ![Let's build the GPT Tokenizer](media/image1_2024-06-01T080001.0779647+0530.png)
 
-## Reddit threads
-- [Ideas in CS that you admire](https://www.reddit.com/r/developersIndia/comments/1czbgfj/what_are_some_ideas_in_computer_science_that_you/)
-  - Computer Architecture
-  - Theory of Automata
-  - [Google doc differential synchronisation](https://www.youtube.com/watch?v=S2Hp_1jqpY8)
+## Explore
+- [VSCode Notebook Github](https://github.com/aviaryan/VSCodeNotebook?tab=readme-ov-file)
+- Webasembly
+- [Hacksussex Coders cup](https://www.youtube.com/live/VixYfv0UEyE?si=MuCJcSi4pk2K31Ly)
