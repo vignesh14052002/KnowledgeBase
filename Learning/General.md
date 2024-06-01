@@ -1,90 +1,38 @@
-General
+# General
 
-Sunday, October 22, 2023
+## Graphics
+- [pyarts](https://github.com/itsMohammedThaier/pyarts)
+- [Generative Art subreddit](https://reddit.com/r/generative/s/ibh9uwsq75)
 
-6:09 PM
+## Shortcuts
+- [VSCode Shortcuts](https://dev.to/stefirosca/10-must-know-vs-code-shortcuts-1n17)
 
- 
+## Git
+- Problem: If I accidentally committed a secret and pushed to repo main branch and after some days everyone started branching out, now how do I remove the commit from history without affecting others (force push will affect others)
+- Topic: Clusters in networking
 
-> Graphics
+- Exercise: Try using keyboard without mouse
+- Widewine
 
-- <https://github.com/itsMohammedThaier/pyarts>
+## Coding with Radu
 
-- <https://reddit.com/r/generative/s/ibh9uwsq75>
+## Coding Train
 
->  
->
-> Shortcuts
+## Outperform YouTube Channel
 
-- [VSCode](https://dev.to/stefirosca/10-must-know-vs-code-shortcuts-1n17)
+## Pragmatic Programmer
 
->  
->
->  
->
-> Python
->
->  
->
-> Git
+## Repositories
+- Go through tru-lens repo
 
-- If I accidentally commited a secret and pushed to repo main branch and after somedays everyone started branching out , now how do I remove the commit from history without affecting others ( force push will affect others)
+## Let's build the GPT Tokenizer
+- [Video](https://youtu.be/zduSFxRajkE?si=SmhGh_SvWjXf5-cp)
+- Question: At 34:03, how does he highlight and scroll?
 
-- Clusters in networking
+![Let's build the GPT Tokenizer](media/image1_2024-06-01T080001.0779647+0530.png)
 
->  
->
->  
->
-> Byte byte go channel
->
-> Try using keyboard without mouse
->
->  
->
-> Widewine
->
-> Coding with radu
->
-> Coding train new video
->
-> Outperform youtube channel
->
-> Pragmatic programmer
->
->  
->
-> Go through tru-lens repo
->
->  
->
->  
->
-> [Let's build the GPT Tokenizer](https://youtu.be/zduSFxRajkE?si=SmhGh_SvWjXf5-cp)
->
->  
->
-> <img src="media/image1_2024-06-01T080001.0779647+0530.png" style="width:4.69167in;height:2.65833in" alt="Video web content titled: Let&#39;s build the GPT Tokenizer" />
-
-- 34:03 , how he highlight and scroll?
-
->  
->
->  
->
->  
->
-> Reddit threads
-
-- [ideas in cs that you admire](https://www.reddit.com/r/developersIndia/comments/1czbgfj/what_are_some_ideas_in_computer_science_that_you/)
-
+## Reddit threads
+- [Ideas in CS that you admire](https://www.reddit.com/r/developersIndia/comments/1czbgfj/what_are_some_ideas_in_computer_science_that_you/)
   - Computer Architecture
-
   - Theory of Automata
-
   - [Google doc differential synchronisation](https://www.youtube.com/watch?v=S2Hp_1jqpY8)
-
->  
-
-
-

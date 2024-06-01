@@ -1,12 +1,4 @@
-Clean Code
-
-05 November 2023
-
-11:13
-
- 
-
- 
+# Clean Code
 
 - Meaningful commit messages
 

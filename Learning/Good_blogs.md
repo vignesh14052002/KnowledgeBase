@@ -1,37 +1,19 @@
-Good blogs
+# Good Blogs
 
-Wednesday, September 06, 2023
+## Blogs
 
-9:25 AM
+- [5 Tips to Improve Your Website's Experience](https://dev.to/alvaromontoro/small-details-to-improve-your-websites-experience-hio)
+- [Python Arts on GitHub](https://github.com/itsMohammedThaier/pyarts)
+- [Shortcut to Find Open Source Projects 100x Faster](https://dev.to/anmolbaranwal/shortcut-to-find-open-source-projects-100x-faster-3lje)
+  - Note: Check comments for extra resources
 
- 
-
-- [5 tips to improve website ( theme-color , accent-color , open graph ...)](https://dev.to/alvaromontoro/small-details-to-improve-your-websites-experience-hio)
-
-- <https://github.com/itsMohammedThaier/pyarts>
-
-<!-- -->
-
-- <https://reddit.com/r/generative/s/ibh9uwsq75>
-
-- <https://dev.to/anmolbaranwal/shortcut-to-find-open-source-projects-100x-faster-3lje>
-
-  - Check comments for extra resources
-
-- <https://zzetao.github.io/awesome-github-profile/>
-
-- <https://this-person-does-not-exist.com/en>
-
- 
-
- 
-
-Reddit
-
-- R/developersindia
-
-  - Must read thread collections in <https://wiki.developersindia.in/>
-
-  -  
+## Websites
+- [This Person Does Not Exist](https://this-person-does-not-exist.com/en)
+- [Awesome GitHub Profile by Zzetao](https://zzetao.github.io/awesome-github-profile/)
 
 
+## Reddit
+- [Generative Art on Reddit](https://reddit.com/r/generative/s/ibh9uwsq75)
+
+- Subreddit: [Developers India](https://www.reddit.com/r/developersindia/)
+  - Must read: [Thread Collections](https://wiki.developersindia.in/)
