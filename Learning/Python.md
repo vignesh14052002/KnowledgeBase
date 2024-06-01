@@ -1,10 +1,3 @@
-Python
-
-Sunday, January 21, 2024
-
-11:49 AM
-
- 
 
 - [25 nooby Python habits you need to ditch](https://youtu.be/qUeud6DvOWI?si=gPbf0Y3ksq-4OGoE)
 
