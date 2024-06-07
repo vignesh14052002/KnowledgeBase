@@ -59,6 +59,10 @@
 - Check if api key is exposed in dev tools
 - Codeact agent will collect relevant code chunks
 
+### SweepAI
+- Have file context in chunk (list of class and functions) 
+- Pass diff alone to next step 
+
 ### Memory management
 - Microsoft copilot chat - create long term and short term memory from the current conversation
 - [memary](https://github.com/kingjulio8238/memary)
@@ -69,6 +73,11 @@
 
 ### Github Copilot
 use/build Extension on top of gihub copilot
+Watch - https://youtu.be/RXaLlCeaBIA?si=a2eZp7bNOWHXZSSY 
+- FIM (Fill in middle) mode 
+- Codex for ghost text, GPT-4 for chat window 
+- Retrieve max 20 files for generation, give priority to open files 
+- Retrieved node info – relative path , language, snippet 
 
 ### Action Items
 - see gemini pricing

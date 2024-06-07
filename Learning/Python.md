@@ -10,6 +10,9 @@
 - [fstrings](https://www.reddit.com/r/Python/s/GUBcYl376V)
     - Example: `"f{a=:-^4}"`
 
+# Core
+- slice()
+
 ## Doubts
 - Poetry commands:
     - `poetry lock –no-update`
