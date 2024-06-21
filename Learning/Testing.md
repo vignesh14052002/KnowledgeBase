@@ -40,6 +40,12 @@ Explore how popular open-source libraries write tests:
 
 - Langchain
   - Folders for unit and integration tests, where app structure is maintained
+  - [Langchain test docs](https://python.langchain.com/v0.1/docs/contributing/testing/)
+    - prefers unit tests over integration tests
+    - unit tests run on every PR
+    - integration tests runs once a day
+      - http interaction will be cached using pytest-vcr - [ref](https://python.langchain.com/v0.1/docs/contributing/testing/#recording-http-interactions-with-pytest-vcr)
+    - llm is mocked while testing agents
 
 Explore how tests written in Astro:
 

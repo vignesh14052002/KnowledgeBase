@@ -53,33 +53,55 @@
 - AI applications needs to be made in a way it will not be included in the underlying model in future.
 
 ## OpenSource Projects
-### opendevin
-- Checkout Slack 
-- Code execution in sandbox 
-- Check if api key is exposed in dev tools
-- Codeact agent will collect relevant code chunks
+
+### Opendevin
+
+- [architecture docs](https://github.com/OpenDevin/OpenDevin/tree/main/opendevin)
+  - mermaid flowchart
+- [Dynamically create architecture diagram](https://opendevin.github.io/OpenDevin/modules/usage/architecture#:~:text=code%20using%20the-,py2puml%20tool.,-The%20diagram%20is)
+- [agent hub](https://github.com/OpenDevin/OpenDevin/blob/main/agenthub/README.md)
+  - Codeact agent will collect relevant code chunks
+  - how monolog agent is used
+  - hint in planner agent?
+- [evaluation](https://github.com/OpenDevin/OpenDevin/blob/main/evaluation/README.md)
+- Community
+  - Slack
+    - check llm usage tracking question
+- Misc
+  - Code execution in sandbox
+  - For Astro : Check if api key is exposed in dev tools
+  - [LLM Debugging](https://github.com/OpenDevin/OpenDevin/blob/main/Development.md#6-llm-debugging)
+- Tests
+  - same as langchain, unit and integration tests in seperate folder
+  - llm is mocked while testing agents
 
 ### SweepAI
-- Have file context in chunk (list of class and functions) 
-- Pass diff alone to next step 
+
+- Have file context in chunk (list of class and functions)
+- Pass diff alone to next step
 
 ### Memory management
+
 - Microsoft copilot chat - create long term and short term memory from the current conversation
 - [memary](https://github.com/kingjulio8238/memary)
 - memgpt
 
 ### Explore Frameworks
+
 - dspy
 
 ### Github Copilot
+
 use/build Extension on top of gihub copilot
-Watch - https://youtu.be/RXaLlCeaBIA?si=a2eZp7bNOWHXZSSY 
-- FIM (Fill in middle) mode 
-- Codex for ghost text, GPT-4 for chat window 
-- Retrieve max 20 files for generation, give priority to open files 
-- Retrieved node info – relative path , language, snippet 
+Watch - <https://youtu.be/RXaLlCeaBIA?si=a2eZp7bNOWHXZSSY>
+
+- FIM (Fill in middle) mode
+- Codex for ghost text, GPT-4 for chat window
+- Retrieve max 20 files for generation, give priority to open files
+- Retrieved node info – relative path , language, snippet
 
 ### Action Items
+
 - see gemini pricing
 - see what's new in agent protocol
 - inspect opensource repos - llama-index, langchain
