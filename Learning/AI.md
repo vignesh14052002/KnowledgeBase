@@ -87,8 +87,9 @@
 - memgpt
 
 ### Explore Frameworks
-
 - dspy
+- [guidance](https://github.com/guidance-ai/guidance)
+- [Finite State machine token decode](https://lmsys.org/blog/2024-02-05-compressed-fsm/)
 
 ### Github Copilot
 

@@ -62,6 +62,4 @@ VersionControl
 		- http://www-cs-students.stanford.edu/~blynn/gitmagic/
 
 
-[[WebsitesCollection]]
-
 
