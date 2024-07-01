@@ -15,3 +15,5 @@ This repository contains documentation of my learnings.
 ## Contributing
 
 If you want to contribute to this knowledge base, please feel free to make a pull request.
+
+This is a new line added by the script.
