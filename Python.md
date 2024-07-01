@@ -61,3 +61,13 @@
 
 ## py2puml
 - converts python project to PlantUML diagram
+
+## One-liners
+Problem : is there 3 consecutive odd numbers in the given list?
+- [leetcode problem](https://leetcode.com/problems/three-consecutive-odds/description/), [solution reference](https://leetcode.com/problems/three-consecutive-odds/solutions/5395859/one-line-solution/)
+```python
+# Solution 1
+any(1&v&u&w for v,u,w in zip(array,array[1:],array[2:]))
+# Solution 2
+'111' in ''.join(str(v&1) for v in array)
+```
