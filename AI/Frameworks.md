@@ -14,9 +14,15 @@
 - Structured output while streaming (partial json parser)
 - Can we use parallel function calling?
 - [Langchain robot server](https://github.com/langchain-ai/langchain/blob/master/libs/langchain/tests/mock_servers/robot/server.py)
-- Mock LLM
+- Mock LLM - for unit tests
+
+## LiteLLM
+- supports many models
+- has proxy servers
+- [calculate cost](https://docs.litellm.ai/docs/completion/token_usage)
 
 ## Explore
 - dspy
+- litellm
 - [guidance](https://github.com/guidance-ai/guidance)
 - [Finite State machine token decode](https://lmsys.org/blog/2024-02-05-compressed-fsm/)

@@ -2,13 +2,18 @@
 
 ## Chunking
 
-- Ragas evaluation
-- ChatViz
 - [5 levels of chunking](https://youtu.be/8OJC21T2SL4?si=ljYjQkVy7MOUtgWT)
+- [ChunkViz Tool](https://chunkviz.up.railway.app/)
 
-## Chunkviz
+## Evaluation
+- Ragas evaluation
+- F1 score
+- truelens
+- llm leaderboard
+- autogpt benchmark
 
-[SambaNova Systems | Generative AI, optimized for enterprise and government](https://sambanova.ai/)
+## Agent Protocol
+- architecture for multi agent communication
 
 ## Tokenization – Andrej Karpathy
 
@@ -33,6 +38,11 @@ Watch - <https://youtu.be/RXaLlCeaBIA?si=a2eZp7bNOWHXZSSY>
 - Codex for ghost text, GPT-4 for chat window
 - Retrieve max 20 files for generation, give priority to open files
 - Retrieved node info – relative path , language, snippet
+
+## Tutorials
+### Let's build the GPT Tokenizer
+- [Video](https://youtu.be/zduSFxRajkE?si=SmhGh_SvWjXf5-cp)
+- Question: At 34:03, how does he highlight and scroll?
 
 ### Action Items
 

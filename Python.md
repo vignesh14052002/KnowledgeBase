@@ -58,3 +58,6 @@
 ## cProfile
 
 - python profiler library
+
+## py2puml
+- converts python project to PlantUML diagram
