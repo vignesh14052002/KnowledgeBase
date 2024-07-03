@@ -1,1 +1,6 @@
 Soliton.md
+
+# Python files
+.venv/
+*.env
+__pycache__/
