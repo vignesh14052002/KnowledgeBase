@@ -14,6 +14,8 @@
 
 - slice()
 
+# pytest
+remove pytest-cov to fix breakpoint not hitting issue in vscode
 ## Doubts
 
 - Poetry commands:
@@ -58,9 +60,6 @@
 ## cProfile
 
 - python profiler library
-
-## py2puml
-- converts python project to PlantUML diagram
 
 ## One-liners
 Problem : is there 3 consecutive odd numbers in the given list?
