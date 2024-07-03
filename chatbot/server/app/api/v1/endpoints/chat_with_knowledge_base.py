@@ -4,6 +4,7 @@ from app.api.v1.models.chat_with_knowledge_base import (
     GetAnwerRequest,
     GetAnwerResponse,
 )
+from app.functions import chat_with_knowledge_base
 
 router = APIRouter()
 
@@ -13,5 +14,5 @@ router = APIRouter()
 )
 async def get_answer(request: GetAnwerRequest):
     return GetAnwerResponse(
-        answer=f"This is the answer from the knowledge base for the question: {request.question}"
+        answer=chat_with_knowledge_base.get_answer(request.question)
     )
