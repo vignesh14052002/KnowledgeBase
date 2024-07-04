@@ -61,6 +61,7 @@ function createNewSession(){
             session.history.push({
               message: data.answer,
               sender: "Bot",
+              referencePaths : data.reference_filepaths
             });
             return newSessions;
           } 

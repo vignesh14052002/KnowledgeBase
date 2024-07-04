@@ -27,15 +27,15 @@ export default function RightSide(props) {
 
   function handleSend(e) {
     const msg = textfield.current.value;
-    console.log("emited", msg);
-    console.log(textfield, lastmessage);
+    textfield.current.value = "";
     const current = new Date();
 
-    states.addUserMessage(msg);
     states.socket.sendObjective({
+      history: selectedSession.history.slice(-10),
       question: msg,
       sessionID: selectedSession.id,
     });
+    states.addUserMessage(msg);
     lastmessage.current.scrollIntoView({
       behavior: "smooth",
       block: "center",
@@ -53,7 +53,7 @@ export default function RightSide(props) {
     //   receiver_email: states.selectedContact.email,
     // });
   }
-  return (
+  return ( 
     <MessageArea>
       <Header>
         <Profilepic src={getProfileImg(10)} />
@@ -66,6 +66,13 @@ export default function RightSide(props) {
           <Message key={i} mine={m.sender === "user"}>
             <p>{m.sender}</p>
             <h2>{m.message}</h2>
+            
+            {m.sender !== "user" &&
+            <div style={{display:"flex",gap:"1em",paddingTop:"5px"}}>
+            <p style={{color:"white",fontSize:"1em"}}>Reference : </p>
+            {m.referencePaths && m.referencePaths.map((path, i) => <a style={{color:"white"}} key={i} href={path}>#{i}</a>)}
+            </div>
+            }
             <p className="createdAt">{m.createdAt}</p>
           </Message>
         ))}

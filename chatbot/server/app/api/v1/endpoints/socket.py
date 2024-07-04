@@ -66,7 +66,7 @@ async def handle_request_answer(socket_object, data):
     communicator = Communicator(socket=socket_object)
     try:
         response = {
-            "answer": chat_with_knowledge_base.get_answer(data["question"]),
+            **chat_with_knowledge_base.get_answer(data["question"], data["history"]),
             "sessionID": data["sessionID"],
         }
         await communicator.emit("respond-answer", response)

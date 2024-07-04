@@ -15,7 +15,12 @@ uvicorn = "^0.30.1"
 langchain-google-genai = "^1.0.7"
 pydantic-settings = "^2.3.4"
 python-dotenv = "^1.0.1"
+langchain-community = "^0.2.6"
+faiss-cpu = "^1.8.0.post1"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core"]

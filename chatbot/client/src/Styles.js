@@ -52,6 +52,7 @@ const MessageArea = styled.div`
   border-radius: 1px;
   display: flex;
   flex-direction: column;
+  height: 98%;
 `;
 const ChatArea = styled.div`
   height: 90%;
@@ -109,7 +110,7 @@ const Input = styled.input`
   border-radius: 5px;
   padding-left: 20px;
   margin-left: 20px;
-  color: #8696a0;
+  color: white;
   &::placeholder {
     color: #8696a0;
   }
