@@ -1,9 +1,10 @@
 
 export default class ChatBotSocket {
   constructor() {
-    // BASE_URL.replace(/http/, "ws" ) + "/ws";
-
-    const socket_url ="http://localhost:8000/ws";
+    let socket_url = "/ws"; //same origin
+    if (window.location.hostname == "localhost"){ 
+      socket_url = "ws://localhost:8000/ws";
+    }
     this.socket = new WebSocket(socket_url);
     this.routes = [];
 
