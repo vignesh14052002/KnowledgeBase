@@ -24,5 +24,7 @@
 ## Explore
 - dspy
 - litellm
+- [flashrank](https://github.com/PrithivirajDamodaran/FlashRank)
 - [guidance](https://github.com/guidance-ai/guidance)
+  - use openai logger and check the llm calls
 - [Finite State machine token decode](https://lmsys.org/blog/2024-02-05-compressed-fsm/)

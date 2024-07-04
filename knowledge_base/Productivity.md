@@ -32,3 +32,6 @@
 
 - Ways to find which packages we are not using in our app?
 - Ways to find which env variables are not used from .env?
+
+# Problem solving
+- Think about the root of the problem
