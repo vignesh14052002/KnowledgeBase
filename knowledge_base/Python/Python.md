@@ -13,6 +13,12 @@
 # Core
 
 - slice()
+- [yield usecases](https://guicommits.com/python-yield-examples/)
+  - clean code
+  - file reading
+  - pytest - not clear
+
+- [faster-json-parsing](https://pythonspeed.com/articles/faster-python-json-parsing/)
 
 # pytest
 remove pytest-cov to fix breakpoint not hitting issue in vscode

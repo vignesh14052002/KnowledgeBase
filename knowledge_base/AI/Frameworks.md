@@ -1,4 +1,6 @@
 
+## OpenAI
+- [batch API](https://platform.openai.com/docs/guides/batch/overview)
 ## Langchain
 
 - Langchain cli
@@ -15,6 +17,11 @@
 - Can we use parallel function calling?
 - [Langchain robot server](https://github.com/langchain-ai/langchain/blob/master/libs/langchain/tests/mock_servers/robot/server.py)
 - Mock LLM - for unit tests
+
+## Langchain over llama-index
+- Usage Cost Tracing
+- [Weaviate Hybrid search](https://github.com/langchain-ai/langchain/issues/21147#issuecomment-2097245513)
+- [Ensemble Retriever](https://python.langchain.com/v0.1/docs/modules/data_connection/retrievers/ensemble/)
 
 ## LiteLLM
 - supports many models

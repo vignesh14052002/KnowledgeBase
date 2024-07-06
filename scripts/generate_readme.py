@@ -1,5 +1,7 @@
 import os
 import re
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
 
 ROOT_PATH = os.path.join(os.path.dirname(__file__), "..")
 KNOWLEDGE_BASE_PATH = os.path.join(ROOT_PATH, "knowledge_base")
@@ -52,10 +54,30 @@ def get_reference_links_count():
     return count
 
 
+def get_time_period():
+    start_date = "01-06-2024"
+    start_date = datetime.strptime(start_date, "%d-%m-%Y")
+    end_date = datetime.now()
+
+    diff = relativedelta(end_date, start_date)
+
+    years = diff.years
+    months = diff.months
+    days = diff.days
+
+    if years > 0:
+        return f"{years} years, {months} months and {days} days"
+    elif months > 0:
+        return f"{months} months and {days} days"
+    else:
+        return f"{days} days"
+
+
 PLACEHOLDER__FUNCTION_MAP = {
     "documents_count": get_documents_count,
     "top_level_headings": get_top_level_headings_count,
     "reference_links": get_reference_links_count,
+    "time_period": get_time_period,
 }
 PLACEHOLDER_PATTERN = re.compile(r"!\@\((.*?)\)")
 
