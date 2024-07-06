@@ -1,7 +1,6 @@
 import os
 import re
 from datetime import datetime
-from dateutil.relativedelta import relativedelta
 
 ROOT_PATH = os.path.join(os.path.dirname(__file__), "..")
 KNOWLEDGE_BASE_PATH = os.path.join(ROOT_PATH, "knowledge_base")
@@ -59,11 +58,11 @@ def get_time_period():
     start_date = datetime.strptime(start_date, "%d-%m-%Y")
     end_date = datetime.now()
 
-    diff = relativedelta(end_date, start_date)
+    delta = end_date - start_date
+    days = delta.days
 
-    years = diff.years
-    months = diff.months
-    days = diff.days
+    years, days = divmod(days, 365)
+    months, days = divmod(days, 30)
 
     if years > 0:
         return f"{years} years, {months} months and {days} days"
