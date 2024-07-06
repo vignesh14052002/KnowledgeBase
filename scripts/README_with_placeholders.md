@@ -18,7 +18,7 @@ The following items will get dynamically updated on every push to `master` branc
 | Section          | Count            |
 |------------------|------------------|
 | Documents        | !@(documents_count) |
-| Topics           | !@(topics_count)    |
+| Top Level Headings           | !@(top_level_headings)    |
 | Reference Links  | !@(reference_links) |
 
 ## Contributing
