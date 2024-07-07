@@ -1,8 +1,8 @@
-# Personal Knowledge base
+# Personal Knowledge base 🧠
 This repository contains documentation of my learnings.
 
 ## What It Contains
-- Handwritten distilled knowledge from areas of interest.
+- Curated distilled knowledge from areas of interest.
 - Running notes, action items, and thoughts.
 - Notes that I think can be publicly shared.
 
@@ -26,8 +26,8 @@ The following items will get dynamically updated on every push to `master` branc
 
 | Section          | Count            |
 |------------------|------------------|
-| Documents        | 30 |
+| Documents        | 32 |
 | Top Level Headings           | 26    |
-| Reference Links  | 97 |
-| Time period   | 1 months and 5 days|
+| Reference Links  | 103 |
+| Time period   | 1 months and 6 days|
 
