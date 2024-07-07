@@ -1,8 +1,8 @@
-# Personal Knowledge base
+# Personal Knowledge base 🧠
 This repository contains documentation of my learnings.
 
 ## What It Contains
-- Handwritten distilled knowledge from areas of interest.
+- Curated distilled knowledge from areas of interest.
 - Running notes, action items, and thoughts.
 - Notes that I think can be publicly shared.
 

@@ -45,8 +45,7 @@ Watch - <https://youtu.be/RXaLlCeaBIA?si=a2eZp7bNOWHXZSSY>
 - Question: At 34:03, how does he highlight and scroll?
 
 ### Action Items
-
-- see gemini pricing
 - see what's new in agent protocol
 - inspect opensource repos - llama-index, langchain
 - explore different AI memory management systems - memgpt
+- try using AzureOpenAI to improve latency on concurrent requests

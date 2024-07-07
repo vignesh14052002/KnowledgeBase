@@ -67,6 +67,11 @@ remove pytest-cov to fix breakpoint not hitting issue in vscode
 
 - python profiler library
 
+## Builtins
+- [Docs](https://docs.python.org/3/py-modindex.html)
+### Doubts
+- use of __init__.py in all subfolders
+
 ## One-liners
 Problem : is there 3 consecutive odd numbers in the given list?
 - [leetcode problem](https://leetcode.com/problems/three-consecutive-odds/description/), [solution reference](https://leetcode.com/problems/three-consecutive-odds/solutions/5395859/one-line-solution/)

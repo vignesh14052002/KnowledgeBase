@@ -3,6 +3,15 @@
 - Keep shorter deadlines, frequent feedbacks
 - pomodoro technique: have 5 minute break , 25 minutes work cycle
 
+## Growth
+- Practice doing hard things
+
+## Time Management
+- Add time to complete in each task in action items
+- be focused on one task at a time
+- time management in attention management
+  - perceive time slower by maximizing attention
+
 ## Note-Taking
 
 - Book – Building a second brain – Tiago Forte
