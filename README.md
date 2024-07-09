@@ -26,8 +26,8 @@ The following items will get dynamically updated on every push to `master` branc
 
 | Section          | Count            |
 |------------------|------------------|
-| Documents        | 32 |
-| Top Level Headings           | 26    |
-| Reference Links  | 103 |
-| Time period   | 1 months and 6 days|
+| Documents        | 33 |
+| Top Level Headings           | 27    |
+| Reference Links  | 107 |
+| Time period   | 1 months and 8 days|
 
