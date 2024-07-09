@@ -23,3 +23,10 @@
 
 - Have file context in chunk (list of class and functions)
 - Pass diff alone to next step
+
+## Guidance
+[github](https://github.com/guidance-ai/guidance)
+
+Code inspection
+ - openai
+    - every gen call triggers a new request, this will add prompt input token cost

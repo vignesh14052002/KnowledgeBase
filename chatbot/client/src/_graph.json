@@ -1,0 +1,1618 @@
+{
+    "nodes": [
+        {
+            "id": "knowledge_base",
+            "group": 4
+        },
+        {
+            "id": "https://dev.to/anthony_hagi/you-dont-need-microservices-a-real-world-perspective-1kck",
+            "group": 1,
+            "title": "blog"
+        },
+        {
+            "id": "https://www.youtube.com/c/ByteByteGo",
+            "group": 1,
+            "title": "Byte-byte go YouTube channel"
+        },
+        {
+            "id": "Architecture.md",
+            "group": 2,
+            "title": "Architecture.md"
+        },
+        {
+            "id": "https://github.com/itsMohammedThaier/pyarts",
+            "group": 1,
+            "title": "pyarts"
+        },
+        {
+            "id": "https://reddit.com/r/generative/s/ibh9uwsq75",
+            "group": 1,
+            "title": "Generative Art subreddit"
+        },
+        {
+            "id": "CanvasGraphics.md",
+            "group": 2,
+            "title": "CanvasGraphics.md"
+        },
+        {
+            "id": "Clean_Code.md",
+            "group": 2,
+            "title": "Clean_Code.md"
+        },
+        {
+            "id": "https://proposal.illinois.edu/files/2023/12/Smart-Brevity.pdf",
+            "group": 1,
+            "title": "Smart brievity \u00e2\u20ac\u201c say more with less"
+        },
+        {
+            "id": "Communication.md",
+            "group": 2,
+            "title": "Communication.md"
+        },
+        {
+            "id": "https://summits-india.virtual.awsevents.com/channel/t/340083842",
+            "group": 1,
+            "title": "Aws recordings"
+        },
+        {
+            "id": "Devops.md",
+            "group": 2,
+            "title": "Devops.md"
+        },
+        {
+            "id": "https://www.forbes.com/advisor/in/investing/xirr-in-mutual-fund/#:~:text=XIRR%20or%20extended%20internal%20rate,transactions%20happen%20during%20a%20period.",
+            "group": 1,
+            "title": "forbes"
+        },
+        {
+            "id": "https://groww.in/p/xirr-in-mutual-funds",
+            "group": 1,
+            "title": "grow"
+        },
+        {
+            "id": "https://sgbanalyzer.com/home",
+            "group": 1,
+            "title": "SGB Analyzer"
+        },
+        {
+            "id": "Finance.md",
+            "group": 2,
+            "title": "Finance.md"
+        },
+        {
+            "id": "https://dev.to/stefirosca/10-must-know-vs-code-shortcuts-1n17",
+            "group": 1,
+            "title": "VSCode Shortcuts"
+        },
+        {
+            "id": "https://github.com/aviaryan/VSCodeNotebook?tab=readme-ov-file",
+            "group": 1,
+            "title": "VSCode Notebook Github"
+        },
+        {
+            "id": "https://www.youtube.com/live/VixYfv0UEyE?si=MuCJcSi4pk2K31Ly",
+            "group": 1,
+            "title": "Hacksussex Coders cup"
+        },
+        {
+            "id": "General.md",
+            "group": 2,
+            "title": "General.md"
+        },
+        {
+            "id": "https://dev.to/alvaromontoro/small-details-to-improve-your-websites-experience-hio",
+            "group": 1,
+            "title": "5 Tips to Improve Your Website's Experience"
+        },
+        {
+            "id": "https://dev.to/anmolbaranwal/shortcut-to-find-open-source-projects-100x-faster-3lje",
+            "group": 1,
+            "title": "Shortcut to Find Open Source Projects 100x Faster"
+        },
+        {
+            "id": "https://this-person-does-not-exist.com/en",
+            "group": 1,
+            "title": "This Person Does Not Exist"
+        },
+        {
+            "id": "https://zzetao.github.io/awesome-github-profile/",
+            "group": 1,
+            "title": "Awesome GitHub Profile by Zzetao"
+        },
+        {
+            "id": "https://www.reddit.com/r/developersindia/",
+            "group": 1,
+            "title": "Developers India"
+        },
+        {
+            "id": "https://wiki.developersindia.in/",
+            "group": 1,
+            "title": "Thread Collections"
+        },
+        {
+            "id": "https://www.reddit.com/r/developersIndia/comments/1czbgfj/what_are_some_ideas_in_computer_science_that_you/",
+            "group": 1,
+            "title": "Ideas in CS that you admire"
+        },
+        {
+            "id": "https://www.youtube.com/watch?v=S2Hp_1jqpY8",
+            "group": 1,
+            "title": "Google doc differential synchronisation"
+        },
+        {
+            "id": "Good_blogs.md",
+            "group": 2,
+            "title": "Good_blogs.md"
+        },
+        {
+            "id": "Health.md",
+            "group": 2,
+            "title": "Health.md"
+        },
+        {
+            "id": "https://github.com/microsoft/lida/pull/90",
+            "group": 1,
+            "title": "PR : BugFix"
+        },
+        {
+            "id": "https://github.com/run-llama/llama_index/issues/13826",
+            "group": 1,
+            "title": "Issue : Bug"
+        },
+        {
+            "id": "https://github.com/run-llama/llama_index/issues/13443",
+            "group": 1,
+            "title": "Issue : Feature Request"
+        },
+        {
+            "id": "https://github.com/victordibia/llmx/pull/17",
+            "group": 1,
+            "title": "PR : New Support"
+        },
+        {
+            "id": "https://github.com/AI-Engineer-Foundation/agent-protocol/pull/89",
+            "group": 1,
+            "title": "PR : BugFix"
+        },
+        {
+            "id": "https://github.com/CodingTrain/website-archive/pull/3477",
+            "group": 1,
+            "title": "PR : Community Contribution"
+        },
+        {
+            "id": "OpenSourceContributions.md",
+            "group": 2,
+            "title": "OpenSourceContributions.md"
+        },
+        {
+            "id": "https://www.buildingasecondbrain.com/resources",
+            "group": 1,
+            "title": "Choose a note-taking app"
+        },
+        {
+            "id": "Productivity.md",
+            "group": 2,
+            "title": "Productivity.md"
+        },
+        {
+            "id": "https://youtu.be/IYzDFHx6QPY?si=sFn5a3PBlfd9knRD",
+            "group": 1,
+            "title": "Property based testing"
+        },
+        {
+            "id": "https://youtu.be/fr1E9aVnBxw?si=MAh5aqCtBYBr5SXb",
+            "group": 1,
+            "title": "Effective Unit Testing"
+        },
+        {
+            "id": "https://python.langchain.com/v0.1/docs/contributing/testing/",
+            "group": 1,
+            "title": "Langchain test docs"
+        },
+        {
+            "id": "https://python.langchain.com/v0.1/docs/contributing/testing/#recording-http-interactions-with-pytest-vcr",
+            "group": 1,
+            "title": "ref"
+        },
+        {
+            "id": "Testing.md",
+            "group": 2,
+            "title": "Testing.md"
+        },
+        {
+            "id": "TODO.md",
+            "group": 2,
+            "title": "TODO.md"
+        },
+        {
+            "id": "UI_UX.md",
+            "group": 2,
+            "title": "UI_UX.md"
+        },
+        {
+            "id": "https://dev.to/franciscomoretti/22-useful-console-methods-every-web-developer-should-know-57le",
+            "group": 1,
+            "title": "22 console methods"
+        },
+        {
+            "id": "https://youtu.be/_-6LgEjEyzE?si=RbCo15KQ4O8fg0ol",
+            "group": 1,
+            "title": "Latest in web"
+        },
+        {
+            "id": "Web.md",
+            "group": 2,
+            "title": "Web.md"
+        },
+        {
+            "id": "https://youtu.be/8OJC21T2SL4?si=ljYjQkVy7MOUtgWT",
+            "group": 1,
+            "title": "5 levels of chunking"
+        },
+        {
+            "id": "https://chunkviz.up.railway.app/",
+            "group": 1,
+            "title": "ChunkViz Tool"
+        },
+        {
+            "id": "https://github.com/kingjulio8238/memary",
+            "group": 1,
+            "title": "memary"
+        },
+        {
+            "id": "https://youtu.be/zduSFxRajkE?si=SmhGh_SvWjXf5-cp",
+            "group": 1,
+            "title": "Video"
+        },
+        {
+            "id": "AI\\AI.md",
+            "group": 2,
+            "title": "AI.md"
+        },
+        {
+            "id": "https://youtu.be/PkXELH6Y2lM?si=ieiSBnsY7LZ1nieO",
+            "group": 1,
+            "title": "Video"
+        },
+        {
+            "id": "https://youtu.be/9ueDd5-NZco?si=eryLJSCeNxp1Xqdg",
+            "group": 1,
+            "title": "Video"
+        },
+        {
+            "id": "https://youtu.be/8sxAcYnZFAk?si=yGIAacCMgjWUksXi",
+            "group": 1,
+            "title": "Video"
+        },
+        {
+            "id": "https://youtu.be/e-gwvmhyU7A?si=S2_ovErBM909DqCS",
+            "group": 1,
+            "title": "Video"
+        },
+        {
+            "id": "AI\\Discussions.md",
+            "group": 2,
+            "title": "Discussions.md"
+        },
+        {
+            "id": "https://platform.openai.com/docs/guides/batch/overview",
+            "group": 1,
+            "title": "batch API"
+        },
+        {
+            "id": "https://integrations.langchain.com/",
+            "group": 1,
+            "title": "Langchain Integrations"
+        },
+        {
+            "id": "https://github.com/langchain-ai/langchain/blob/master/libs/langchain/tests/mock_servers/robot/server.py",
+            "group": 1,
+            "title": "Langchain robot server"
+        },
+        {
+            "id": "https://github.com/langchain-ai/langchain/issues/21147#issuecomment-2097245513",
+            "group": 1,
+            "title": "Weaviate Hybrid search"
+        },
+        {
+            "id": "https://python.langchain.com/v0.1/docs/modules/data_connection/retrievers/ensemble/",
+            "group": 1,
+            "title": "Ensemble Retriever"
+        },
+        {
+            "id": "https://docs.litellm.ai/docs/completion/token_usage",
+            "group": 1,
+            "title": "calculate cost"
+        },
+        {
+            "id": "https://github.com/PrithivirajDamodaran/FlashRank",
+            "group": 1,
+            "title": "flashrank"
+        },
+        {
+            "id": "https://github.com/guidance-ai/guidance",
+            "group": 1,
+            "title": "guidance"
+        },
+        {
+            "id": "https://lmsys.org/blog/2024-02-05-compressed-fsm/",
+            "group": 1,
+            "title": "Finite State machine token decode"
+        },
+        {
+            "id": "AI\\Frameworks.md",
+            "group": 2,
+            "title": "Frameworks.md"
+        },
+        {
+            "id": "https://github.com/yixuantt/MultiHop-RAG",
+            "group": 1,
+            "title": "sample large dataset"
+        },
+        {
+            "id": "https://github.com/microsoft/graphrag?tab=readme-ov-file",
+            "group": 1,
+            "title": "Repo"
+        },
+        {
+            "id": "https://arxiv.org/pdf/2404.16130",
+            "group": 1,
+            "title": "White Paper"
+        },
+        {
+            "id": "https://youtu.be/jCjyaQL-7mA?si=PTPT9XdJdX-2wbdi",
+            "group": 1,
+            "title": "Demo Video"
+        },
+        {
+            "id": "AI\\KnowledgeGraph.md",
+            "group": 2,
+            "title": "KnowledgeGraph.md"
+        },
+        {
+            "id": "https://github.com/OpenDevin/OpenDevin/tree/main/opendevin",
+            "group": 1,
+            "title": "architecture docs"
+        },
+        {
+            "id": "https://opendevin.github.io/OpenDevin/modules/usage/architecture#:~:text=code%20using%20the-,py2puml%20tool.,-The%20diagram%20is",
+            "group": 1,
+            "title": "Dynamically create architecture diagram"
+        },
+        {
+            "id": "https://github.com/OpenDevin/OpenDevin/blob/main/agenthub/README.md",
+            "group": 1,
+            "title": "agent hub"
+        },
+        {
+            "id": "https://github.com/OpenDevin/OpenDevin/blob/main/evaluation/README.md",
+            "group": 1,
+            "title": "evaluation"
+        },
+        {
+            "id": "https://github.com/OpenDevin/OpenDevin/blob/main/Development.md#6-llm-debugging",
+            "group": 1,
+            "title": "LLM Debugging"
+        },
+        {
+            "id": "AI\\OpensourceProjects.md",
+            "group": 2,
+            "title": "OpensourceProjects.md"
+        },
+        {
+            "id": "AI",
+            "group": 3,
+            "title": "AI"
+        },
+        {
+            "id": "old_notes\\AI.md",
+            "group": 2,
+            "title": "AI.md"
+        },
+        {
+            "id": "old_notes\\Angular.md",
+            "group": 2,
+            "title": "Angular.md"
+        },
+        {
+            "id": "old_notes\\Blender.md",
+            "group": 2,
+            "title": "Blender.md"
+        },
+        {
+            "id": "https://www.youtube.com/c/SebastianLague/playlists",
+            "group": 1,
+            "title": "Sebastian league"
+        },
+        {
+            "id": "https://www.youtube.com/c/Acegikmo",
+            "group": 1,
+            "title": "Freya Holmer"
+        },
+        {
+            "id": "https://www.youtube.com/c/CodeMonkeyUnity",
+            "group": 1,
+            "title": "Code Monkey"
+        },
+        {
+            "id": "https://www.youtube.com/c/MarkBrownGMT",
+            "group": 1,
+            "title": "Game Maker Toollkit"
+        },
+        {
+            "id": "old_notes\\GameDevelopment.md",
+            "group": 2,
+            "title": "GameDevelopment.md"
+        },
+        {
+            "id": "old_notes\\Goals.md",
+            "group": 2,
+            "title": "Goals.md"
+        },
+        {
+            "id": "https://www.instagram.com/reel/CnkA70cqIVn/?igshid=YmMyMTA2M2Y=",
+            "group": 1,
+            "title": "tutorial"
+        },
+        {
+            "id": "old_notes\\ImageProcessing.md",
+            "group": 2,
+            "title": "ImageProcessing.md"
+        },
+        {
+            "id": "old_notes\\Index.md",
+            "group": 2,
+            "title": "Index.md"
+        },
+        {
+            "id": "https://solitontech-my.sharepoint.com/:x:/p/nusra/Eb4t6plNkJtPorb2U9KiCYABYsDCekeC_ojz-W2DzamThg?e=ZWerQt&login_hint=vignesh.arivazhagan%40solitontech.com&ct=1682481159835&wdOrigin=OFFICECOM-WEB.MAIN.EDGEWORTH&cid=0e054b6f-d759-4d32-90c1-2fe4ad237c07&wdPreviousSessionSrc=HarmonyWeb&wdPreviousSession=793dfc3f-81ca-4e0e-a965-3ea540d8ee99",
+            "group": 1,
+            "title": "Excellence Award sheet"
+        },
+        {
+            "id": "old_notes\\Soliton.md",
+            "group": 2,
+            "title": "Soliton.md"
+        },
+        {
+            "id": "https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-subjects.md#version-control-systems",
+            "group": 1,
+            "title": "Books"
+        },
+        {
+            "id": "old_notes\\ToLearn.md",
+            "group": 2,
+            "title": "ToLearn.md"
+        },
+        {
+            "id": "https://roadmap.sh/frontend",
+            "group": 1,
+            "title": "FrontendRoadmap"
+        },
+        {
+            "id": "https://www.youtube.com/watch?v=YS5Zh7KExvE&ab_channel=LearnLinuxTV",
+            "group": 1,
+            "title": "Detailed Guide"
+        },
+        {
+            "id": "https://gist.github.com/elonmallin/2cc94c45ab57e2060498e855acefade0",
+            "group": 1,
+            "title": "setupcommand"
+        },
+        {
+            "id": "https://www.youtube.com/watch?v=vpk_1gldOAE&ab_channel=CoreySchafer",
+            "group": 1,
+            "title": "linuxref"
+        },
+        {
+            "id": "https://www.youtube.com/watch?v=22lBJIfO9qQ&ab_channel=TonyTeachesTech",
+            "group": 1,
+            "title": "ref"
+        },
+        {
+            "id": "https://www.youtube.com/watch?v=TNZW0LvEUKM&ab_channel=TechnoCally",
+            "group": 1,
+            "title": "ref"
+        },
+        {
+            "id": "https://www.youtube.com/kepowob/playlists",
+            "group": 1,
+            "title": "Kevin powel"
+        },
+        {
+            "id": "https://www.youtube.com/c/WebDevSimplified/playlists",
+            "group": 1,
+            "title": "Web dev simplified"
+        },
+        {
+            "id": "https://www.youtube.com/c/CodingArtist",
+            "group": 1,
+            "title": "Codingartist"
+        },
+        {
+            "id": "https://www.youtube.com/c/RedStapler_channel ",
+            "group": 1,
+            "title": "RedStapler"
+        },
+        {
+            "id": "https://www.youtube.com/c/TheCodingTrain/playlists",
+            "group": 1,
+            "title": "Coding train"
+        },
+        {
+            "id": "https://www.youtube.com/c/RaduMariescuIstodor",
+            "group": 1,
+            "title": "RaduMariescuIstodor"
+        },
+        {
+            "id": "https://www.youtube.com/c/DavidBombal",
+            "group": 1,
+            "title": "David Bombell"
+        },
+        {
+            "id": "https://www.youtube.com/c/HusseinNasser-software-engineering",
+            "group": 1,
+            "title": "Hussein Nasser"
+        },
+        {
+            "id": "https://www.youtube.com/c/EngineerMan",
+            "group": 1,
+            "title": "Engineer Man"
+        },
+        {
+            "id": "https://www.youtube.com/c/shanselman",
+            "group": 1,
+            "title": "Scott Hanselman"
+        },
+        {
+            "id": "https://www.youtube.com/c/codedamn",
+            "group": 1,
+            "title": "Codedamn"
+        },
+        {
+            "id": "old_notes\\WebDevelopment.md",
+            "group": 2,
+            "title": "WebDevelopment.md"
+        },
+        {
+            "id": "https://vignesh2002.pythonanywhere.com/",
+            "group": 1,
+            "title": "Django website"
+        },
+        {
+            "id": "https://vignesh14052002.github.io/portfolio",
+            "group": 1,
+            "title": "React portfolio"
+        },
+        {
+            "id": "https://vignesh14052002.github.io/frontend/portfolio/index.html",
+            "group": 1,
+            "title": "pwa portfolio"
+        },
+        {
+            "id": "https://github.com/vignesh14052002",
+            "group": 1,
+            "title": "Github"
+        },
+        {
+            "id": "https://www.linkedin.com/in/vignesh-a-ba83841b0/",
+            "group": 1,
+            "title": "linkedin"
+        },
+        {
+            "id": "https://www.instagram.com/_._av.__/",
+            "group": 1,
+            "title": "instagram"
+        },
+        {
+            "id": "https://www.reddit.com/user/vignesh-2002",
+            "group": 1,
+            "title": "Reddit"
+        },
+        {
+            "id": "https://stackoverflow.com/users/13218335/vignesh",
+            "group": 1,
+            "title": "StackOverflow"
+        },
+        {
+            "id": "https://discordapp.com/users/1053652408271634432",
+            "group": 1,
+            "title": "Discord"
+        },
+        {
+            "id": "https://www.facebook.com/vignesh.rock.98622/",
+            "group": 1,
+            "title": "facebook"
+        },
+        {
+            "id": "old_notes\\WebsitesCollection.md",
+            "group": 2,
+            "title": "WebsitesCollection.md"
+        },
+        {
+            "id": "old_notes",
+            "group": 3,
+            "title": "old_notes"
+        },
+        {
+            "id": "old_notes\\.obsidian",
+            "group": 3,
+            "title": ".obsidian"
+        },
+        {
+            "id": "old_notes\\.obsidian\\plugins",
+            "group": 3,
+            "title": "plugins"
+        },
+        {
+            "id": "old_notes\\.obsidian\\plugins\\obsidian-git",
+            "group": 3,
+            "title": "obsidian-git"
+        },
+        {
+            "id": "https://www.plantuml.com/plantuml/uml/SoWkIImgAStDuNBCoKnELT2rKt3AJx9IS2mjoKZDAybCJYp9pCzJ24ejB4qjBk42oYde0jM05MDHLLoGdrUSoeLkM5u-K5sHGY9MGw6ARNHryQb66EwGcfS2T300",
+            "group": 1,
+            "title": "example"
+        },
+        {
+            "id": "Python\\Plantuml.md",
+            "group": 2,
+            "title": "Plantuml.md"
+        },
+        {
+            "id": "https://youtu.be/qUeud6DvOWI?si=gPbf0Y3ksq-4OGoE",
+            "group": 1,
+            "title": "25 nooby Python habits you need to ditch"
+        },
+        {
+            "id": "https://www.reddit.com/r/Python/s/GUBcYl376V",
+            "group": 1,
+            "title": "fstrings"
+        },
+        {
+            "id": "https://guicommits.com/python-yield-examples/",
+            "group": 1,
+            "title": "yield usecases"
+        },
+        {
+            "id": "https://pythonspeed.com/articles/faster-python-json-parsing/",
+            "group": 1,
+            "title": "faster-json-parsing"
+        },
+        {
+            "id": "https://www.youtube.com/@codecollider/videos",
+            "group": 1,
+            "title": "codecollider"
+        },
+        {
+            "id": "https://youtu.be/row-SdNdHFE?si=SKugDtfBxVT9qQUe",
+            "group": 1,
+            "title": "AsyncClient instead of requests"
+        },
+        {
+            "id": "https://youtu.be/Qb9s3UiMSTA?si=0UHJM7ou_TEmOSIY",
+            "group": 1,
+            "title": "tutorial"
+        },
+        {
+            "id": "https://docs.python.org/3/py-modindex.html",
+            "group": 1,
+            "title": "Docs"
+        },
+        {
+            "id": "https://leetcode.com/problems/three-consecutive-odds/description/",
+            "group": 1,
+            "title": "leetcode problem"
+        },
+        {
+            "id": "https://leetcode.com/problems/three-consecutive-odds/solutions/5395859/one-line-solution/",
+            "group": 1,
+            "title": "solution reference"
+        },
+        {
+            "id": "Python\\Python.md",
+            "group": 2,
+            "title": "Python.md"
+        },
+        {
+            "id": "Python\\Resources.md",
+            "group": 2,
+            "title": "Resources.md"
+        },
+        {
+            "id": "Python",
+            "group": 3,
+            "title": "Python"
+        }
+    ],
+    "links": [
+        {
+            "source": "Architecture.md",
+            "target": "https://dev.to/anthony_hagi/you-dont-need-microservices-a-real-world-perspective-1kck",
+            "value": 1,
+            "title": "blog"
+        },
+        {
+            "source": "Architecture.md",
+            "target": "https://www.youtube.com/c/ByteByteGo",
+            "value": 1,
+            "title": "Byte-byte go YouTube channel"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "Architecture.md",
+            "value": 1,
+            "title": "Architecture.md"
+        },
+        {
+            "source": "CanvasGraphics.md",
+            "target": "https://github.com/itsMohammedThaier/pyarts",
+            "value": 1,
+            "title": "pyarts"
+        },
+        {
+            "source": "CanvasGraphics.md",
+            "target": "https://reddit.com/r/generative/s/ibh9uwsq75",
+            "value": 1,
+            "title": "Generative Art subreddit"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "CanvasGraphics.md",
+            "value": 1,
+            "title": "CanvasGraphics.md"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "Clean_Code.md",
+            "value": 1,
+            "title": "Clean_Code.md"
+        },
+        {
+            "source": "Communication.md",
+            "target": "https://proposal.illinois.edu/files/2023/12/Smart-Brevity.pdf",
+            "value": 1,
+            "title": "Smart brievity \u00e2\u20ac\u201c say more with less"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "Communication.md",
+            "value": 1,
+            "title": "Communication.md"
+        },
+        {
+            "source": "Devops.md",
+            "target": "https://summits-india.virtual.awsevents.com/channel/t/340083842",
+            "value": 1,
+            "title": "Aws recordings"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "Devops.md",
+            "value": 1,
+            "title": "Devops.md"
+        },
+        {
+            "source": "Finance.md",
+            "target": "https://www.forbes.com/advisor/in/investing/xirr-in-mutual-fund/#:~:text=XIRR%20or%20extended%20internal%20rate,transactions%20happen%20during%20a%20period.",
+            "value": 1,
+            "title": "forbes"
+        },
+        {
+            "source": "Finance.md",
+            "target": "https://groww.in/p/xirr-in-mutual-funds",
+            "value": 1,
+            "title": "grow"
+        },
+        {
+            "source": "Finance.md",
+            "target": "https://sgbanalyzer.com/home",
+            "value": 1,
+            "title": "SGB Analyzer"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "Finance.md",
+            "value": 1,
+            "title": "Finance.md"
+        },
+        {
+            "source": "General.md",
+            "target": "https://dev.to/stefirosca/10-must-know-vs-code-shortcuts-1n17",
+            "value": 1,
+            "title": "VSCode Shortcuts"
+        },
+        {
+            "source": "General.md",
+            "target": "https://github.com/aviaryan/VSCodeNotebook?tab=readme-ov-file",
+            "value": 1,
+            "title": "VSCode Notebook Github"
+        },
+        {
+            "source": "General.md",
+            "target": "https://www.youtube.com/live/VixYfv0UEyE?si=MuCJcSi4pk2K31Ly",
+            "value": 1,
+            "title": "Hacksussex Coders cup"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "General.md",
+            "value": 1,
+            "title": "General.md"
+        },
+        {
+            "source": "Good_blogs.md",
+            "target": "https://dev.to/alvaromontoro/small-details-to-improve-your-websites-experience-hio",
+            "value": 1,
+            "title": "5 Tips to Improve Your Website's Experience"
+        },
+        {
+            "source": "Good_blogs.md",
+            "target": "https://github.com/itsMohammedThaier/pyarts",
+            "value": 1,
+            "title": "Python Arts on GitHub"
+        },
+        {
+            "source": "Good_blogs.md",
+            "target": "https://dev.to/anmolbaranwal/shortcut-to-find-open-source-projects-100x-faster-3lje",
+            "value": 1,
+            "title": "Shortcut to Find Open Source Projects 100x Faster"
+        },
+        {
+            "source": "Good_blogs.md",
+            "target": "https://this-person-does-not-exist.com/en",
+            "value": 1,
+            "title": "This Person Does Not Exist"
+        },
+        {
+            "source": "Good_blogs.md",
+            "target": "https://zzetao.github.io/awesome-github-profile/",
+            "value": 1,
+            "title": "Awesome GitHub Profile by Zzetao"
+        },
+        {
+            "source": "Good_blogs.md",
+            "target": "https://reddit.com/r/generative/s/ibh9uwsq75",
+            "value": 1,
+            "title": "Generative Art on Reddit"
+        },
+        {
+            "source": "Good_blogs.md",
+            "target": "https://www.reddit.com/r/developersindia/",
+            "value": 1,
+            "title": "Developers India"
+        },
+        {
+            "source": "Good_blogs.md",
+            "target": "https://wiki.developersindia.in/",
+            "value": 1,
+            "title": "Thread Collections"
+        },
+        {
+            "source": "Good_blogs.md",
+            "target": "https://www.reddit.com/r/developersIndia/comments/1czbgfj/what_are_some_ideas_in_computer_science_that_you/",
+            "value": 1,
+            "title": "Ideas in CS that you admire"
+        },
+        {
+            "source": "Good_blogs.md",
+            "target": "https://www.youtube.com/watch?v=S2Hp_1jqpY8",
+            "value": 1,
+            "title": "Google doc differential synchronisation"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "Good_blogs.md",
+            "value": 1,
+            "title": "Good_blogs.md"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "Health.md",
+            "value": 1,
+            "title": "Health.md"
+        },
+        {
+            "source": "OpenSourceContributions.md",
+            "target": "https://github.com/microsoft/lida/pull/90",
+            "value": 1,
+            "title": "PR : BugFix"
+        },
+        {
+            "source": "OpenSourceContributions.md",
+            "target": "https://github.com/run-llama/llama_index/issues/13826",
+            "value": 1,
+            "title": "Issue : Bug"
+        },
+        {
+            "source": "OpenSourceContributions.md",
+            "target": "https://github.com/run-llama/llama_index/issues/13443",
+            "value": 1,
+            "title": "Issue : Feature Request"
+        },
+        {
+            "source": "OpenSourceContributions.md",
+            "target": "https://github.com/victordibia/llmx/pull/17",
+            "value": 1,
+            "title": "PR : New Support"
+        },
+        {
+            "source": "OpenSourceContributions.md",
+            "target": "https://github.com/AI-Engineer-Foundation/agent-protocol/pull/89",
+            "value": 1,
+            "title": "PR : BugFix"
+        },
+        {
+            "source": "OpenSourceContributions.md",
+            "target": "https://github.com/CodingTrain/website-archive/pull/3477",
+            "value": 1,
+            "title": "PR : Community Contribution"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "OpenSourceContributions.md",
+            "value": 1,
+            "title": "OpenSourceContributions.md"
+        },
+        {
+            "source": "Productivity.md",
+            "target": "https://www.buildingasecondbrain.com/resources",
+            "value": 1,
+            "title": "Choose a note-taking app"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "Productivity.md",
+            "value": 1,
+            "title": "Productivity.md"
+        },
+        {
+            "source": "Testing.md",
+            "target": "https://youtu.be/IYzDFHx6QPY?si=sFn5a3PBlfd9knRD",
+            "value": 1,
+            "title": "Property based testing"
+        },
+        {
+            "source": "Testing.md",
+            "target": "https://youtu.be/fr1E9aVnBxw?si=MAh5aqCtBYBr5SXb",
+            "value": 1,
+            "title": "Effective Unit Testing"
+        },
+        {
+            "source": "Testing.md",
+            "target": "https://python.langchain.com/v0.1/docs/contributing/testing/",
+            "value": 1,
+            "title": "Langchain test docs"
+        },
+        {
+            "source": "Testing.md",
+            "target": "https://python.langchain.com/v0.1/docs/contributing/testing/#recording-http-interactions-with-pytest-vcr",
+            "value": 1,
+            "title": "ref"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "Testing.md",
+            "value": 1,
+            "title": "Testing.md"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "TODO.md",
+            "value": 1,
+            "title": "TODO.md"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "UI_UX.md",
+            "value": 1,
+            "title": "UI_UX.md"
+        },
+        {
+            "source": "Web.md",
+            "target": "https://dev.to/alvaromontoro/small-details-to-improve-your-websites-experience-hio",
+            "value": 1,
+            "title": "5 tips to improve website (theme-color, accent-color, open graph...)"
+        },
+        {
+            "source": "Web.md",
+            "target": "https://dev.to/franciscomoretti/22-useful-console-methods-every-web-developer-should-know-57le",
+            "value": 1,
+            "title": "22 console methods"
+        },
+        {
+            "source": "Web.md",
+            "target": "https://youtu.be/_-6LgEjEyzE?si=RbCo15KQ4O8fg0ol",
+            "value": 1,
+            "title": "Latest in web"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "Web.md",
+            "value": 1,
+            "title": "Web.md"
+        },
+        {
+            "source": "AI\\AI.md",
+            "target": "https://youtu.be/8OJC21T2SL4?si=ljYjQkVy7MOUtgWT",
+            "value": 1,
+            "title": "5 levels of chunking"
+        },
+        {
+            "source": "AI\\AI.md",
+            "target": "https://chunkviz.up.railway.app/",
+            "value": 1,
+            "title": "ChunkViz Tool"
+        },
+        {
+            "source": "AI\\AI.md",
+            "target": "https://github.com/kingjulio8238/memary",
+            "value": 1,
+            "title": "memary"
+        },
+        {
+            "source": "AI\\AI.md",
+            "target": "https://youtu.be/zduSFxRajkE?si=SmhGh_SvWjXf5-cp",
+            "value": 1,
+            "title": "Video"
+        },
+        {
+            "source": "AI",
+            "target": "AI\\AI.md",
+            "value": 1,
+            "title": "AI\\AI.md"
+        },
+        {
+            "source": "AI\\Discussions.md",
+            "target": "https://youtu.be/PkXELH6Y2lM?si=ieiSBnsY7LZ1nieO",
+            "value": 1,
+            "title": "Video"
+        },
+        {
+            "source": "AI\\Discussions.md",
+            "target": "https://youtu.be/9ueDd5-NZco?si=eryLJSCeNxp1Xqdg",
+            "value": 1,
+            "title": "Video"
+        },
+        {
+            "source": "AI\\Discussions.md",
+            "target": "https://youtu.be/8sxAcYnZFAk?si=yGIAacCMgjWUksXi",
+            "value": 1,
+            "title": "Video"
+        },
+        {
+            "source": "AI\\Discussions.md",
+            "target": "https://youtu.be/e-gwvmhyU7A?si=S2_ovErBM909DqCS",
+            "value": 1,
+            "title": "Video"
+        },
+        {
+            "source": "AI",
+            "target": "AI\\Discussions.md",
+            "value": 1,
+            "title": "AI\\Discussions.md"
+        },
+        {
+            "source": "AI\\Frameworks.md",
+            "target": "https://platform.openai.com/docs/guides/batch/overview",
+            "value": 1,
+            "title": "batch API"
+        },
+        {
+            "source": "AI\\Frameworks.md",
+            "target": "https://integrations.langchain.com/",
+            "value": 1,
+            "title": "Langchain Integrations"
+        },
+        {
+            "source": "AI\\Frameworks.md",
+            "target": "https://github.com/langchain-ai/langchain/blob/master/libs/langchain/tests/mock_servers/robot/server.py",
+            "value": 1,
+            "title": "Langchain robot server"
+        },
+        {
+            "source": "AI\\Frameworks.md",
+            "target": "https://github.com/langchain-ai/langchain/issues/21147#issuecomment-2097245513",
+            "value": 1,
+            "title": "Weaviate Hybrid search"
+        },
+        {
+            "source": "AI\\Frameworks.md",
+            "target": "https://python.langchain.com/v0.1/docs/modules/data_connection/retrievers/ensemble/",
+            "value": 1,
+            "title": "Ensemble Retriever"
+        },
+        {
+            "source": "AI\\Frameworks.md",
+            "target": "https://docs.litellm.ai/docs/completion/token_usage",
+            "value": 1,
+            "title": "calculate cost"
+        },
+        {
+            "source": "AI\\Frameworks.md",
+            "target": "https://github.com/PrithivirajDamodaran/FlashRank",
+            "value": 1,
+            "title": "flashrank"
+        },
+        {
+            "source": "AI\\Frameworks.md",
+            "target": "https://github.com/guidance-ai/guidance",
+            "value": 1,
+            "title": "guidance"
+        },
+        {
+            "source": "AI\\Frameworks.md",
+            "target": "https://lmsys.org/blog/2024-02-05-compressed-fsm/",
+            "value": 1,
+            "title": "Finite State machine token decode"
+        },
+        {
+            "source": "AI",
+            "target": "AI\\Frameworks.md",
+            "value": 1,
+            "title": "AI\\Frameworks.md"
+        },
+        {
+            "source": "AI\\KnowledgeGraph.md",
+            "target": "https://github.com/yixuantt/MultiHop-RAG",
+            "value": 1,
+            "title": "sample large dataset"
+        },
+        {
+            "source": "AI\\KnowledgeGraph.md",
+            "target": "https://github.com/microsoft/graphrag?tab=readme-ov-file",
+            "value": 1,
+            "title": "Repo"
+        },
+        {
+            "source": "AI\\KnowledgeGraph.md",
+            "target": "https://arxiv.org/pdf/2404.16130",
+            "value": 1,
+            "title": "White Paper"
+        },
+        {
+            "source": "AI\\KnowledgeGraph.md",
+            "target": "https://youtu.be/jCjyaQL-7mA?si=PTPT9XdJdX-2wbdi",
+            "value": 1,
+            "title": "Demo Video"
+        },
+        {
+            "source": "AI",
+            "target": "AI\\KnowledgeGraph.md",
+            "value": 1,
+            "title": "AI\\KnowledgeGraph.md"
+        },
+        {
+            "source": "AI\\OpensourceProjects.md",
+            "target": "https://github.com/OpenDevin/OpenDevin/tree/main/opendevin",
+            "value": 1,
+            "title": "architecture docs"
+        },
+        {
+            "source": "AI\\OpensourceProjects.md",
+            "target": "https://opendevin.github.io/OpenDevin/modules/usage/architecture#:~:text=code%20using%20the-,py2puml%20tool.,-The%20diagram%20is",
+            "value": 1,
+            "title": "Dynamically create architecture diagram"
+        },
+        {
+            "source": "AI\\OpensourceProjects.md",
+            "target": "https://github.com/OpenDevin/OpenDevin/blob/main/agenthub/README.md",
+            "value": 1,
+            "title": "agent hub"
+        },
+        {
+            "source": "AI\\OpensourceProjects.md",
+            "target": "https://github.com/OpenDevin/OpenDevin/blob/main/evaluation/README.md",
+            "value": 1,
+            "title": "evaluation"
+        },
+        {
+            "source": "AI\\OpensourceProjects.md",
+            "target": "https://github.com/OpenDevin/OpenDevin/blob/main/Development.md#6-llm-debugging",
+            "value": 1,
+            "title": "LLM Debugging"
+        },
+        {
+            "source": "AI",
+            "target": "AI\\OpensourceProjects.md",
+            "value": 1,
+            "title": "AI\\OpensourceProjects.md"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "AI",
+            "value": 1,
+            "title": "AI"
+        },
+        {
+            "source": "old_notes",
+            "target": "old_notes\\AI.md",
+            "value": 1,
+            "title": "old_notes\\AI.md"
+        },
+        {
+            "source": "old_notes",
+            "target": "old_notes\\Angular.md",
+            "value": 1,
+            "title": "old_notes\\Angular.md"
+        },
+        {
+            "source": "old_notes",
+            "target": "old_notes\\Blender.md",
+            "value": 1,
+            "title": "old_notes\\Blender.md"
+        },
+        {
+            "source": "old_notes\\GameDevelopment.md",
+            "target": "https://www.youtube.com/c/SebastianLague/playlists",
+            "value": 1,
+            "title": "Sebastian league"
+        },
+        {
+            "source": "old_notes\\GameDevelopment.md",
+            "target": "https://www.youtube.com/c/Acegikmo",
+            "value": 1,
+            "title": "Freya Holmer"
+        },
+        {
+            "source": "old_notes\\GameDevelopment.md",
+            "target": "https://www.youtube.com/c/CodeMonkeyUnity",
+            "value": 1,
+            "title": "Code Monkey"
+        },
+        {
+            "source": "old_notes\\GameDevelopment.md",
+            "target": "https://www.youtube.com/c/MarkBrownGMT",
+            "value": 1,
+            "title": "Game Maker Toollkit"
+        },
+        {
+            "source": "old_notes",
+            "target": "old_notes\\GameDevelopment.md",
+            "value": 1,
+            "title": "old_notes\\GameDevelopment.md"
+        },
+        {
+            "source": "old_notes",
+            "target": "old_notes\\Goals.md",
+            "value": 1,
+            "title": "old_notes\\Goals.md"
+        },
+        {
+            "source": "old_notes\\ImageProcessing.md",
+            "target": "https://www.instagram.com/reel/CnkA70cqIVn/?igshid=YmMyMTA2M2Y=",
+            "value": 1,
+            "title": "tutorial"
+        },
+        {
+            "source": "old_notes",
+            "target": "old_notes\\ImageProcessing.md",
+            "value": 1,
+            "title": "old_notes\\ImageProcessing.md"
+        },
+        {
+            "source": "old_notes",
+            "target": "old_notes\\Index.md",
+            "value": 1,
+            "title": "old_notes\\Index.md"
+        },
+        {
+            "source": "old_notes\\Soliton.md",
+            "target": "https://solitontech-my.sharepoint.com/:x:/p/nusra/Eb4t6plNkJtPorb2U9KiCYABYsDCekeC_ojz-W2DzamThg?e=ZWerQt&login_hint=vignesh.arivazhagan%40solitontech.com&ct=1682481159835&wdOrigin=OFFICECOM-WEB.MAIN.EDGEWORTH&cid=0e054b6f-d759-4d32-90c1-2fe4ad237c07&wdPreviousSessionSrc=HarmonyWeb&wdPreviousSession=793dfc3f-81ca-4e0e-a965-3ea540d8ee99",
+            "value": 1,
+            "title": "Excellence Award sheet"
+        },
+        {
+            "source": "old_notes",
+            "target": "old_notes\\Soliton.md",
+            "value": 1,
+            "title": "old_notes\\Soliton.md"
+        },
+        {
+            "source": "old_notes\\ToLearn.md",
+            "target": "https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-subjects.md#version-control-systems",
+            "value": 1,
+            "title": "Books"
+        },
+        {
+            "source": "old_notes",
+            "target": "old_notes\\ToLearn.md",
+            "value": 1,
+            "title": "old_notes\\ToLearn.md"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://roadmap.sh/frontend",
+            "value": 1,
+            "title": "FrontendRoadmap"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/watch?v=YS5Zh7KExvE&ab_channel=LearnLinuxTV",
+            "value": 1,
+            "title": "Detailed Guide"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://gist.github.com/elonmallin/2cc94c45ab57e2060498e855acefade0",
+            "value": 1,
+            "title": "setupcommand"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/watch?v=vpk_1gldOAE&ab_channel=CoreySchafer",
+            "value": 1,
+            "title": "linuxref"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/watch?v=22lBJIfO9qQ&ab_channel=TonyTeachesTech",
+            "value": 1,
+            "title": "ref"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/watch?v=TNZW0LvEUKM&ab_channel=TechnoCally",
+            "value": 1,
+            "title": "ref"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/kepowob/playlists",
+            "value": 1,
+            "title": "Kevin powel"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/c/WebDevSimplified/playlists",
+            "value": 1,
+            "title": "Web dev simplified"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/c/CodingArtist",
+            "value": 1,
+            "title": "Codingartist"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/c/RedStapler_channel ",
+            "value": 1,
+            "title": "RedStapler"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/c/TheCodingTrain/playlists",
+            "value": 1,
+            "title": "Coding train"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/c/RaduMariescuIstodor",
+            "value": 1,
+            "title": "RaduMariescuIstodor"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/c/DavidBombal",
+            "value": 1,
+            "title": "David Bombell"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/c/HusseinNasser-software-engineering",
+            "value": 1,
+            "title": "Hussein Nasser"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/c/EngineerMan",
+            "value": 1,
+            "title": "Engineer Man"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/c/shanselman",
+            "value": 1,
+            "title": "Scott Hanselman"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/c/WebDevSimplified/playlists",
+            "value": 1,
+            "title": "Web dev simplified"
+        },
+        {
+            "source": "old_notes\\WebDevelopment.md",
+            "target": "https://www.youtube.com/c/codedamn",
+            "value": 1,
+            "title": "Codedamn"
+        },
+        {
+            "source": "old_notes",
+            "target": "old_notes\\WebDevelopment.md",
+            "value": 1,
+            "title": "old_notes\\WebDevelopment.md"
+        },
+        {
+            "source": "old_notes\\WebsitesCollection.md",
+            "target": "https://vignesh2002.pythonanywhere.com/",
+            "value": 1,
+            "title": "Django website"
+        },
+        {
+            "source": "old_notes\\WebsitesCollection.md",
+            "target": "https://vignesh14052002.github.io/portfolio",
+            "value": 1,
+            "title": "React portfolio"
+        },
+        {
+            "source": "old_notes\\WebsitesCollection.md",
+            "target": "https://vignesh14052002.github.io/frontend/portfolio/index.html",
+            "value": 1,
+            "title": "pwa portfolio"
+        },
+        {
+            "source": "old_notes\\WebsitesCollection.md",
+            "target": "https://github.com/vignesh14052002",
+            "value": 1,
+            "title": "Github"
+        },
+        {
+            "source": "old_notes\\WebsitesCollection.md",
+            "target": "https://www.linkedin.com/in/vignesh-a-ba83841b0/",
+            "value": 1,
+            "title": "linkedin"
+        },
+        {
+            "source": "old_notes\\WebsitesCollection.md",
+            "target": "https://www.instagram.com/_._av.__/",
+            "value": 1,
+            "title": "instagram"
+        },
+        {
+            "source": "old_notes\\WebsitesCollection.md",
+            "target": "https://www.reddit.com/user/vignesh-2002",
+            "value": 1,
+            "title": "Reddit"
+        },
+        {
+            "source": "old_notes\\WebsitesCollection.md",
+            "target": "https://stackoverflow.com/users/13218335/vignesh",
+            "value": 1,
+            "title": "StackOverflow"
+        },
+        {
+            "source": "old_notes\\WebsitesCollection.md",
+            "target": "https://discordapp.com/users/1053652408271634432",
+            "value": 1,
+            "title": "Discord"
+        },
+        {
+            "source": "old_notes\\WebsitesCollection.md",
+            "target": "https://www.facebook.com/vignesh.rock.98622/",
+            "value": 1,
+            "title": "facebook"
+        },
+        {
+            "source": "old_notes",
+            "target": "old_notes\\WebsitesCollection.md",
+            "value": 1,
+            "title": "old_notes\\WebsitesCollection.md"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "old_notes",
+            "value": 1,
+            "title": "old_notes"
+        },
+        {
+            "source": "old_notes",
+            "target": "old_notes\\.obsidian",
+            "value": 1,
+            "title": "old_notes\\.obsidian"
+        },
+        {
+            "source": "old_notes\\.obsidian",
+            "target": "old_notes\\.obsidian\\plugins",
+            "value": 1,
+            "title": "old_notes\\.obsidian\\plugins"
+        },
+        {
+            "source": "old_notes\\.obsidian\\plugins",
+            "target": "old_notes\\.obsidian\\plugins\\obsidian-git",
+            "value": 1,
+            "title": "old_notes\\.obsidian\\plugins\\obsidian-git"
+        },
+        {
+            "source": "Python\\Plantuml.md",
+            "target": "https://www.plantuml.com/plantuml/uml/SoWkIImgAStDuNBCoKnELT2rKt3AJx9IS2mjoKZDAybCJYp9pCzJ24ejB4qjBk42oYde0jM05MDHLLoGdrUSoeLkM5u-K5sHGY9MGw6ARNHryQb66EwGcfS2T300",
+            "value": 1,
+            "title": "example"
+        },
+        {
+            "source": "Python",
+            "target": "Python\\Plantuml.md",
+            "value": 1,
+            "title": "Python\\Plantuml.md"
+        },
+        {
+            "source": "Python\\Python.md",
+            "target": "https://youtu.be/qUeud6DvOWI?si=gPbf0Y3ksq-4OGoE",
+            "value": 1,
+            "title": "25 nooby Python habits you need to ditch"
+        },
+        {
+            "source": "Python\\Python.md",
+            "target": "https://www.reddit.com/r/Python/s/GUBcYl376V",
+            "value": 1,
+            "title": "fstrings"
+        },
+        {
+            "source": "Python\\Python.md",
+            "target": "https://guicommits.com/python-yield-examples/",
+            "value": 1,
+            "title": "yield usecases"
+        },
+        {
+            "source": "Python\\Python.md",
+            "target": "https://pythonspeed.com/articles/faster-python-json-parsing/",
+            "value": 1,
+            "title": "faster-json-parsing"
+        },
+        {
+            "source": "Python\\Python.md",
+            "target": "https://www.youtube.com/@codecollider/videos",
+            "value": 1,
+            "title": "codecollider"
+        },
+        {
+            "source": "Python\\Python.md",
+            "target": "https://youtu.be/row-SdNdHFE?si=SKugDtfBxVT9qQUe",
+            "value": 1,
+            "title": "AsyncClient instead of requests"
+        },
+        {
+            "source": "Python\\Python.md",
+            "target": "https://youtu.be/Qb9s3UiMSTA?si=0UHJM7ou_TEmOSIY",
+            "value": 1,
+            "title": "tutorial"
+        },
+        {
+            "source": "Python\\Python.md",
+            "target": "https://docs.python.org/3/py-modindex.html",
+            "value": 1,
+            "title": "Docs"
+        },
+        {
+            "source": "Python\\Python.md",
+            "target": "https://leetcode.com/problems/three-consecutive-odds/description/",
+            "value": 1,
+            "title": "leetcode problem"
+        },
+        {
+            "source": "Python\\Python.md",
+            "target": "https://leetcode.com/problems/three-consecutive-odds/solutions/5395859/one-line-solution/",
+            "value": 1,
+            "title": "solution reference"
+        },
+        {
+            "source": "Python",
+            "target": "Python\\Python.md",
+            "value": 1,
+            "title": "Python\\Python.md"
+        },
+        {
+            "source": "Python",
+            "target": "Python\\Resources.md",
+            "value": 1,
+            "title": "Python\\Resources.md"
+        },
+        {
+            "source": "knowledge_base",
+            "target": "Python",
+            "value": 1,
+            "title": "Python"
+        }
+    ]
+}

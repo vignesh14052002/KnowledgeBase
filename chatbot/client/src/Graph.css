@@ -1,0 +1,13 @@
+.node {
+  /* fill: green; */
+  stroke: black;
+  stroke-opacity: inherit;
+  stroke-width: 2px;
+}
+
+.link {
+  background-color: red;
+  stroke: black;
+  stroke-opacity: inherit;
+  stroke-width: 2px;
+}
