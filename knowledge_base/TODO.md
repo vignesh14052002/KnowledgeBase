@@ -4,11 +4,25 @@
 - How to do Documentation
 
 # TODO
-- see llamaindex linkedin posts
-- Github copilot – see latest features 
-- see reddit r/productivity
-- see weekly post in r/developersindia
-- See microsoft developer youtube channel
+- See microsoft developer youtube channel - 5 mins
+- Github copilot – see latest features - 10 mins
+- go throught langchain docs - 30 mins
+- go through langchain repo - 30 mins
+- go through realpython website - 30 mins
+- see openai videos - 1hr
+
+# Daily TODO
+- llamaindex,langchain linkedin posts
+- reddit
+    - r/productivity
+    - weekly post in r/developersindia
+- youtube
+    - mathew berman
+- do leetcode daily challenge
+- podcast
+    - lex fridman
+    - dwarkesh patel
+    - sid warrior
 
 ## Knowledge base Improvements
 - write a script to calculate update pattern over time
@@ -23,11 +37,12 @@
 - Readme - Add emojis, background image 
 
 ## Chatbot improvements
-- Get openai key from user 
-- Display cost and time for response 
+- UI
+    - Use React-markdown renderer
 - Use recursive character markdown splitter  
 - Add a pipeline that embeds diff on each push 
-- Use metadata like timestamp, file path 
+- Use metadata like timestamp, file path
+    - add llm call to filter by timestamp on querying
 - Use function calling  
     - Commit history access 
 - Ui, give options for only retrieval, answer, scape link info 
@@ -36,3 +51,5 @@
 - Suggested questions  
 - Top k with threshold combo 
 - Check if some files in repo alone can be embeded 
+- Display cost and time for response 
+- Add Support for openai (get key from user) 

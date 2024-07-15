@@ -11,6 +11,15 @@
 - LangGraph
 - [Langchain Integrations](https://integrations.langchain.com/)
 - Langchain expression language
+  - [RAG in LCEL](https://python.langchain.com/v0.2/docs/tutorials/rag/)
+  ```python
+  rag_chain = (
+    {"context": retriever | format_docs, "question": RunnablePassthrough()}
+    | prompt
+    | llm
+    | StrOutputParser()
+  )
+  ```
 - Langhub prompts
 - Can we use Convert_pydantic_to_openai_function from langchain for our skills?
 - Structured output while streaming (partial json parser)

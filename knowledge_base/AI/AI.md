@@ -40,6 +40,8 @@ Watch - <https://youtu.be/RXaLlCeaBIA?si=a2eZp7bNOWHXZSSY>
 - Retrieved node info – relative path , language, snippet
 
 ## Tutorials
+- [openai : survey of techniques to maximize the LLM performance](https://youtu.be/ahnGLM-RC1Y?si=z5rcC6Ex_MiGyghs)
+
 ### Let's build the GPT Tokenizer
 - [Video](https://youtu.be/zduSFxRajkE?si=SmhGh_SvWjXf5-cp)
 - Question: At 34:03, how does he highlight and scroll?

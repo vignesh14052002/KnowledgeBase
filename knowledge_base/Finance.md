@@ -17,6 +17,9 @@
 
 ### Doubts
 - Why do we pay incometax? Can they just deduct some portion while giving the salary itself
+  - Answer: Because the tax is calculated based on the total income of the person, not just the salary.Let's say income stream 1 is 5LPA and stream 2 is 5LPA, then the tax has to be calculated for 10LPA not two 5LPA separately.
+- Why do we pay income tax as well as GST?
+
 - IPO 
   - Is there any Relation between subscription status and listing gains? -  I saw a company 50x oversubscribed with 5% listing loss 
   - How slots are allocated (random or first come first serve)? - Random 
