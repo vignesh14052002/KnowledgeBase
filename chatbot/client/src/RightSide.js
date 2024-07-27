@@ -62,8 +62,12 @@ export default function RightSide(props) {
             
             {m.sender !== "user" &&
             <div style={{display:"flex",gap:"1em",paddingTop:"5px"}}>
+            {m.referencePaths.length>0 &&
+            <>
             <p style={{color:"white",fontSize:"1em"}}>Reference : </p>
-            {m.referencePaths && m.referencePaths.map((path, i) => <a style={{color:"white"}} key={i} href={path}>#{i}</a>)}
+            <p> { m.referencePaths.map((path, i) => <a style={{color:"white"}} key={i} href={path}>#{i}</a>)} </p>
+            </>
+            }
             </div>
             }
             <p className="createdAt">{m.createdAt}</p>

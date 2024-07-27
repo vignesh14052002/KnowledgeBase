@@ -17,7 +17,10 @@ embeddings_path = os.path.abspath(os.path.join(root_path, "embeddings"))
 index = FAISS.load_local(
     embeddings_path, embeddings, allow_dangerous_deserialization=True
 )
-retriever = index.as_retriever(search_kwargs={"k": 5})
+retriever = index.as_retriever(
+    search_type="similarity_score_threshold",
+    search_kwargs={"k": 5, "score_threshold": 0.5},
+)
 
 
 def format_nodes(nodes):
@@ -43,7 +46,11 @@ def get_answer(question: str, history: list[str] = []) -> dict[str, Any]:
     """Get answer from the knowledge base."""
     gemini = get_gemini_llm("gemini-pro")
     nodes = retriever.invoke(question)
-    node_text = format_nodes(nodes)
+    node_text = (
+        format_nodes(nodes)
+        if len(nodes) > 0
+        else "No relevant information found in the knowledge base."
+    )
     prompt = answer_from_knowledge_base_prompt_template.format(
         question=question, documentation=node_text, history=format_history(history)
     )
