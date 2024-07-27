@@ -76,12 +76,13 @@ const Message = styled.div`
   border-radius: 10px;
   margin: 10px;
   align-self: ${(props) => (props.mine ? "flex-end" : "flex-start")};
-  p {
+  .sender {
     font-size: 1.1em;
     color: #9db137;
   }
-  h2 {
+  .message-body {
     font-size: 1em;
+    color: white;
   }
   .createdAt {
     font-size: 0.7em;

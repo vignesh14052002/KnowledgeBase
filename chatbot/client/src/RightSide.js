@@ -16,7 +16,7 @@ import { BsEmojiLaughing } from "react-icons/bs";
 import { IoSend } from "react-icons/io5";
 import { useRef } from "react";
 import { getProfileImg } from "./utils.js";
-
+import RenderMarkdown from "./components/RenderMarkdown.js";
 export default function RightSide(props) {
   console.log("rightside component");
   const states = props.states;
@@ -45,13 +45,6 @@ export default function RightSide(props) {
     if (e.key === "Enter") {
       handleSend();
     }
-
-    // states.socket.emit("typing", {
-    //   sender: states.user.name,
-    //   sender_email: states.user.email,
-    //   receiver: states.selectedContact.name,
-    //   receiver_email: states.selectedContact.email,
-    // });
   }
   return ( 
     <MessageArea>
@@ -64,8 +57,8 @@ export default function RightSide(props) {
       <ChatArea>
         {messages.map((m, i) => (
           <Message key={i} mine={m.sender === "user"}>
-            <p>{m.sender}</p>
-            <h2>{m.message}</h2>
+            <p className="sender">{m.sender}</p>
+            <RenderMarkdown  markdown={m.message} />
             
             {m.sender !== "user" &&
             <div style={{display:"flex",gap:"1em",paddingTop:"5px"}}>
