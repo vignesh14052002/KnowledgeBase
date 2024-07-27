@@ -73,7 +73,7 @@ const Message = styled.div`
   padding: 5px;
   background-color: ${(props) => (props.mine ? "#005c4b" : "#202c33")};
   color: #e9edef;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 10px;
   align-self: ${(props) => (props.mine ? "flex-end" : "flex-start")};
   .sender {

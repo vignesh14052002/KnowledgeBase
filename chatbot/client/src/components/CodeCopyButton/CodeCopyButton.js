@@ -4,7 +4,8 @@ export default function CodeCopyBtn ({ children }) {
   const [copyOk, setCopyOk] = React.useState(false)
   const icon = copyOk ? 'fa-check-square' : 'fa-copy'
   const handleClick = (e) => {
-    navigator.clipboard.writeText(children[0].props.children[0])
+    // console.log(children)
+    navigator.clipboard.writeText(children.props.children)
 
     setCopyOk(true)
     setTimeout(() => {
