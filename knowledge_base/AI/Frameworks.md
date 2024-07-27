@@ -22,10 +22,20 @@
   ```
 - Langhub prompts
 - Can we use Convert_pydantic_to_openai_function from langchain for our skills?
-- Structured output while streaming (partial json parser)
 - Can we use parallel function calling?
 - [Langchain robot server](https://github.com/langchain-ai/langchain/blob/master/libs/langchain/tests/mock_servers/robot/server.py)
 - Mock LLM - for unit tests
+- Structured output
+  - stream structured output
+  - [pydantic model with json mode](https://python.langchain.com/v0.2/docs/how_to/structured_output/#advanced-specifying-the-method-for-structuring-outputs)
+  - `include_raw=True`
+- [Debug Mode](https://python.langchain.com/v0.2/docs/how_to/debugging/#set_debugtrue)
+
+## Explore
+- `from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder`
+- runnable interface
+- how `LCEL` is implemented
+- [async streaming?](https://python.langchain.com/v0.2/docs/how_to/streaming/#:~:text=consider%20using%20the-,async%20astream%20API,-%3A)
 
 ## Langchain over llama-index
 - Usage Cost Tracing
