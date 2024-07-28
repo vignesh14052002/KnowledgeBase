@@ -51,3 +51,19 @@ Watch - <https://youtu.be/RXaLlCeaBIA?si=a2eZp7bNOWHXZSSY>
 - inspect opensource repos - llama-index, langchain
 - explore different AI memory management systems - memgpt
 - try using AzureOpenAI to improve latency on concurrent requests
+
+
+# DeepLearning Courses
+
+## Prompt Compression and Query Optimization
+- [Course](https://www.deeplearning.ai/short-courses/prompt-compression-and-query-optimization/)
+Terminology
+- Projecting : Filtering only required information in a chunk for prompt
+- Boosting : re-ranking 
+
+Prompt compression 
+ - Reducing the size of retrieved documents
+    - Metadata filtering
+        - Doubt : is there a scenario where post filtering is better than pre-filtering?
+ - Reducing the size of the prompt
+    - Use LLM to rephrase the prompt : [Microsoft llm lingua prompt compression](https://github.com/microsoft/LLMLingua)

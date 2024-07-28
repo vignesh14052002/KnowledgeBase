@@ -10,7 +10,7 @@
 - Kubernetes
 - Terraform
 - Prometheus
-
+- pre-commit hooks
 
 ## Resources
 - Dora devops
