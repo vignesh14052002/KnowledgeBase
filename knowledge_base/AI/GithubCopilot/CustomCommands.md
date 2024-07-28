@@ -11,8 +11,19 @@ I wanted to leverage AI in day-to-day tasks, Github Copilot is a great tool to a
 Github Copilot Chat extension in VSCode is a closed source project, their code is not publicly available. However the minified version of client side code of any installed extension will be in path `C:\Users\<username>\.vscode\extensions\<extension-name>\dist\extension.js`. The extension.js file is minified, so it is difficult to understand the code. But there is a [blog post](https://thakkarparth007.github.io/copilot-explorer/posts/copilot-internals.html) that explains the internals of the extension.
 
 I wrote a code snippet that can be used to dynamically include custom commands from `./Prompts` folder. 
+The logic goes like
 
+```mermaid
+graph TD
+A[Start] --> B[Read prompts from ./Prompts folder via GitHub API]
+B --> C[For each prompt in ./Prompts folder]
+C --> D[Convert prompt into command]
+D --> |/file_name-heading as command name, Prompt as system prompt| E[Register the command to list of commands]
+E --> C
+E --> F[End]
+```
 After including the custom commands, the chat will look like this:
+
 ![Alt text](image.png)
 
 To include custom commands:
