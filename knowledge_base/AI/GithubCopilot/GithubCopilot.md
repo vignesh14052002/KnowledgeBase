@@ -1,1 +1,0 @@
-The `./Prompts` folder will contain several prompts that can be used in the `github copilot chat` extension
