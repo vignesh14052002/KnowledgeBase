@@ -28,7 +28,10 @@ Time: 9:22 PM
     - Invert the operation, check for original input (reverse a list two times, you get original one)
   - [Effective Unit Testing](https://youtu.be/fr1E9aVnBxw?si=MAh5aqCtBYBr5SXb)
     - Run quick tests first
-    - Follow TDD
+    - [Follow TDD](https://youtu.be/vXnTMjMe5Eg?si=GVI9QhWBRAk2RxHH)
+      - Write test first
+      - Run the test, it should fail
+      - Write code to pass the test
     - Avoid test interdependency, run them parallely
 - Integration Testing
 - End to end Testing

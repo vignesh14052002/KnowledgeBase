@@ -24,3 +24,18 @@
   - Dynamic UI for response
     - A best way to display answer for what's weather today is different from answering how to do tax excemption
 - Poorly constructed query is not user's fault, better product should be good for lazy people 
+
+# Tech Talks
+
+## How to add genuinely useful AI to your webapp
+- [Video](https://youtu.be/TSNAvFJoP4M?si=Yz5KGhpdpMYiiSSt)
+- First 15 minutes is good
+- Smart Components
+  - Smart paste button - pastes the clipboard content in the expected format
+  - Smart search bar - search bar that uses semantic search
+  - Smart Textbox - with AI Autocomplete
+- Form Input
+  - Classification of labels
+  - Title generation
+- Filtering
+  - Summarize the filtered results

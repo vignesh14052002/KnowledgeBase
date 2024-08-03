@@ -8,6 +8,7 @@ A tool that can render text as diagram - [example](https://www.plantuml.com/plan
 
 # Related Tools
 ## py2puml
+- [repo](https://github.com/lucsorel/py2puml)
 - python library that parses our python project and convert into PlantUML representation
 
 ### Working
@@ -23,3 +24,11 @@ A tool that can render text as diagram - [example](https://www.plantuml.com/plan
 
 ## plantuml
 - python library that converts plantuml text into png, so that it can be viewed in unsupported platforms like azdo
+
+## swagger_to_uml
+- [repo](https://github.com/nlohmann/swagger_to_uml)
+- converts fastapi swagger documentation into plantuml representation
+
+# tplant
+- [repo](https://github.com/bafolts/tplant)
+- typescript to plantuml
