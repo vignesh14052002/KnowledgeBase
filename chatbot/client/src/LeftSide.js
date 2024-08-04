@@ -9,7 +9,7 @@ import {
   Contact,
   ContactsContainer,
 } from "./Styles.js";
-import { Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import {
   handleAddContact,
@@ -17,6 +17,9 @@ import {
   handleContact,
   getProfileImg,
 } from "./utils.js";
+import SettingsIcon from '@mui/icons-material/Settings';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 export default function LeftSide(props) {
   const states = props.states;
@@ -30,9 +33,18 @@ export default function LeftSide(props) {
   useEffect(() => {
     setDisplaySessions(sessions);
   }, [sessions]);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   const selectedSession = states.sessions[states.selectedSessionIndex];
   return (
+    <>
     <ContactsContainer>
       <Header>
         <Profilepic src={getProfileImg(1)} />
@@ -83,6 +95,27 @@ export default function LeftSide(props) {
           </Contact>
         ))}
       </div>
+      <div>
+ <SettingsIcon
+   onClick={handleClick}
+   sx={{ cursor: 'pointer', fontSize: 40, color: 'grey',
+  position: 'fixed', left: '10px', bottom: '10px' }}
+ />
+ <Menu
+   id="basic-menu"
+   anchorEl={anchorEl}
+   open={open}
+   onClose={handleClose}
+   MenuListProps={{
+     'aria-labelledby': 'basic-button',
+   }}
+ >
+   <MenuItem><Link to="/graph" replace="true">Graph</Link></MenuItem>
+   <MenuItem ><Link to="/decision-tree" replace="true">Decision Tree</Link></MenuItem>
+ </Menu>
+</div>
     </ContactsContainer>
+ 
+</>
   );
 }
