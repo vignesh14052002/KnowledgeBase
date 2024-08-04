@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "question": "Is your problem requires intelligence to solve?",
+    "choices": [
+      {
+        "choice": "Yes",
+        "next": 3
+      },
+      {
+        "choice": "No",
+        "next": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "solution": "You can use rule based systems to solve your problem.",
+    "next": null
+  },
+  {
+    "id": 3,
+    "solution": "You can use AI based system",
+    "question": "which category your problem falls into?",
+    "choices": [
+      {
+        "choice": "Question Answering",
+        "next": 14
+      },
+      {
+        "choice": "Data Classification",
+        "next": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "is the data structured or unstructured?",
+    "choices": [
+      {
+        "choice": "structured",
+        "next": 8
+      },
+      {
+        "choice": "unstructured",
+        "next": 10
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "solution": "You can use Generative AI based system",
+    "question": "Is the data is complex and interdependent?",
+    "choices": [
+      {
+        "choice": "yes",
+        "next": 12
+      },
+      {
+        "choice": "no",
+        "next": 13
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "solution": "You can use Retrieval Augumented Generation",
+    "title": "Stages of RAG",
+    "stages": [
+      {
+        "stage": "Indexing",
+        "next": 4
+      },
+      {
+        "stage": "Retrieval",
+        "next": null
+      },
+      {
+        "stage": "Synthesis",
+        "next": null
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "solution": "You can use a ETL pipeline to process",
+    "question": "Is the data is fixed or can be updated in runtime/periodically ?",
+    "choices": [
+      {
+        "choice": "fixed",
+        "next": 6
+      },
+      {
+        "choice": "might get updated",
+        "next": 7
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "solution": "You can use Generative AI / Conventional Classification Algorithms"
+  },
+  {
+    "id": 6,
+    "solution": "Preprocess the data (with ETL)",
+    "next": 11
+  },
+  {
+    "id": 7,
+    "solution": "Trigger ETL on each data updation",
+    "next": 11
+  },
+  {
+    "id": 11,
+    "title": "Stages of Ingestion",
+    "stages": [
+      {
+        "stage": "Parsing"
+      },
+      {
+        "stage": "Chunking"
+      },
+      {
+        "stage": "Embedding"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Fine Tuning"
+  },
+  {
+    "id": 8,
+    "question": "What is the data structure?",
+    "choices": [
+      {
+        "choice": "table",
+        "next": 15
+      },
+      {
+        "choice": "graph",
+        "next": 16
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "solution": "You can frame queries using LLM and get the required data"
+  },
+  {
+    "id": 16,
+    "solution": "You can use Knowledge Graphs"
+  }
+]
