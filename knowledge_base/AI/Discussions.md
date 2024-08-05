@@ -1,3 +1,4 @@
+# Podcasts
 ## Bill Gates and Sam Altman
 - [Video](https://youtu.be/PkXELH6Y2lM?si=ieiSBnsY7LZ1nieO)
 - Before AI, we thought the jobs at higher risk are blue collar followed by white collar and finally creative jobs are at the lowest risk of replacement, but generative AI is going in opposite direction.
@@ -24,6 +25,14 @@
   - Dynamic UI for response
     - A best way to display answer for what's weather today is different from answering how to do tax excemption
 - Poorly constructed query is not user's fault, better product should be good for lazy people 
+
+## Do you think ChatGPT can reason?
+- [Video](https://youtu.be/y1WnHpedi2A?si=ZI-tOspV2Y7hewIE)
+- ChatGPT creates an illusion of reasoning, real reasoning comes from Chain of Thought
+  - Illusion of reasoning : Things that we think are reasoned out generation might possibly be a memorized response from internet
+    Example : Cypher Text Decoding : LLM strugges to decode cypher text where the cypher query and decoded pairs where not available on internet
+- will better models need Chain of Thought?
+- Companies are focusing on training GPT models with large data instead of trying to creating new architecture shift in AI, like RNN to Transformer
 
 # Tech Talks
 
