@@ -24,10 +24,32 @@ This repository contains documentation of my learnings.
 ## Stats
 The following items will get dynamically updated on every push to `master` branch via github actions
 
-| Section          | Count            |
-|------------------|------------------|
-| Documents        | !@(documents_count) |
-| Average lines per document           | !@(average_lines_per_document)    |
-| Reference Links  | !@(reference_links) |
-| Time period   | !@(time_period)|
-
+<table>
+    <thead>
+        <tr>
+            <th>Section</th>
+            <th>Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Documents</td>
+            <td>!@(documents_count)</td>
+        </tr>
+        <tr>
+            <td>Average lines per document</td>
+            <td>!@(average_lines_per_document)</td>
+        </tr>
+        <tr>
+            <td><details>
+                    <summary>Reference Links</summary>
+                    !@(top_reference_sites_table)</details>
+            </td>
+            <td>!@(reference_links)</td>
+        </tr>
+        <tr>
+            <td>Time period</td>
+            <td>!@(time_period)</td>
+        </tr>
+    </tbody>
+</table>
