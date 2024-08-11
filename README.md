@@ -24,10 +24,44 @@ This repository contains documentation of my learnings.
 ## Stats
 The following items will get dynamically updated on every push to `master` branch via github actions
 
-| Section          | Count            |
-|------------------|------------------|
-| Documents        | 39 |
-| Average lines per document           | 31    |
-| Reference Links  | 131 |
-| Time period   | 2 months and 11 days|
-
+<table>
+    <thead>
+        <tr>
+            <th>Section</th>
+            <th>Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Documents</td>
+            <td>39</td>
+        </tr>
+        <tr>
+            <td>Average lines per document</td>
+            <td>31</td>
+        </tr>
+        <tr>
+            <td><details>
+                    <summary>Reference Links</summary>
+                    <table>
+<tr><td><details><summary><a href='https://github.com'>github.com</a></summary><table>
+<tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/OpenSourceContributions.md>OpenSourceContributions.md</a></td><td>7</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/OpensourceProjects.md>OpensourceProjects.md</a></td><td>5</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/Frameworks.md>Frameworks.md</a></td><td>4</td></tr>
+</table></details></td><td>28</td></tr><tr><td><details><summary><a href='https://www.youtube.com'>youtube.com</a></summary><table>
+<tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/old_notes/WebDevelopment.md>WebDevelopment.md</a></td><td>16</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/old_notes/GameDevelopment.md>GameDevelopment.md</a></td><td>4</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/General.md>General.md</a></td><td>1</td></tr>
+</table></details></td><td>25</td></tr><tr><td><details><summary><a href='https://youtu.be'>youtu.be</a></summary><table>
+<tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/Discussions.md>Discussions.md</a></td><td>6</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/AI.md>AI.md</a></td><td>4</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Testing.md>Testing.md</a></td><td>3</td></tr>
+</table></details></td><td>20</td></tr><tr><td><details><summary><a href='https://python.langchain.com'>python.langchain.com</a></summary><table>
+<tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/Frameworks.md>Frameworks.md</a></td><td>5</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Testing.md>Testing.md</a></td><td>2</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/Retrieval.md>Retrieval.md</a></td><td>1</td></tr>
+</table></details></td><td>8</td></tr><tr><td><details><summary><a href='https://dev.to'>dev.to</a></summary><table>
+<tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Good_blogs.md>Good_blogs.md</a></td><td>2</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Web.md>Web.md</a></td><td>2</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/General.md>General.md</a></td><td>1</td></tr>
+</table></details></td><td>6</td></tr>
+</table></details>
+            </td>
+            <td>131</td>
+        </tr>
+        <tr>
+            <td>Time period</td>
+            <td>2 months and 11 days</td>
+        </tr>
+    </tbody>
+</table>
