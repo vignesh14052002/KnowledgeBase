@@ -38,6 +38,22 @@ def get_top_level_headings_count():
     return count
 
 
+def get_average_lines_per_document():
+    # Average number of lines in all markdown files in repo recursively
+    count = 0
+    total_lines = 0
+    for root, dirs, files in os.walk(KNOWLEDGE_BASE_PATH):
+        for file in files:
+            if not file.endswith(".md"):
+                continue
+            with open(os.path.join(root, file), "r") as file:
+                content = file.read()
+            lines = content.split("\n")
+            total_lines += len(lines)
+            count += 1
+    return total_lines // count
+
+
 def get_reference_links_count():
     # Count of all reference links in all markdown files in repo recursively
     count = 0
@@ -77,6 +93,7 @@ PLACEHOLDER__FUNCTION_MAP = {
     "top_level_headings": get_top_level_headings_count,
     "reference_links": get_reference_links_count,
     "time_period": get_time_period,
+    "average_lines_per_document": get_average_lines_per_document,
 }
 PLACEHOLDER_PATTERN = re.compile(r"!\@\((.*?)\)")
 
