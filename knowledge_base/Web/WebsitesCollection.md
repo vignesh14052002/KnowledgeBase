@@ -1,10 +1,10 @@
-My Websites:
+## My Websites:
 
 [Django website](https://vignesh2002.pythonanywhere.com/)
 [React portfolio](https://vignesh14052002.github.io/portfolio)
 [pwa portfolio](https://vignesh14052002.github.io/frontend/portfolio/index.html) 
 
-My social media:
+## My social media:
 
 [Github](https://github.com/vignesh14052002)
 [linkedin](https://www.linkedin.com/in/vignesh-a-ba83841b0/)
@@ -14,13 +14,12 @@ My social media:
 [StackOverflow](https://stackoverflow.com/users/13218335/vignesh)
 [Discord](https://discordapp.com/users/1053652408271634432)
 [facebook](https://www.facebook.com/vignesh.rock.98622/) 
-Interesting:
 
-Chrome extension:
+## Chrome extensions:
 project naptha
 Panic button
 
-websites
+## Interesting Sites:
 https://pointerpointer.com/
 http://koalastothemax.com/
 roadmap.sh

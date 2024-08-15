@@ -50,11 +50,8 @@ Explore how popular open-source libraries write tests:
       - http interaction will be cached using pytest-vcr - [ref](https://python.langchain.com/v0.1/docs/contributing/testing/#recording-http-interactions-with-pytest-vcr)
     - llm is mocked while testing agents
 
-Explore how tests written in Astro:
-
-- Frontend
-- Backend
-- AI
-
-# Explore
+## Explore
 - Qmetry
+
+## TODO
+- Learn Pytest

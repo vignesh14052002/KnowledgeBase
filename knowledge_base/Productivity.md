@@ -36,6 +36,7 @@
 
 - Shift right click on file -> restore previous version?
 - Power toys
+- Try not to use mouse
 
 ## Unused Packages and Variables
 
@@ -43,4 +44,11 @@
 - Ways to find which env variables are not used from .env?
 
 # Problem solving
-- Think about the root of the problem
+- First Principle Thinking : Think about the root of the problem
+
+## Resources
+- Youtube
+  - [Outperform](https://www.youtube.com/@OutperformMP)
+- Reddit
+  - r/productivity
+  - r/getdisciplined

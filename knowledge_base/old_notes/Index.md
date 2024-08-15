@@ -1,6 +1,0 @@
-- [[Goals]]
-- [[ToLearn]]
-- [[WebDevelopment]]
-- [[GameDevelopment]]
-- [[Blender]]
-- [[AI]] 

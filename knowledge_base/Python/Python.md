@@ -22,8 +22,8 @@
 
 # pytest
 remove pytest-cov to fix breakpoint not hitting issue in vscode
-## Doubts
 
+## Doubts
 - Poetry commands:
   - `poetry lock –no-update`
   - `poetry extras`
@@ -38,12 +38,12 @@ remove pytest-cov to fix breakpoint not hitting issue in vscode
 
 ## Concepts to explore
 
-- With block
 - Builtin decorators in class
 - Itertools, functools, collections
 - dunder methods
 - See arjan codes
   - Caching decorators
+  - protocols
 - See [codecollider](https://www.youtube.com/@codecollider/videos)
 
 ## Fastapi
@@ -69,6 +69,7 @@ remove pytest-cov to fix breakpoint not hitting issue in vscode
 
 ## Builtins
 - [Docs](https://docs.python.org/3/py-modindex.html)
+
 ### Doubts
 - use of __init__.py in all subfolders
 
@@ -81,3 +82,14 @@ any(1&v&u&w for v,u,w in zip(array,array[1:],array[2:]))
 # Solution 2
 '111' in ''.join(str(v&1) for v in array)
 ```
+
+## Libs
+- Native
+- Third party
+  - cProfile : python profiler library
+  
+## TODO
+- Learn Advanced Python
+  - Go through all built in modules
+  - see realpython
+- See Software design in Arjan codes

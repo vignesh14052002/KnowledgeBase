@@ -1,7 +1,15 @@
-# Learn
-- Cloud, Azure, AWS
-- Testing
-- How to do Documentation
+# Areas of Interest
+- Testing 
+- Documentation 
+- System design 
+    - Find a source like leetcode, frontend mentor 
+- Advanced python 
+    - Go through all built in modules, see realpython  
+- AI
+    - Conference, tech talks 
+- Read opensource code 
+    - Search repos in Microsoft,Google etc 
+- Cloud
 
 # TODO
 - See microsoft developer youtube channel - 5 mins

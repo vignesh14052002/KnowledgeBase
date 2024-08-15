@@ -1,0 +1,3 @@
+- [VSCode Shortcuts](https://dev.to/stefirosca/10-must-know-vs-code-shortcuts-1n17)
+- [VSCode Notebook Github](https://github.com/aviaryan/VSCodeNotebook?tab=readme-ov-file)
+- [Tasks](https://code.visualstudio.com/docs/editor/tasks)
