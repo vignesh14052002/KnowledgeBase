@@ -19,7 +19,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Run Python script
+      - name: Run Readme generation script
         run: python scripts/generate_readme.py
 
       - name: Install Poetry

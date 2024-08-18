@@ -87,7 +87,7 @@
 - Estimate all 
  
 - Classify ideas into 
-    - not started
+    - Not started
         - AI system to understand people's opinion - YouTube comments, reddit thread 
-    - in progress
+    - In progress
         - Stock advice scrapper 
