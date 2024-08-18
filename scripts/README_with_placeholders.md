@@ -61,6 +61,7 @@ The following items will get dynamically updated on every push to `master` branc
     </tbody>
 </table>
 
+```mermaid
 graph TD
     A[/Push to master branch/] --> B[Generate Stats]
     B --> C[Update Embeddings]
@@ -88,6 +89,7 @@ graph TD
     U --> V[Insert into the index]
     V --> W[Save the current commit hash to /embeddings/commit_hash.txt]
     W --> Z[/End/]
+```
 
 ## Contributing
 please refer [CONTRIBUTING.md](./CONTRIBUTING.md) for more details
