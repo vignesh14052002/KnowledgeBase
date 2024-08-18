@@ -4,7 +4,6 @@
 - Topics to explore:
   - Use Logging module
   - Using list as keyword argument and modifying inside will modify the reference
-  - `==` vs `is`
   - Key in `max()`
 
 - [fstrings](https://www.reddit.com/r/Python/s/GUBcYl376V)
@@ -23,33 +22,10 @@
 # pytest
 remove pytest-cov to fix breakpoint not hitting issue in vscode
 
-## Doubts
-- Poetry commands:
-  - `poetry lock –no-update`
-  - `poetry extras`
-- when to use multithreading vs multiprocessing vs asyncio
-
-## Libraries to explore
-
-- Pprint
-- Tqdm – progress bar
-- Regex vs re
-- pytopuml - generate architecture diagrams from python code
-
-## Concepts to explore
-
-- Builtin decorators in class
-- Itertools, functools, collections
-- dunder methods
-- See arjan codes
-  - Caching decorators
-  - protocols
-- See [codecollider](https://www.youtube.com/@codecollider/videos)
 
 ## Fastapi
 
 - Get metrics for application performance
-- Yield
 - Rate limit
 - DependsOn
 - Pulimi
@@ -83,13 +59,48 @@ any(1&v&u&w for v,u,w in zip(array,array[1:],array[2:]))
 '111' in ''.join(str(v&1) for v in array)
 ```
 
-## Libs
+## Interesting Libs
 - Native
-- Third party
+  - bdb : python debugger
+    - didn't found a good usecase yet
   - cProfile : python profiler library
-  
+  - doctest : test code in docstring
+- Third party
+  - tqdm : progress bar
+    - find how to print loading circle in terminal
+  - pytopuml : generate architecture diagrams from python code
+
 ## TODO
 - Learn Advanced Python
   - Go through all built in modules
+    - Inprogress : until d
   - see realpython
-- See Software design in Arjan codes
+- logging vs print statement
+
+## Libraries to explore
+
+- Pprint
+- Tqdm – progress bar
+- Regex vs re
+
+## Concepts to explore
+
+- Builtin decorators in class
+- Itertools, functools, collections
+- dunder methods
+- See arjan codes
+  - Caching decorators
+  - protocols
+  - Software design series
+- See [codecollider](https://www.youtube.com/@codecollider/videos)
+
+## Doubts
+- Poetry commands:
+  - `poetry lock –no-update`
+  - `poetry extras`
+- when to use multithreading vs multiprocessing vs asyncio
+- pytest
+  - Pytest vs unittest 
+  - Fixtures
+  - Timeout in fastapi sockets while testing 
+

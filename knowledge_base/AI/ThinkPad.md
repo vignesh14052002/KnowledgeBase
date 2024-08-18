@@ -41,3 +41,8 @@
 - explore different AI memory management systems - memgpt
 - try using AzureOpenAI to improve latency on concurrent requests
 - Go through tru-lens repo
+- Do a course in deep learning - 1 hr 
+- Watch Andrej karpathy tokenization - 1 hr
+- Watch Conference, tech talks
+- Find ways to use AI in daily workflow
+    - Github copilot code review

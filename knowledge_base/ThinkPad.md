@@ -1,4 +1,5 @@
 # Areas of Interest
+## Tech
 - Testing 
 - Documentation 
 - System design 
@@ -6,10 +7,18 @@
 - Advanced python 
     - Go through all built in modules, see realpython  
 - AI
-    - Conference, tech talks 
 - Read opensource code 
     - Search repos in Microsoft,Google etc 
 - Cloud
+## Soft skills
+- Communication
+- Time/Energy management
+
+## Books to explore 
+- Debugging
+- Testing
+- Dev research
+- System design 
 
 # TODO
 - See microsoft developer youtube channel - 5 mins
@@ -33,11 +42,15 @@
     - sid warrior
 
 ## Knowledge base Improvements
-- write a script to calculate update pattern over time
-    - go through commit history
-    - group by date/week/month
-    - calculate score by number of lines added/removed under top level folder/files
-    - display in a bar chart
+- Add stats
+    - write a script to calculate update pattern over time
+        - go through commit history
+        - group by date/week/month
+        - calculate score by number of lines added/removed under top level folder/files
+        - display in a bar chart
+    - Content consumption trend graph
+        - Add a slider for time range
+        - Show most consumed resource (youtube, reddit, github, etc) 
 - add markdownlint
 - add Graph that represents links between notes and external resources
 - Try removing commit step in pipeline 
@@ -60,4 +73,21 @@
 - Top k with threshold combo 
 - Check if some files in repo alone can be embeded 
 - Display cost and time for response 
-- Add Support for openai (get key from user) 
+- Add Support for openai (get key from user)
+- Add semantic search page
+
+## General
+- Use of docasoaurs over GitHub ?
+
+## Sort todos 
+- Daily/frequent habits 
+    - Set targets and track them 
+    - Track time too 
+- Good to do/ ideas 
+- Estimate all 
+ 
+- Classify ideas into 
+    - not started
+        - AI system to understand people's opinion - YouTube comments, reddit thread 
+    - in progress
+        - Stock advice scrapper 

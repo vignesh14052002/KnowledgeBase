@@ -6,11 +6,12 @@
 - Multiple FROM in dockerfile?
 
 ## Explore
+- interesting CI workflows
+- pre-commit hooks
 - Nginx
 - Kubernetes
 - Terraform
 - Prometheus
-- pre-commit hooks
 
 ## Resources
 - Dora devops

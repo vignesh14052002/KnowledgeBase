@@ -21,6 +21,13 @@ This repository contains documentation of my learnings.
 - To practice [pressure writing](https://www.youtube.com/shorts/o8sBS0th8xQ)
 - To [let it grow over time](https://youtu.be/DMlgzTUT5E0?si=Po-O2G2vAEvfi1YU)
 
+## How to Read
+- [Open this repo in vscode web editor](https://github.dev/vignesh14052002/KnowledgeBase)
+- Use the search bar to find topics
+- Make use of the Folder structure
+- Make use of the [AI chatbot](./chatbot/README.md)
+- Refer the below stats for overview
+
 ## Stats
 The following items will get dynamically updated on every push to `master` branch via github actions
 
@@ -53,3 +60,6 @@ The following items will get dynamically updated on every push to `master` branc
         </tr>
     </tbody>
 </table>
+
+## Contributing
+please refer [CONTRIBUTING.md](./CONTRIBUTING.md) for more details
