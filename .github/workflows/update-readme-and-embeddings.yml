@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  update-readme:
+  update-readme-and-embeddings:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Python
