@@ -1,4 +1,4 @@
-name: Update README on push to main
+name: Update VectorStore embeddings on push to main
 
 on:
   push:

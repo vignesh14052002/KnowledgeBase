@@ -28,12 +28,5 @@ Status: pg 120/299
  - Check pydantic model's immutability
 
 
- 
-
- 
-
-Defining custom exceptions helps in catching a particular exception alone in a outer module 
-
-Derive custom exceptions from more specific exception 
-
-Good with EASP instead of LBYL https://stackoverflow.com/questions/11360858/what-is-the-eafp-principle-in-python 
+## Books i might read
+- [Intermediate to Advanced Books mentioned in realpython](https://realpython.com/best-python-books/#best-intermediate-and-advanced-python-books)
