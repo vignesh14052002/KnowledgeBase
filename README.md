@@ -68,40 +68,10 @@ The following items will get dynamically updated on every push to `master` branc
         </tr>
         <tr>
             <td>Time period</td>
-            <td>2 months and 18 days</td>
+            <td>2 months and 21 days</td>
         </tr>
     </tbody>
 </table>
-
-```mermaid
-graph TD
-    A[/Push to master branch/] --> B[Generate Stats]
-    B --> C[Update Embeddings]
-    C --> D[Check for file changes - git diff]
-    D -->D1{If changes}
-    D1 -->|Yes|E[Commit changes]
-    D1 -->|No|F[/End/]
-    E --> I[Push changes]
-    I --> I1[/End/]
-    
-    M[/Generate Stats/] --> J[Read placeholders from readme template]
-    J --> K[Fill the placeholders using appropriate functions]
-    K --> L[Write to README.md]
-    L --> L1[/End/]
-
-        N[/Update Embeddings/] --> O[Get last embedding commit hash from /embeddings/commit_hash.txt]
-    O --> P[Get the file diff from the last commit hash to the current commit hash]
-    P --> Q[Get the affected filepaths from the diff]
-    Q-->Q1{is any \n file affected?}
-    Q1 -->|Yes| R[Delete the existing embeddings from the index where the affected filepaths matches metadata]
-    Q1 -->|No| x[/End/]
-    R --> S[Get the current state of these files]
-    S --> T[Chunk them]
-    T --> U[Embed them]
-    U --> V[Insert into the index]
-    V --> W[Save the current commit hash to /embeddings/commit_hash.txt]
-    W --> Z[/End/]
-```
 
 ## Contributing
 please refer [CONTRIBUTING.md](./CONTRIBUTING.md) for more details
