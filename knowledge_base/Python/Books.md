@@ -3,7 +3,6 @@ The following are some of the books that I have read and found useful. They are 
 I usually skip points that are already known to me, so i would recommend reading the full book.
 
 # Python Tricks: A Buffet of Awesome Python Features
-Status: pg 120/299
 - [Book](https://github.com/plthiyagu/CheatSheet/blob/master/Python%20Tricks.pdf)
 - Assertions 
     - Use for dev debugging, not for user exceptions 
@@ -22,6 +21,16 @@ Status: pg 120/299
     - Defining custom exceptions helps in catching a particular exception alone in a outer module 
     - Derive custom exceptions from more specific exception
     - Good with `EASP` instead of `LBYL` - [ref](https://stackoverflow.com/questions/11360858/what-is-the-eafp-principle-in-python)
+- Class decorators
+    - `@classmethod` can be used to create multiple constructors
+    - `@staticmethod` can be used to tell that the method is independent of the class attributes but related to the class 
+    - doubt : Can we mark private methods static?
+- Datastructures
+    - Use `MappingProxyType` for immutable dict 
+    - Use `set()` where intersection will be computed 
+    - Explore `Lifoqueue, multiprocessing.queue` 
+- Generators can be used to create chains where processing happens one at a time 
+- Replace switch cases with `dict[condition,function]` with default function in getter 
 
 ## TODO
  - Check pydantic basemodel's `__repr__`
