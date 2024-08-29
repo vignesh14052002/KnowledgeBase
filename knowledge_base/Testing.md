@@ -50,8 +50,25 @@ Explore how popular open-source libraries write tests:
       - http interaction will be cached using pytest-vcr - [ref](https://python.langchain.com/v0.1/docs/contributing/testing/#recording-http-interactions-with-pytest-vcr)
     - llm is mocked while testing agents
 
+## Pytest : Documentaion notes
+  - Use builtin temp dir fixture for file paths 
+  - Fixture results will be cached in a scope and can be modified  
+  - Fixture with params 
+  - Overriding fixtures 
+  - Config add addopts:--strict-markers  
+  - When to use skip and xfail 
+    - skip - test cannot run in a env 
+    - xfail - expected to fail 
+  - Add no_request monkeypatch fixture in conftest 
+  - Test running config 
+    - `-lf` - runs only failed test 
+    - `-ff` - runs failed test first 
+    - `-sw` - stops at first failing test 
+  - Diff between scope module,package,session? 
+  - Hooks vs autouse fixtures? 
+
 ## Explore
 - Qmetry
-
-## TODO
-- Learn Pytest
+- Test writing patterns
+  - See how popular libraries write tests
+- Pytest bdd? 

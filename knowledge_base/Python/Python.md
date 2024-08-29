@@ -104,3 +104,4 @@ any(1&v&u&w for v,u,w in zip(array,array[1:],array[2:]))
   - Fixtures
   - Timeout in fastapi sockets while testing 
 
+- If child class didn't set a value, it is throwing error only at accessing not initializing

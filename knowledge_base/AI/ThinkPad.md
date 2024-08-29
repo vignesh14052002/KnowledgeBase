@@ -46,3 +46,23 @@
 - Watch Conference, tech talks
 - Find ways to use AI in daily workflow
     - Github copilot code review
+
+
+## SWE Bench
+[site](https://www.swebench.com/)
+- resolve github issues with language models
+ - Input : Issue, Code base snapshot
+ - Output : PR (Code)
+ - Evaluation : pre configured unit tests
+[paper](https://arxiv.org/pdf/2310.06770v2)
+ - 2294 problems took from github issues of 12 popular python repos (which repos?)
+ - Benchmark construction pipeline (getting high quality PR)
+    - Extract Closed PR and Issue that is being addressed 
+    - Only include PRs that modifies test cases
+    - Filter by increase in test fail-to-pass ratio
+
+
+
+Explore
+- [openai](https://openai.com/index/introducing-swe-bench-verified/)
+- [genie scored 30%](https://cosine.sh/blog/genie-technical-report)

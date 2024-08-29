@@ -36,6 +36,17 @@ I usually skip points that are already known to me, so i would recommend reading
  - Check pydantic basemodel's `__repr__`
  - Check pydantic model's immutability
 
+ 
+
+## Architecture patterns with python 
+[Book](https://cosmicpython.com/book/preface.html)
+ - Three layered architecture  
+    - Endpoints -> business logic -> data operations 
+ - Dependency inversion 
+ - High level functions should not depend on low level function 
+    - High level - business logic 
+    - Low level - technical aspects (network protocol etc) 
+ - Persistence ignorant code 
 
 ## Books i might read
 - [Intermediate to Advanced Books mentioned in realpython](https://realpython.com/best-python-books/#best-intermediate-and-advanced-python-books)
