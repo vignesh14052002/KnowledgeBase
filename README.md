@@ -45,7 +45,7 @@ The following items will get dynamically updated on every push to `master` branc
         </tr>
         <tr>
             <td>Average lines per document</td>
-            <td>35</td>
+            <td>36</td>
         </tr>
         <tr>
             <td><details>
@@ -68,7 +68,7 @@ The following items will get dynamically updated on every push to `master` branc
         </tr>
         <tr>
             <td>Time period</td>
-            <td>3 months and 17 days</td>
+            <td>3 months and 19 days</td>
         </tr>
     </tbody>
 </table>
