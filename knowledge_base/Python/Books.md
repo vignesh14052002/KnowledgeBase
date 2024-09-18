@@ -22,9 +22,8 @@ I usually skip points that are already known to me, so i would recommend reading
     - Derive custom exceptions from more specific exception
     - Good with `EASP` instead of `LBYL` - [ref](https://stackoverflow.com/questions/11360858/what-is-the-eafp-principle-in-python)
 - Class decorators
-    - `@classmethod` can be used to create multiple constructors
-    - `@staticmethod` can be used to tell that the method is independent of the class attributes but related to the class 
-    - doubt : Can we mark private methods static?
+    - `@classmethod` can be used to create multiple constructors, methods that do not depend on instance attributes
+    - `@staticmethod` can be used to tell that the method is independent of the class and instance attributes but related to the class 
 - Datastructures
     - Use `MappingProxyType` for immutable dict 
     - Use `set()` where intersection will be computed 
@@ -36,7 +35,38 @@ I usually skip points that are already known to me, so i would recommend reading
  - Check pydantic basemodel's `__repr__`
  - Check pydantic model's immutability
 
- 
+## Fluent Python
+- Nested unpacking in loops 
+    - for index,(val1,val2) in enumerate(zip(iter1,iter2)): 
+- Match case 
+    - How different from switch case 
+        - Advanced pattern matching in case 
+    - doubts
+        - Can it be combined with dict pattern for switch case?
+    - example pattern matching
+        - match data 
+            case : ['val1',int(a),(*_,int(b))] if a+b < 5 
+- If slicing is repetitive, name it and reuse , example : `reverse = slice(::-1)` 
+    - doubt : What can be the naming convention of slice? 
+- typehints
+    - use standard types instead of typing module
+    - typeAlias for complex types
+    - TypeVar for generic types  
+    - doubts
+        - Tuple[int,...] or list[int]? 
+        - ... In pydantic field?
+- Add ruff's no-self-use rule, to check unnecessary self usage in class methods
+- explore : mypy type coverage report
+- method overriding
+    - use `@abstractmethod` to ensure derived class implements the method
+    - use `@override` (supports python 3.12 or above) to ensure base class method is overriden in derived class
+- use `non-local` to modify outer scope variable in nested functions
+- don't use mutable default kwargs, it will gets initialized only once 
+- `del` only removes reference
+- doubt : When to enforce positional only or keyword only functions?
+- useful builtin decorators
+    - `@lrucache` for least recently used cache
+    - `@singledispatch` for function overloading
 
 ## Architecture patterns with python 
 [Book](https://cosmicpython.com/book/preface.html)
