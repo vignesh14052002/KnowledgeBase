@@ -1,6 +1,24 @@
 ## Resources
- - websites
-    - https://pythonspeed.com/
-    - https://realpython.com/
 - youtube
-    - https://www.youtube.com/@ArjanCodes
+    - [Arjan Codes](https://www.youtube.com/@ArjanCodes)
+        - channel that explains python concepts and best practices
+    - [Corey Schafer](https://www.youtube.com/@coreyms)
+        - recommended for pandas (Data Analysis) and matplotlib (Visualization)
+    - [PyCon](https://www.youtube.com/@PyConUS/videos)
+        - Conference talks on python
+ - websites
+    - [Real Python](https://realpython.com/)
+        - Difficuilty level based learning paths
+        - Quizzes
+        - Blogs
+    - [Python Speed](https://pythonspeed.com/)
+        - Collection of articles on python performance optimization
+- reddit
+    - Have a look at the following communities, where you can ask questions and get help
+        - [r/learnpython](https://www.reddit.com/r/learnpython/)
+        - [r/Python](https://www.reddit.com/r/Python/)
+        - [r/ExperiecedDevs](https://www.reddit.com/r/ExperiencedDevs/)
+        - [r/Dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/)
+- Books
+    - Have a look at [Python Books](https://realpython.com/best-python-books/), to find the best book for your level
+    - Books will contain indepth knowledge (tip: try to go with the latest edition)

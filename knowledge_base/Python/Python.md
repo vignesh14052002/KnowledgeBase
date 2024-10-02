@@ -96,7 +96,6 @@ any(1&v&u&w for v,u,w in zip(array,array[1:],array[2:]))
 
 ## Doubts
 - Poetry commands:
-  - `poetry lock –no-update`
   - `poetry extras`
 - when to use multithreading vs multiprocessing vs asyncio
 - pytest
@@ -105,3 +104,18 @@ any(1&v&u&w for v,u,w in zip(array,array[1:],array[2:]))
   - Timeout in fastapi sockets while testing 
 
 - If child class didn't set a value, it is throwing error only at accessing not initializing
+
+## Ruff
+Good rules to add
+  - `no-self-use`
+  - pyupgrade
+- ruff in jupyter notebook
+- diff between ignore and entendIgnore?
+
+## Mypy
+- why typeguard is needed?
+- why NewType is needed?
+
+is @typing.overload same as python 3.12's overload decorator?
+
+version = ["auto"] in fastapi toml?

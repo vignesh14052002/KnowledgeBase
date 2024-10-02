@@ -68,6 +68,21 @@ I usually skip points that are already known to me, so i would recommend reading
     - `@lrucache` for least recently used cache
     - `@singledispatch` for function overloading
 
+### Explore
+- __slots__  
+- @runtime_checkable 
+- metaclass, protocols 
+
+## Using Asyncio in Python
+- [Book](https://www.oreilly.com/library/view/using-asyncio-in/9781492075325/?_gl=1*dj5yli*_ga*MTQwMjMzMjkzNy4xNzI3NTg3OTE5*_ga_092EL089CH*MTcyNzU4NzkxOC4xLjEuMTcyNzU4NzkyOC41MC4wLjA.)
+- Multiprocessing vs threading vs asyncio 
+    - Multiprocessing is good for CPU bound tasks
+        - expensive to create and destroy processes
+    - Threading is good for IO bound tasks
+        - shared memory is a problem in threading, race conditions can occur
+    - Asyncio is good for IO bound tasks with more control on context switching
+- when to use `async for`
+
 ## Architecture patterns with python 
 [Book](https://cosmicpython.com/book/preface.html)
  - Three layered architecture  
