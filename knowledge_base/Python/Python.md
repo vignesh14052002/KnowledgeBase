@@ -119,3 +119,13 @@ Good rules to add
 is @typing.overload same as python 3.12's overload decorator?
 
 version = ["auto"] in fastapi toml?
+
+## Pydantic
+- @model_serializer ?
+- llama-index instrumentation, workflows
+
+- metaprogramming
+- testing
+  - mutation testing - mutmut
+  - property based testing - hypothesis
+  - toolz, pyrsistent, hissp, subrepls

@@ -1,9 +1,13 @@
 ## Microsoft Lida
 - [PR : Merged : BugFix](https://github.com/microsoft/lida/pull/90)
 
+## Langchain
+- [PR : Open : Feature Addition](https://github.com/langchain-ai/langchain/pull/27135)
+
 ## LLama Index
 - [Issue : Resolved : Bug](https://github.com/run-llama/llama_index/issues/13826)
-- [Issue : Open : Feature Request](https://github.com/run-llama/llama_index/issues/13443)
+- [Issue : Closed as Not planned : Feature Request](https://github.com/run-llama/llama_index/issues/13443)
+- [PR : Closed : Feature Addition](https://github.com/run-llama/llama_index/pull/16374)
 
 ## LLMX
 - [PR : Merged : Support on Dependency Upgrade](https://github.com/victordibia/llmx/pull/17)

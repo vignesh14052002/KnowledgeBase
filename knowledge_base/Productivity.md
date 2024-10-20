@@ -1,5 +1,11 @@
 # Productivity
+## Quotes
+- Parkinson's Law: Work expands to fill the time available for its completion
+  - Don't aim for perfection, aim for completion
+- Pareto Principle: 80% of the effects come from 20% of the causes
 
+## Action Items
+- prioritize tasks
 - Keep shorter deadlines, frequent feedbacks
 - pomodoro technique: have 5 minute break , 25 minutes work cycle
 
@@ -37,11 +43,6 @@
 - Shift right click on file -> restore previous version?
 - Power toys
 - Try not to use mouse
-
-## Unused Packages and Variables
-
-- Ways to find which packages we are not using in our app?
-- Ways to find which env variables are not used from .env?
 
 # Problem solving
 - First Principle Thinking : Think about the root of the problem

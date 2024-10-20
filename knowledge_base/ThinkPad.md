@@ -21,6 +21,7 @@
 - System design 
 
 # TODO
+- Ask questions from ./Problems.md in forums
 - See microsoft developer youtube channel - 5 mins
 - Github copilot – see latest features - 10 mins
 - go throught langchain docs - 30 mins
@@ -56,6 +57,7 @@
 - Try removing commit step in pipeline 
     - Not working
 - Readme - Add emojis, background image 
+- Create a animated intro video with manim
 
 ## Chatbot improvements
 - UI
@@ -75,9 +77,6 @@
 - Display cost and time for response 
 - Add Support for openai (get key from user)
 - Add semantic search page
-
-## General
-- Use of docasoaurs over GitHub ?
 
 ## Sort todos 
 - Daily/frequent habits 

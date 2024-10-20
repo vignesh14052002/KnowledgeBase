@@ -39,7 +39,6 @@
 - see what's new in agent protocol
 - inspect opensource repos - llama-index, langchain
 - explore different AI memory management systems - memgpt
-- try using AzureOpenAI to improve latency on concurrent requests
 - Go through tru-lens repo
 - Do a course in deep learning - 1 hr 
 - Watch Andrej karpathy tokenization - 1 hr
@@ -47,5 +46,28 @@
 - Find ways to use AI in daily workflow
     - Github copilot code review
 
+- read [result decoding in LLM](https://medium.com/@aalokpatwa/llm-decoding-balancing-quality-and-latency-23632cc0277e)
+- explore on openai model metric from playground
+    - temperature
+    - top-p
+    - frequency penalty
+    - presence penalty
+- see [this lecture playlist](https://www.youtube.com/watch?v=RM6ZArd2nVc&ab_channel=BerkeleyRDICenteronDecentralization%26AI)
 
+## OpenAI Structured Output
+- [blog](https://openai.com/index/introducing-structured-outputs-in-the-api/)
+- Offering 100% reliability in structured output
+- inspired from guidance and lark
 
+How it works
+- supply a pydanitc model along with prompt in API call
+- the pydantic model will be converted into Context Free Grammer and cached for future requests
+    - Due to this process, first request alone will take additional ~10 seconds to respond
+- The Context Free Grammer will be used for Constrained Decoding on each token prediction
+
+Limitations
+- There can be some cases where structured output is not possible, in such cases a boolean `refusal` will be returned
+    - Cases `refusal` will be returned
+        - gaurdrails: when model considers response to be unsafe
+        - max token limit reaches
+- Regex in pydantic model's attribute will not be guarenteed to be matched
