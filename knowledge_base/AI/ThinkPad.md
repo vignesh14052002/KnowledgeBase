@@ -21,6 +21,7 @@
 - Gpt optimized python indentation tokens
 - Byte pair encoding
 - Separate tokens of end-of-string, system-message, user-message, ai-message
+- how to tokenize?
 
 ### Memory management
 
@@ -46,28 +47,33 @@
 - Find ways to use AI in daily workflow
     - Github copilot code review
 
-- read [result decoding in LLM](https://medium.com/@aalokpatwa/llm-decoding-balancing-quality-and-latency-23632cc0277e)
+## Result decoding in LLM
+- [Blog](https://medium.com/@aalokpatwa/llm-decoding-balancing-quality-and-latency-23632cc0277e)
+- greedy decoding
+    - choose the token with the highest probability
+    - cons
+        - may be a local maxima
+        - repetitive completions
+- beam search
+    - keep track of k best completions
+    - cons
+        - slower, high compute
+- nucleus sampling
+    - calculate probability distribution by softmax with temperature
+    - sort the tokens by probability in descending order
+    - collect tokens until the cumulative probability is less than a threshold
+    - randomly sample from the collected tokens
+- speculative decoding
+    - use smaller model to generate completions
+    - use larger model to verify completions
+    - yet to understand more
+- medusa
+    - explore https://github.com/FasterDecoding/Medusa
+
+
 - explore on openai model metric from playground
-    - temperature
-    - top-p
+    - temperature : softmax temperature
+    - top-p : cumulative probability threshold
     - frequency penalty
     - presence penalty
 - see [this lecture playlist](https://www.youtube.com/watch?v=RM6ZArd2nVc&ab_channel=BerkeleyRDICenteronDecentralization%26AI)
-
-## OpenAI Structured Output
-- [blog](https://openai.com/index/introducing-structured-outputs-in-the-api/)
-- Offering 100% reliability in structured output
-- inspired from guidance and lark
-
-How it works
-- supply a pydanitc model along with prompt in API call
-- the pydantic model will be converted into Context Free Grammer and cached for future requests
-    - Due to this process, first request alone will take additional ~10 seconds to respond
-- The Context Free Grammer will be used for Constrained Decoding on each token prediction
-
-Limitations
-- There can be some cases where structured output is not possible, in such cases a boolean `refusal` will be returned
-    - Cases `refusal` will be returned
-        - gaurdrails: when model considers response to be unsafe
-        - max token limit reaches
-- Regex in pydantic model's attribute will not be guarenteed to be matched

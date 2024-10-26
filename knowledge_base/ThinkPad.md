@@ -78,6 +78,17 @@
 - Add Support for openai (get key from user)
 - Add semantic search page
 
+## Desicion tree improvements
+- Case study: Search if there are solution builders available online
+- Split the UI into two parts vertically 
+    - Ask questions on left side (google video style)
+    - Build a flowchart/block diagram on right side
+        - frame datastructure of diagram
+        - decide which one to use, PUML/mermaid or custom
+- Add a search bar to start from a particular node
+- Show progress bar, based on longest path from current node to leaf
+- Optional : Convert the chosen path from tree to code
+
 ## Sort todos 
 - Daily/frequent habits 
     - Set targets and track them 

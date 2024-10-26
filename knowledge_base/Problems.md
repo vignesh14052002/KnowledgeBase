@@ -19,8 +19,15 @@
     - If we have pytest coverage enabled, the debugger is not stopping at breakpoints
     - How to automatically disable pytest coverage on debug mode?
 2) How to profile async code? (`cprofile` is not working)
+3) Is there a way to check if docstring is in sync with actual code (attributes, method names)
 
 ## FastAPI
 1) Tests to validate Swagger UI examples
     - refer [this thread](https://www.reddit.com/r/FastAPI/comments/1fmlw4v/is_there_a_way_to_dynamically_validate_swagger_ui/)
- 
+
+## Pydantic
+1) Dynamic Literals
+    - How to create dynamic literals in Pydantic?
+    - Example: 
+        - `status: Literal['active', 'inactive']`
+        - `status: Literal[get_status()]`
