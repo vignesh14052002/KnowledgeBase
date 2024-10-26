@@ -41,7 +41,7 @@ The following items will get dynamically updated on every push to `master` branc
     <tbody>
         <tr>
             <td>Documents</td>
-            <td>44</td>
+            <td>45</td>
         </tr>
         <tr>
             <td>Average lines per document</td>
@@ -52,8 +52,8 @@ The following items will get dynamically updated on every push to `master` branc
                     <summary>Reference Links</summary>
                     <table>
 <tr><td><details><summary><a href='https://github.com'>github.com</a></summary><table>
-<tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/OpenSourceContributions.md>OpenSourceContributions.md</a></td><td>9</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/OpensourceProjects.md>OpensourceProjects.md</a></td><td>7</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/Frameworks.md>Frameworks.md</a></td><td>4</td></tr>
-</table></details></td><td>33</td></tr><tr><td><details><summary><a href='https://www.youtube.com'>youtube.com</a></summary><table>
+<tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/OpenSourceContributions.md>OpenSourceContributions.md</a></td><td>10</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/OpensourceProjects.md>OpensourceProjects.md</a></td><td>7</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/Frameworks.md>Frameworks.md</a></td><td>4</td></tr>
+</table></details></td><td>35</td></tr><tr><td><details><summary><a href='https://www.youtube.com'>youtube.com</a></summary><table>
 <tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Web/Resources.md>Resources.md</a></td><td>15</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Web/ThinkPad.md>ThinkPad.md</a></td><td>5</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/old_notes/GameDevelopment.md>GameDevelopment.md</a></td><td>4</td></tr>
 </table></details></td><td>28</td></tr><tr><td><details><summary><a href='https://youtu.be'>youtu.be</a></summary><table>
 <tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/Discussions.md>Discussions.md</a></td><td>6</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Testing.md>Testing.md</a></td><td>3</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/ThinkPad.md>ThinkPad.md</a></td><td>3</td></tr>
@@ -64,11 +64,11 @@ The following items will get dynamically updated on every push to `master` branc
 </table></details></td><td>8</td></tr>
 </table></details>
             </td>
-            <td>163</td>
+            <td>164</td>
         </tr>
         <tr>
             <td>Time period</td>
-            <td>4 months and 21 days</td>
+            <td>4 months and 27 days</td>
         </tr>
     </tbody>
 </table>
