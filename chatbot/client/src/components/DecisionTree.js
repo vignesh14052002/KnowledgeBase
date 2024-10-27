@@ -45,6 +45,7 @@ function buildTree(node_id) {
       ..._node,
       children: node.stages.map((stage) => {
         return {
+          ...stage,
           id: uuidv4(),
           label: stage.stage,
           children: [buildTree(stage.next?.toString())].filter(
@@ -52,6 +53,14 @@ function buildTree(node_id) {
           ),
         };
       }),
+    };
+  }
+  if (node.next){
+    return {
+      ..._node,
+      children: [buildTree(node.next.toString())].filter(
+        (e) => e !== undefined
+      ),
     };
   }
   return _node;
@@ -79,29 +88,64 @@ const CustomTreeItem = React.forwardRef((props, ref) => {
 });
 
 function get_mermaid_id(text) {
+  if (text.includes("[") && text.includes("]")) return text;
   const id = text.replace(/[^a-zA-Z0-9]/g, "_");
+  if (id==text) return text;
   return `${id}[${text}]`;
 }
 function get_mermaid_text(nodes) {
   let mermaid_texts = ["graph TD"];
   let last_id = null;
-  nodes.forEach((node) => {
-    console.log("here", node);
+  function update_text(node){
     if (!node.block) {
-      return;
+      return
     }
     let node_text = get_mermaid_id(node.block.text);
     if (node.block.type === "replace") {
       if (mermaid_texts.length > 1) {
         const last_line = mermaid_texts.pop();
-        last_id = last_line.split("-->")[0].trim();
+        if (last_line.includes("-->")) {
+          last_id = last_line.split("-->")[0].trim();
+        }else{
+          last_id = null;
+        }
       }
+    }
+    if (node.block.parent){
+      last_id = get_mermaid_id(node.block.parent);
     }
     if (!last_id) {
       mermaid_texts.push(node_text);
-    } else {
-      mermaid_texts.push(`${last_id} --> ${node_text}\n`);
       last_id = node_text;
+      return
+    }
+    mermaid_texts.push(`${last_id} --> ${node_text}\n`);
+    last_id = node_text;
+  
+  }
+  nodes.forEach((node) => {
+    console.log("here", node);
+    if (node.block && node.stages){
+      const first_child = node.children[0];
+      if (node.children[0].block){
+        const last_item = mermaid_texts[mermaid_texts.length-1];
+        if (last_item.includes("-->")){
+          first_child.block.parent = last_item.split("-->")[1].trim();
+        }
+        else{
+          first_child.block.parent = last_item;
+        }
+      }
+      update_text(first_child);
+      mermaid_texts.push(`subgraph ${get_mermaid_id(node.block.text)}`);
+      // start from second child
+      node.children.slice(1).forEach((child) => {
+        update_text(child);
+      });
+      mermaid_texts.push("end");
+    }
+    else{
+      update_text(node)
     }
   });
   if (mermaid_texts.length == 1) {
@@ -113,9 +157,10 @@ function get_mermaid_text(nodes) {
 export default function DecisionTree() {
   const [expandedItems, setExpandedItems] = React.useState([]);
   const [decisionTreeData, setDecisionTreeData] = React.useState([]);
-  const [current_node, setCurrentNode] = React.useState(null);
+  const [nodeStack, setNodeStack] = React.useState([]);
   const [solution_path, setSolutionPath] = React.useState([]);
   const [questionView, setQuestionView] = React.useState("one_by_one");
+
 
   const toggleView = () => {
     if (questionView === "one_by_one") {
@@ -147,7 +192,7 @@ export default function DecisionTree() {
         console.log(data);
         const root_node = buildTree("1");
         setDecisionTreeData([root_node]);
-        setCurrentNode(root_node);
+        setNodeStack([root_node]);
       });
   }, []);
 
@@ -161,8 +206,35 @@ export default function DecisionTree() {
     );
   };
   const handleOnChoiceClick = (choice) => {
-    setCurrentNode(choice.children[0]);
-    const new_solution = [...solution_path, choice.children[0]];
+    nodeStack.pop();
+
+    let children = [choice.children[0]]
+    const child = children[0];
+    let new_solution = [...solution_path];
+    if (child.stages){
+      children = []
+      child.children.slice().reverse().forEach((stage) => {
+        if (stage.children){
+          children.push(...stage.children)
+        }
+      }
+      )
+      if (children.length >0 && child.solution){
+        children[0].solution = child.solution;
+      }
+      new_solution.push(child)
+    }
+    else{
+
+      if (!child.question && child.children.length > 0){
+       children = child.children;
+       if (child.solution){
+         children[0].solution = child.solution;
+       } 
+      }
+      new_solution.push(...children);
+    }
+    setNodeStack([...nodeStack, ...children]);
     setSolutionPath(new_solution);
     const mermaidElement = document.getElementById("mermaid");
     if (mermaidElement) {
@@ -171,6 +243,8 @@ export default function DecisionTree() {
       window.mermaid.init(undefined, mermaidElement);
     }
   };
+  const current_node = nodeStack.length>0?nodeStack[nodeStack.length - 1]:null;
+  console.log("c",current_node);
   return (
     <Box sx={{ display: "flex" }}>
       <Box sx={{ position: "fixed", bottom: "10px", left: "10px" }}>

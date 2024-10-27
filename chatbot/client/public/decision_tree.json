@@ -72,27 +72,47 @@
   "13": {
     "block": {
       "type": "append",
-      "text": "Retrieval Augumented Generation"
+      "text": "RAG Stages"
     },
     "solution": "You can use Retrieval Augumented Generation",
     "title": "Stages of RAG",
     "stages": [
       {
         "stage": "Indexing",
+        "block": {
+          "type": "append",
+          "parent": "RAG Stages",
+          "text": "Indexing"
+        },
         "next": 4
       },
       {
         "stage": "Retrieval",
+        "block": {
+          "type": "append",
+          "parent": "Indexing",
+          "text": "Retrieval"
+        },
         "next": null
       },
       {
         "stage": "Synthesis",
+        "block": {
+          "type": "append",
+          "parent": "Retrieval",
+          "text": "Synthesis"
+        },
         "next": null
       }
     ]
   },
   "10": {
     "solution": "You can use a ETL pipeline to process",
+    "block": {
+      "type": "append",
+      "parent": "Indexing",
+      "text": "ETL"
+    },
     "question": "Is the data is fixed or can be updated in runtime/periodically ?",
     "choices": [
       {
@@ -118,15 +138,35 @@
   },
   "11": {
     "title": "Stages of Ingestion",
+    "block": {
+      "type": "append",
+      "parent": "ETL",
+      "text": "Stages of Ingestion"
+    },
     "stages": [
       {
-        "stage": "Parsing"
+        "stage": "Parsing",
+        "block": {
+          "type": "append",
+          "parent": "ETL",
+          "text": "Parsing"
+        }
       },
       {
-        "stage": "Chunking"
+        "stage": "Chunking",
+        "block": {
+          "type": "append",
+          "parent": "Parsing",
+          "text": "Chunking"
+        }
       },
       {
-        "stage": "Embedding"
+        "stage": "Embedding",
+        "block": {
+          "type": "append",
+          "parent": "Chunking",
+          "text": "Embedding"
+        }
       }
     ]
   },
