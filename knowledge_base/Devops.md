@@ -16,3 +16,9 @@
 ## Resources
 - Dora devops
 - [Aws recordings](https://summits-india.virtual.awsevents.com/channel/t/340083842)
+
+## DB
+### Row DB vs Column DB
+- [video](https://youtu.be/Vw1fCeD06YI?si=QxhUhlub0r5IORoi)
+- based on the query pattern, we can choose the db
+- column db is heavy for write operations
