@@ -10,6 +10,10 @@ import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import FormatAlignCenterIcon from "@mui/icons-material/FormatAlignCenter";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import IconButton from "@mui/material/IconButton";
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+import {styled} from "@mui/system";
+import Tooltip from '@mui/material/Tooltip';
+import CircularProgress from '@mui/material/CircularProgress';
 
 let decision_tree_data = {};
 function buildTree(node_id) {
@@ -22,7 +26,7 @@ function buildTree(node_id) {
   if (node.title) label.push(node.title);
   const _node = {
     ...node,
-    id: node_id,
+    id: uuidv4(),
     label: label.join("\n"),
     children: [],
   };
@@ -154,12 +158,19 @@ function get_mermaid_text(nodes) {
   console.log(mermaid_texts.join("\n"));
   return mermaid_texts.join("\n");
 }
+const GlowingButton = styled(IconButton)(({ theme, is_clicked }) => ({
+  color: is_clicked ? '#8076c8' : 'default',
+}));
+let root_node = null
 export default function DecisionTree() {
   const [expandedItems, setExpandedItems] = React.useState([]);
   const [decisionTreeData, setDecisionTreeData] = React.useState([]);
   const [nodeStack, setNodeStack] = React.useState([]);
   const [solution_path, setSolutionPath] = React.useState([]);
   const [questionView, setQuestionView] = React.useState("one_by_one");
+  const [useAI, setUseAI] = React.useState(false);
+  const [architectureDiagram, setArchitectureDiagram] = React.useState("graph TD");
+  const [history, setHistory] = React.useState([]);
 
 
   const toggleView = () => {
@@ -183,6 +194,11 @@ export default function DecisionTree() {
 
     return itemIds;
   };
+
+  function reset_root_node(root_node){
+    setDecisionTreeData([root_node]);
+    setNodeStack([root_node]);
+  }
   React.useEffect(() => {
     //fetch("https://raw.githubusercontent.com/vignesh14052002/KnowledgeBase/master/knowledge_base/AI/decision_tree.json")
     fetch("./decision_tree.json")
@@ -190,9 +206,8 @@ export default function DecisionTree() {
       .then((data) => {
         decision_tree_data = data;
         console.log(data);
-        const root_node = buildTree("1");
-        setDecisionTreeData([root_node]);
-        setNodeStack([root_node]);
+        root_node = buildTree("1");
+        reset_root_node(root_node);
       });
   }, []);
 
@@ -205,9 +220,61 @@ export default function DecisionTree() {
       oldExpanded.length === 0 ? getAllItemsWithChildrenItemIds() : []
     );
   };
-  const handleOnChoiceClick = (choice) => {
-    nodeStack.pop();
 
+  const handleOnChoiceClickAI = (choice) => {
+      const c_node = nodeStack.pop();
+      setHistory([...history, {
+        question: c_node.question,
+        choices: c_node.children.map((child) => child.label),
+        answer: choice.label,
+      }]);
+      fetch("http://localhost:8000/v1/solution-builder/get-question",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          history: history,
+          architecture: architectureDiagram,
+        }),
+      }
+      )
+      .then((response) => response.json())
+      .then((data) => {
+        const new_node = {
+          id: uuidv4(),
+          question: data["next_question"],
+          children: data["choices"].map((choice) => {
+            return {
+              id: uuidv4(),
+              label: choice,
+            };
+          }),
+        }
+        console.log("response",data);
+        setNodeStack([...nodeStack, new_node]);
+        const updated_architecture = data["updated_architecture"];
+
+        setArchitectureDiagram(updated_architecture);
+        updateDiagram(updated_architecture)
+      })
+
+  }
+  const updateDiagram = (text)=>{
+    const mermaidElement = document.getElementById("mermaid");
+    if (mermaidElement) {
+      mermaidElement.innerHTML = text
+      mermaidElement.removeAttribute("data-processed");
+      window.mermaid.init(undefined, mermaidElement);
+    }
+  }
+  const handleOnChoiceClick = (choice) => {
+    if (useAI){
+      handleOnChoiceClickAI(choice);
+      return;
+    }
+    nodeStack.pop();
     let children = [choice.children[0]]
     const child = children[0];
     let new_solution = [...solution_path];
@@ -236,12 +303,7 @@ export default function DecisionTree() {
     }
     setNodeStack([...nodeStack, ...children]);
     setSolutionPath(new_solution);
-    const mermaidElement = document.getElementById("mermaid");
-    if (mermaidElement) {
-      mermaidElement.innerHTML = get_mermaid_text(new_solution);
-      mermaidElement.removeAttribute("data-processed");
-      window.mermaid.init(undefined, mermaidElement);
-    }
+    updateDiagram(get_mermaid_text(new_solution));
   };
   const current_node = nodeStack.length>0?nodeStack[nodeStack.length - 1]:null;
   console.log("c",current_node);
@@ -261,6 +323,23 @@ export default function DecisionTree() {
           minHeight="100vh"
           width="50%"
         >
+           <Box sx={{ position: "fixed", top: "10px", left: "10px" }}>
+            <Tooltip title="Use AI">
+            <GlowingButton  is_clicked={useAI?1:0} onClick={()=>{
+              setUseAI(!useAI);
+              reset_root_node(root_node) 
+            }
+        }>
+      <AutoAwesomeIcon />
+      </GlowingButton>
+      </Tooltip>
+      </Box>
+          {!current_node && useAI && (
+          <Box sx={{ display: 'flex' }}>
+            <Typography variant="h5">Preparing next question for you...</Typography>
+            <CircularProgress />
+          </Box>
+          )}
           {current_node && (
             <Box margin="10px">
               {(current_node.solution || current_node.title) && (

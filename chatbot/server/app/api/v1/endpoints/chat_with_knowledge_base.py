@@ -1,5 +1,4 @@
 from fastapi import APIRouter
-from fastapi.responses import JSONResponse
 from app.api.v1.models.chat_with_knowledge_base import (
     GetAnwerRequest,
     GetAnwerResponse,

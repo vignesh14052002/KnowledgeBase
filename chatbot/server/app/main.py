@@ -2,7 +2,7 @@ import os
 import uvicorn
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from app.api.v1.endpoints import chat_with_knowledge_base, socket
+from app.api.v1.endpoints import chat_with_knowledge_base, socket, solution_builder
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -27,6 +27,12 @@ app.include_router(
     prefix="/v1/knowledge-base",
     tags=["Chat with Knowledge Base"],
 )
+app.include_router(
+    solution_builder.router,
+    prefix="/v1/solution-builder",
+    tags=["Solution Builder"],
+)
+
 app.include_router(
     socket.router,
     tags=["Socket"],
