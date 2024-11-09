@@ -228,7 +228,7 @@ export default function DecisionTree() {
         choices: c_node.children.map((child) => child.label),
         answer: choice.label,
       }]);
-      fetch("http://localhost:8000/v1/solution-builder/get-question",
+      fetch("/v1/solution-builder/get-question",
       {
         method: "POST",
         headers: {
