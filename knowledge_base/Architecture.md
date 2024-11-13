@@ -17,3 +17,11 @@ Refer to this [blog](https://dev.to/anthony_hagi/you-dont-need-microservices-a-r
 
 ## Resources
 - [Byte-byte go YouTube channel](https://www.youtube.com/c/ByteByteGo)
+
+## Incidence Matrix
+- [NDC Conference: Residuality Theory](https://youtu.be/1KHXAWLSMqE?si=vG7K3Ddg5UrH8P3g)
+- construct a boolean matrix with rows as incidents and columns as microservices
+- 1 if incident i affects microservice j else 0
+- Max of sum of rows indicates the most critical incident
+- Max of sum of columns indicates the most critical microservice
+- if two columns looks similar, then they are tightly coupled

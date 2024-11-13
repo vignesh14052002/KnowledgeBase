@@ -98,3 +98,9 @@
     - presence penalty
     
 - see [this lecture playlist](https://www.youtube.com/watch?v=RM6ZArd2nVc&ab_channel=BerkeleyRDICenteronDecentralization%26AI)
+
+## Interesting
+- finding AI tools usage in leetcode contest
+    - hidden custom instructions are provided when description is copied
+    - when those are identified in the generated code while submitting, the code will be rejected
+    - ![Leetcode hidden instruction](./img/leetcode_ai_instruction.png)

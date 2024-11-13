@@ -22,9 +22,9 @@
         - Uses mock server from all services (mock server creation is as simple as importing test mocks and start the server) 
 
 ## Pipelines
-    - Flaky test identification - run failed tests again and if it passed, mark as flaky
-        - [Reference : NDC Oslo 2024 : Developer Joy](https://youtu.be/zqjyPl5ytZc?si=yqXffh1REQGaWftG)
-    - Optimizing pipelines
-        - [Reference: NDC Oslo 2024 : CI/CD patterns and antipatterns](https://youtu.be/OonABHdHD2I?si=n7iu7bQf3M-8l_2v)
-        - Run independent pipelines parallelly and sequence them for quick feedback and optimized execution
-            ![Parallel Pipelines](./img/parallel_pipelines.png)
+- Flaky test identification - run failed tests again and if it passed, mark as flaky
+    - [Reference : NDC Oslo 2024 : Developer Joy](https://youtu.be/zqjyPl5ytZc?si=yqXffh1REQGaWftG)
+- Optimizing pipelines
+    - [Reference: NDC Oslo 2024 : CI/CD patterns and antipatterns](https://youtu.be/OonABHdHD2I?si=n7iu7bQf3M-8l_2v)
+    - Run independent pipelines parallelly and sequence them for quick feedback and optimized execution
+        ![Parallel Pipelines](./img/parallel_pipelines.png)

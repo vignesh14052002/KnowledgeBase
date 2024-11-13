@@ -1,6 +1,7 @@
 # Areas of Interest
 ## Tech
-- Testing 
+- Testing
+    - Learn Testing strategies
 - Documentation 
 - System design 
     - Find a source like leetcode, frontend mentor 
@@ -53,11 +54,13 @@
         - Add a slider for time range
         - Show most consumed resource (youtube, reddit, github, etc) 
 - add markdownlint
+- add a check for broken links
 - add Graph that represents links between notes and external resources
 - Try removing commit step in pipeline 
     - Not working
 - Readme - Add emojis, background image 
 - Create a animated intro video with manim
+- refactor each doc, make it more readable
 
 ## Chatbot improvements
 - UI
