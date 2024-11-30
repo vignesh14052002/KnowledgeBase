@@ -93,7 +93,9 @@
 
 - explore on openai model metric from playground
     - temperature : softmax temperature
+        - [understanding openai's temperature](https://www.coltsteele.com/tips/understanding-openai-s-temperature-parameter)
     - top-p : cumulative probability threshold
+        - [top-p temperature table](https://community.openai.com/t/cheat-sheet-mastering-temperature-and-top-p-in-chatgpt-api/172683)
     - frequency penalty
     - presence penalty
     

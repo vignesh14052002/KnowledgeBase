@@ -16,6 +16,8 @@ import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import {styled} from "@mui/system";
 import Tooltip from '@mui/material/Tooltip';
 import CircularProgress from '@mui/material/CircularProgress';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
 
 let decision_tree_data = {};
 function buildTree(node_id) {
@@ -39,7 +41,7 @@ function buildTree(node_id) {
         return {
           id: uuidv4(),
           label: choice.choice,
-          children: [buildTree(choice.next.toString())].filter(
+          children: [buildTree(choice.next?.toString())].filter(
             (e) => e !== undefined
           ),
         };
@@ -230,11 +232,14 @@ export default function DecisionTree() {
 
   const handleOnChoiceClickAI = (choice) => {
       const c_node = nodeStack[nodeStack.length - 1];
-      setChatHistory([...chat_history, {
+      const newNodeStack = [...nodeStack.slice(0,-1)];
+      setNodeStack(newNodeStack);
+      const newChatHistory = [...chat_history, {
         question: c_node.question,
         choices: c_node.children.map((child) => child.label),
         answer: choice.label,
-      }]);
+      }]
+      setChatHistory(newChatHistory);
       fetch("/v1/solution-builder/get-question",
       {
         method: "POST",
@@ -242,7 +247,7 @@ export default function DecisionTree() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          history: chat_history,
+          history: newChatHistory,
           architecture: architectureDiagram,
         }),
       }
@@ -260,7 +265,7 @@ export default function DecisionTree() {
           }),
         }
         console.log("response",data);
-        setNodeStack([...nodeStack.slice(0,-1), new_node]);
+        setNodeStack([...newNodeStack, new_node]);
         const updated_architecture = data["updated_architecture"];
 
         setArchitectureDiagram(updated_architecture);
@@ -283,6 +288,10 @@ export default function DecisionTree() {
     }
     let children = [choice.children[0]]
     const child = children[0];
+    if (!child && popNodeStackOnInvalidNode(child)) {
+      alert("Next question not available for selected choice, switching to next block ");
+      return;
+    }
     let new_solution = [...solution_path];
     if (child.stages){
       children = []
@@ -292,10 +301,23 @@ export default function DecisionTree() {
         }
       }
       )
-      if (children.length >0 && child.solution){
+      if (children.length >0 && !children[0].solution && child.solution){
         children[0].solution = child.solution;
       }
       new_solution.push(child)
+    }
+    else if (child.children.length == 1 && child.children[0].stages){
+      children = []
+      child.children[0].children.slice().reverse().forEach((stage) => {
+        if (stage.children){
+          children.push(...stage.children)
+        }
+      }
+      )
+      if (children.length >0 && !children[0].solution && child.solution){
+        children[0].solution = child.solution;
+      }
+      new_solution.push(child.children[0])
     }
     else{
 
@@ -335,11 +357,21 @@ export default function DecisionTree() {
     setSolutionPath(newHistory.solutionPath);
     const new_architecture = get_mermaid_text(newHistory.solutionPath);
     setArchitectureDiagram(new_architecture);
+    updateDiagram(new_architecture);
+  }
+  const popNodeStackOnInvalidNode = (current_node)=>{
+    if (nodeStack.length>1 && !current_node?.children?.length>0){
+      setNodeStack([...nodeStack.slice(0,-1)]);
+      return true;
+    }
+    return false;
   }
   const current_node = nodeStack.length>0?nodeStack[nodeStack.length - 1]:null;
-  console.log("c",current_node, currentIndexInHistory, stateHistory);
+  popNodeStackOnInvalidNode(current_node);
+  console.log("c",nodeStack);
   return (
     <Box sx={{ display: "flex" }}>
+      
       <Box sx={{ position: "fixed", bottom: "10px", left: "10px" }}>
         <IconButton onClick={toggleView}>
           {questionView === "one_by_one" && <AccountTreeIcon />}

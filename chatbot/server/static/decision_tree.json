@@ -93,7 +93,7 @@
           "parent": "Indexing",
           "text": "Retrieval"
         },
-        "next": null
+        "next": "retrieval"
       },
       {
         "stage": "Synthesis",
@@ -105,6 +105,39 @@
         "next": null
       }
     ]
+  },
+  "retrieval": {
+    "solution": "Prototype the solution provided and measure the retrieval performance and answer the question",
+    "question": "Is there any Issue in retrieval performance?",
+    "choices": [
+      {
+        "choice": "Expected Documents are not retrieved, retrieval query is complex",
+        "next": "query_decomposition"
+      },
+      {
+        "choice": "Expected Documents are not retrieved, but retrieval query looks good",
+        "next": "reranking"
+      },
+      {
+        "choice": "No Issues"
+      }
+    ]
+  },
+  "reranking": {
+    "solution": "Rerank the documents after retrieval",
+    "block": {
+      "type": "append",
+      "parent": "Retrieval",
+      "text": "Reranking"
+    }
+  },
+  "query_decomposition": {
+    "solution": "Decompose the retrieval query into subqueries using AI and retrieve the documents",
+    "block": {
+      "type": "append",
+      "parent": "Retrieval",
+      "text": "Query Decomposition"
+    }
   },
   "10": {
     "solution": "You can use a ETL pipeline to process",
@@ -136,6 +169,48 @@
     "solution": "Trigger ETL on each data updation",
     "next": 11
   },
+  "chunking": {
+    "chunking": "Chunking is the process of dividing text into smaller pieces called chunks",
+    "question": "Do you need intelligence in chunking?",
+    "choices": [
+      {
+        "choice": "Yes",
+        "next": "semantic_chunking"
+      },
+      {
+        "choice": "No",
+        "next": 18
+      }
+    ]
+  },
+  "semantic_chunking": {
+    "solution": "You can use Semantic or Agentic chunking",
+    "block": {
+      "type": "append",
+      "parent": "Chunking",
+      "text": "Semantic Chunking"
+    }
+  },
+  "parsing": {
+    "question": "Is the document contains images?",
+    "choices": [
+      {
+        "choice": "Yes",
+        "next": "image_parsing"
+      },
+      {
+        "choice": "No"
+      }
+    ]
+  },
+  "image_parsing": {
+    "solution": "You can use OCR / Vision models to extract text from images",
+    "block": {
+      "type": "append",
+      "parent": "Parsing",
+      "text": "Image Parsing with OCR / AI"
+    }
+  },
   "11": {
     "title": "Stages of Ingestion",
     "block": {
@@ -150,7 +225,8 @@
           "type": "append",
           "parent": "ETL",
           "text": "Parsing"
-        }
+        },
+        "next": "parsing"
       },
       {
         "stage": "Chunking",
@@ -158,7 +234,8 @@
           "type": "append",
           "parent": "Parsing",
           "text": "Chunking"
-        }
+        },
+        "next": "chunking"
       },
       {
         "stage": "Embedding",
