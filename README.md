@@ -64,11 +64,11 @@ The following items will get dynamically updated on every push to `master` branc
 </table></details></td><td>8</td></tr>
 </table></details>
             </td>
-            <td>171</td>
+            <td>173</td>
         </tr>
         <tr>
             <td>Time period</td>
-            <td>5 months and 15 days</td>
+            <td>6 months and 2 days</td>
         </tr>
     </tbody>
 </table>
