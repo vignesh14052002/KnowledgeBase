@@ -9,6 +9,8 @@ import { Typography } from "@mui/material";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import FormatAlignCenterIcon from "@mui/icons-material/FormatAlignCenter";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import IconButton from "@mui/material/IconButton";
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import {styled} from "@mui/system";
@@ -170,7 +172,10 @@ export default function DecisionTree() {
   const [questionView, setQuestionView] = React.useState("one_by_one");
   const [useAI, setUseAI] = React.useState(false);
   const [architectureDiagram, setArchitectureDiagram] = React.useState("graph TD");
-  const [history, setHistory] = React.useState([]);
+  const [chat_history, setChatHistory] = React.useState([]);
+
+  const [stateHistory, setStateHistory] = React.useState([]);
+  const [currentIndexInHistory, setCurrentIndexInHistory] = React.useState(0);
 
 
   const toggleView = () => {
@@ -198,6 +203,8 @@ export default function DecisionTree() {
   function reset_root_node(root_node){
     setDecisionTreeData([root_node]);
     setNodeStack([root_node]);
+    setStateHistory([{nodeStack: [root_node], solutionPath: []}]);
+    setCurrentIndexInHistory(0);
   }
   React.useEffect(() => {
     //fetch("https://raw.githubusercontent.com/vignesh14052002/KnowledgeBase/master/knowledge_base/AI/decision_tree.json")
@@ -222,8 +229,8 @@ export default function DecisionTree() {
   };
 
   const handleOnChoiceClickAI = (choice) => {
-      const c_node = nodeStack.pop();
-      setHistory([...history, {
+      const c_node = nodeStack[nodeStack.length - 1];
+      setChatHistory([...chat_history, {
         question: c_node.question,
         choices: c_node.children.map((child) => child.label),
         answer: choice.label,
@@ -235,7 +242,7 @@ export default function DecisionTree() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          history: history,
+          history: chat_history,
           architecture: architectureDiagram,
         }),
       }
@@ -253,7 +260,7 @@ export default function DecisionTree() {
           }),
         }
         console.log("response",data);
-        setNodeStack([...nodeStack, new_node]);
+        setNodeStack([...nodeStack.slice(0,-1), new_node]);
         const updated_architecture = data["updated_architecture"];
 
         setArchitectureDiagram(updated_architecture);
@@ -274,7 +281,6 @@ export default function DecisionTree() {
       handleOnChoiceClickAI(choice);
       return;
     }
-    nodeStack.pop();
     let children = [choice.children[0]]
     const child = children[0];
     let new_solution = [...solution_path];
@@ -301,12 +307,37 @@ export default function DecisionTree() {
       }
       new_solution.push(...children);
     }
-    setNodeStack([...nodeStack, ...children]);
+    const new_node_stack = [...nodeStack.slice(0,-1), ...children];
+    setNodeStack(new_node_stack);
     setSolutionPath(new_solution);
-    updateDiagram(get_mermaid_text(new_solution));
+    const new_architecture = get_mermaid_text(new_solution);
+    setArchitectureDiagram(new_architecture);
+    updateDiagram(new_architecture);
+    const newHistory = [...stateHistory.slice(0,currentIndexInHistory+1), {nodeStack: new_node_stack, solutionPath: new_solution}];
+    setStateHistory(newHistory);
+    setCurrentIndexInHistory(newHistory.length - 1);
   };
+
+  const goBackInHistory = () => {
+    if (currentIndexInHistory == 0) return;
+    const newIndex = currentIndexInHistory - 1;
+    updateHistory(newIndex);
+  }
+  const goForwardInHistory = () => {
+    if (currentIndexInHistory == stateHistory.length - 1) return;
+    const newIndex = currentIndexInHistory + 1;
+    updateHistory(newIndex);
+  }
+  const updateHistory = (index)=>{
+    setCurrentIndexInHistory(index);
+    const newHistory = stateHistory[index];
+    setNodeStack(newHistory.nodeStack);
+    setSolutionPath(newHistory.solutionPath);
+    const new_architecture = get_mermaid_text(newHistory.solutionPath);
+    setArchitectureDiagram(new_architecture);
+  }
   const current_node = nodeStack.length>0?nodeStack[nodeStack.length - 1]:null;
-  console.log("c",current_node);
+  console.log("c",current_node, currentIndexInHistory, stateHistory);
   return (
     <Box sx={{ display: "flex" }}>
       <Box sx={{ position: "fixed", bottom: "10px", left: "10px" }}>
@@ -327,7 +358,7 @@ export default function DecisionTree() {
             <Tooltip title="Use AI">
             <GlowingButton  is_clicked={useAI?1:0} onClick={()=>{
               setUseAI(!useAI);
-              reset_root_node(root_node) 
+              reset_root_node(root_node);
             }
         }>
       <AutoAwesomeIcon />
@@ -340,6 +371,20 @@ export default function DecisionTree() {
             <CircularProgress />
           </Box>
           )}
+          {current_node && !useAI && (
+            <Box sx={{ display: 'flex', position:'absolute', width:'50%', justifyContent:'space-between' }}>
+              <Box>
+              <IconButton onClick={goBackInHistory} sx={{ display: currentIndexInHistory>=1?'inline-block':'none'}}>
+                <ArrowBackIosIcon />
+              </IconButton>
+              </Box>
+              <Box>
+              <IconButton onClick={goForwardInHistory} sx={{ display: currentIndexInHistory < stateHistory.length - 1?'inline-block':'none'}}>
+                <ArrowForwardIosIcon />
+              </IconButton>
+              </Box>
+            </Box>
+            )}
           {current_node && (
             <Box margin="10px">
               {(current_node.solution || current_node.title) && (
