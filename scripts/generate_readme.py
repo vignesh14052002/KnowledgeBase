@@ -152,6 +152,9 @@ PLACEHOLDER__FUNCTION_MAP = {
 }
 PLACEHOLDER_PATTERN = re.compile(r"!\@\((.*?)\)")
 
+# Update relative paths
+readme = readme.replace("../", "./")
+
 # Replace all placeholders with the actual values
 for pattern_match in PLACEHOLDER_PATTERN.finditer(readme):
     placeholder = pattern_match.group(1)

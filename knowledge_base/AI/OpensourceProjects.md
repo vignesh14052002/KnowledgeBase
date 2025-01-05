@@ -1,9 +1,9 @@
 ## Opendevin
 
-- [architecture docs](https://github.com/OpenDevin/OpenDevin/tree/main/opendevin)
+- [architecture docs](https://github.com/All-Hands-AI/OpenHands/tree/main/openhands)
   - mermaid flowchart
-- [Dynamically create architecture diagram](https://opendevin.github.io/OpenDevin/modules/usage/architecture#:~:text=code%20using%20the-,py2puml%20tool.,-The%20diagram%20is)
-- [agent hub](https://github.com/OpenDevin/OpenDevin/blob/main/agenthub/README.md)
+- Using [py2puml](../Python/Plantuml.md#py2puml) to dynamically create architecture diagrams
+- [agent hub](https://github.com/All-Hands-AI/OpenHands/blob/main/openhands/agenthub/README.md)
   - Codeact agent will collect relevant code chunks
   - how monolog agent is used?
   - hint in planner agent?
@@ -47,7 +47,7 @@ Code inspection
   - Only include PRs where the closed PR's snapshot is in a runnable state without any errors
   - Filter by increase in test fail-to-pass ratio
   - After filtering, out of 90000 problems, 2294 were selected
-- [openai](https://openai.com/index/introducing-swe-bench-verified/) partnered to verify the benchmark
+- [openai](https://openai.com/index/introducing-swe-bench-verified) partnered to verify the benchmark
   - makes sure the tests captures that the Issue is fixed and are not dependent on the implementation details (follows BDD)
 
 ## SWE Agent

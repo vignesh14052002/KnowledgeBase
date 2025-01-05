@@ -25,7 +25,7 @@ This repository contains documentation of my learnings.
 - [Open this repo in vscode web editor](https://github.dev/vignesh14052002/KnowledgeBase)
 - Use the search bar to find topics
 - Make use of the Folder structure
-- Make use of the [AI chatbot](./chatbot/README.md)
+- Make use of the [AI chatbot](../chatbot/README.md)
 - Refer the below stats for overview
 
 ## Stats
@@ -62,4 +62,4 @@ The following items will get dynamically updated on every push to `master` branc
 </table>
 
 ## Contributing
-please refer [CONTRIBUTING.md](./CONTRIBUTING.md) for more details
+please refer [CONTRIBUTING.md](../CONTRIBUTING.md) for more details
