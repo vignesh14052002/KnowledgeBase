@@ -2,8 +2,7 @@
 The following are some of the books that I have read and found useful. They are not the summary of the books but the key points that I found useful.
 I usually skip points that are already known to me, so i would recommend reading the full book.
 
-# Python Tricks: A Buffet of Awesome Python Features
-- [Book](https://github.com/plthiyagu/CheatSheet/blob/master/Python%20Tricks.pdf)
+## [Python Tricks: A Buffet of Awesome Python Features](https://www.amazon.in/Python-Tricks-Buffet-Awesome-Features/dp/1775093301)
 - Assertions 
     - Use for dev debugging, not for user exceptions 
 - `with` statements (context managers)
@@ -35,7 +34,7 @@ I usually skip points that are already known to me, so i would recommend reading
  - Check pydantic basemodel's `__repr__`
  - Check pydantic model's immutability
 
-## Fluent Python
+## [Fluent Python](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/)
 - Nested unpacking in loops 
     - for index,(val1,val2) in enumerate(zip(iter1,iter2)): 
 - Match case 

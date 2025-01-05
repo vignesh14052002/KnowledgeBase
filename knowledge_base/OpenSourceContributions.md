@@ -2,15 +2,15 @@
 - [PR : Merged : BugFix](https://github.com/microsoft/lida/pull/90)
 
 ## Langchain
-- [PR : Open : Feature Addition](https://github.com/langchain-ai/langchain/pull/27135)
+- [PR : Merged : Feature Addition](https://github.com/langchain-ai/langchain/pull/27135)
 
 ## LLama Index
 - [Issue : Resolved : Bug](https://github.com/run-llama/llama_index/issues/13826)
 - [Issue : Closed as Not planned : Feature Request](https://github.com/run-llama/llama_index/issues/13443)
-- [PR : Closed : Feature Addition](https://github.com/run-llama/llama_index/pull/16374)
+- [PR : Merged : Feature Addition](https://github.com/run-llama/llama_index/pull/16374)
 
 ## Pandas
-- [Issue : Open : Bug](https://github.com/pandas-dev/pandas/issues/60088)
+- [Issue : Closed as Issue in external dependency : Bug](https://github.com/pandas-dev/pandas/issues/60088)
 
 ## Py2puml
 - [PR : Open : Feature Addition](https://github.com/lucsorel/py2puml/pull/108)

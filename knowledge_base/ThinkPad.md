@@ -54,7 +54,7 @@
         - Add a slider for time range
         - Show most consumed resource (youtube, reddit, github, etc) 
 - add markdownlint
-- add a check for broken links
+- add a check for broken http links and relative links
 - add Graph that represents links between notes and external resources
 - Try removing commit step in pipeline 
     - Not working
