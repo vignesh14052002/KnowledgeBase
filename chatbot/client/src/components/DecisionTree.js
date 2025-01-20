@@ -18,7 +18,33 @@ import Tooltip from '@mui/material/Tooltip';
 import CircularProgress from '@mui/material/CircularProgress';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
+import CodeSandboxer from 'react-codesandboxer';
+import { getParameters } from "codesandbox/lib/api/define";
+import CodeIcon from '@mui/icons-material/Code';
+import CodeOffIcon from '@mui/icons-material/CodeOff';
 
+const parameters = getParameters({
+  files: {
+    "index.js": {
+      content: "console.log('hello')"
+    },
+    "package.json": {
+      content: { dependencies: {} }
+    }
+  }
+});
+const parameters2 = getParameters({
+  files: {
+    "index.js": {
+      content: "console.log('hello1')"
+    },
+    "package.json": {
+      content: { dependencies: {} }
+    }
+  }
+});
+let url = `https://codesandbox.io/api/v1/sandboxes/define?parameters=${parameters}`;
+let url2 = `https://codesandbox.io/api/v1/sandboxes/define?parameters=${parameters2}`;
 let decision_tree_data = {};
 function buildTree(node_id) {
   if (!node_id || !Object.keys(decision_tree_data).includes(node_id)) return;
@@ -166,6 +192,13 @@ const GlowingButton = styled(IconButton)(({ theme, is_clicked }) => ({
   color: is_clicked ? '#8076c8' : 'default',
 }));
 let root_node = null
+
+const uiLayout = Object.freeze(
+  {
+    WITHOUT_CODE_EDITOR:"without editor",
+    WITH_CODE_EDITOR:"with code editor"
+  }
+)
 export default function DecisionTree() {
   const [expandedItems, setExpandedItems] = React.useState([]);
   const [decisionTreeData, setDecisionTreeData] = React.useState([]);
@@ -175,6 +208,8 @@ export default function DecisionTree() {
   const [useAI, setUseAI] = React.useState(false);
   const [architectureDiagram, setArchitectureDiagram] = React.useState("graph TD");
   const [chat_history, setChatHistory] = React.useState([]);
+  const [layout,setLayout] = React.useState(uiLayout.WITHOUT_CODE_EDITOR);
+  const [codeSandboxUrl, setCodeSandboxUrl] = React.useState(url);
 
   const [stateHistory, setStateHistory] = React.useState([]);
   const [currentIndexInHistory, setCurrentIndexInHistory] = React.useState(0);
@@ -185,6 +220,14 @@ export default function DecisionTree() {
       setQuestionView("tree");
     } else {
       setQuestionView("one_by_one");
+    }
+  };
+
+  const toggleCodeEditor = () => {
+    if (layout === uiLayout.WITHOUT_CODE_EDITOR) {
+      setLayout(uiLayout.WITH_CODE_EDITOR)
+    } else {
+      setLayout(uiLayout.WITHOUT_CODE_EDITOR)
     }
   };
 
@@ -368,9 +411,9 @@ export default function DecisionTree() {
   }
   const current_node = nodeStack.length>0?nodeStack[nodeStack.length - 1]:null;
   popNodeStackOnInvalidNode(current_node);
-  console.log("c",nodeStack);
+
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex" }} minHeight="100vh">
       
       <Box sx={{ position: "fixed", bottom: "10px", left: "10px" }}>
         <IconButton onClick={toggleView}>
@@ -378,13 +421,20 @@ export default function DecisionTree() {
           {questionView === "tree" && <FormatAlignCenterIcon />}
         </IconButton>
       </Box>
+      <Box sx={{ position: "fixed", bottom: "10px", right: "10px" }}>
+        <IconButton onClick={toggleCodeEditor} style={{backgroundColor:layout === uiLayout.WITH_CODE_EDITOR?"white":"inherit"}}>
+          {layout===uiLayout.WITH_CODE_EDITOR && <CodeOffIcon/>}
+          {layout===uiLayout.WITHOUT_CODE_EDITOR && <CodeIcon/>}
+        </IconButton>
+      </Box>
+      <Box sx={{ display: "flex", flexDirection: layout === uiLayout.WITHOUT_CODE_EDITOR?"row":"column" }}>
       {questionView === "one_by_one" && (
         <Box
           display="flex"
           justifyContent="center"
           alignItems="center"
-          minHeight="100vh"
-          width="50%"
+          flexGrow={1}
+          maxWidth="50vw"
         >
            <Box sx={{ position: "fixed", top: "10px", left: "10px" }}>
             <Tooltip title="Use AI">
@@ -486,8 +536,8 @@ export default function DecisionTree() {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        minHeight="100vh"
-        width="50%"
+        flexGrow={1}
+        maxWidth="50vw"
         sx={{ borderLeft: "2px solid grey" }}
       >
         {questionView === "tree" && (
@@ -495,6 +545,9 @@ export default function DecisionTree() {
         )}
         <pre id="mermaid" style={{display:questionView === "one_by_one"?"block":"none"}}></pre>
       </Box>
+      </Box>
+      {layout === uiLayout.WITH_CODE_EDITOR && 
+      <iframe style={{width:"100%"}} src={codeSandboxUrl}></iframe>}
     </Box>
   );
 }

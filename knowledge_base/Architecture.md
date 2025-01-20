@@ -12,7 +12,7 @@
 - if two columns looks similar, then they are tightly coupled
 
 ## [ByteByteGo 2023 System Design PDF](https://blog.bytebytego.com/p/free-system-design-pdf-158-pages)
-    - progress pg 131/344
+    - progress pg 259/344
     - Explore
         - pg 25: software architecture styles
         - pg 31: api protocols
@@ -32,8 +32,17 @@
         - pg 105: 18 design patterns
         - pg 125: cookies vs sessions
         - pg 129: process vs threads
-    - immediate
+        - pg 203: sessions, tokens, JWT
+        - pg 219: system design algorithms
+        - pg 224: how password managers work?
+        - pg 228: REST API design
+        - pg 233: Payments ecosystem
+        - pg 249: event sourcing
+    - doubts
         - url, urn, uri?
+        - how public key private key works?
+        - service discovery, service mesh
+        - when to use time series database?
         
 
 ## Explore
