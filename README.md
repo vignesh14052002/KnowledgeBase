@@ -64,7 +64,7 @@ The following items will get dynamically updated on every push to `master` branc
 </table></details></td><td>8</td></tr>
 </table></details>
             </td>
-            <td>175</td>
+            <td>173</td>
         </tr>
         <tr>
             <td>Time period</td>
