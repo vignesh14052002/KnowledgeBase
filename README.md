@@ -54,7 +54,7 @@ The following items will get dynamically updated on every push to `master` branc
 <tr><td><details><summary><a href='https://github.com'>github.com</a></summary><table>
 <tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/OpenSourceContributions.md>OpenSourceContributions.md</a></td><td>10</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/OpensourceProjects.md>OpensourceProjects.md</a></td><td>7</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/Frameworks.md>Frameworks.md</a></td><td>4</td></tr>
 </table></details></td><td>35</td></tr><tr><td><details><summary><a href='https://www.youtube.com'>youtube.com</a></summary><table>
-<tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Python/Resources.md>Resources.md</a></td><td>15</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/ThinkPad.md>ThinkPad.md</a></td><td>5</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/old_notes/GameDevelopment.md>GameDevelopment.md</a></td><td>4</td></tr>
+<tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Python/Resources.md>Resources.md</a></td><td>15</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Web/ThinkPad.md>ThinkPad.md</a></td><td>5</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/old_notes/GameDevelopment.md>GameDevelopment.md</a></td><td>4</td></tr>
 </table></details></td><td>28</td></tr><tr><td><details><summary><a href='https://youtu.be'>youtu.be</a></summary><table>
 <tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/Discussions.md>Discussions.md</a></td><td>6</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/ThinkPad.md>ThinkPad.md</a></td><td>4</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Devops.md>Devops.md</a></td><td>3</td></tr>
 </table></details></td><td>27</td></tr><tr><td><details><summary><a href='https://reddit.com'>reddit.com</a></summary><table>
@@ -68,7 +68,7 @@ The following items will get dynamically updated on every push to `master` branc
         </tr>
         <tr>
             <td>Time period</td>
-            <td>7 months and 23 days</td>
+            <td>7 months and 28 days</td>
         </tr>
     </tbody>
 </table>
