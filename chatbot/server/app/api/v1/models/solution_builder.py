@@ -18,3 +18,11 @@ class Message(BaseModel):
 class SolutionBuilderRequest(BaseModel):
     architecture: str
     history: list[Message]
+
+
+class TemplateRequest(BaseModel):
+    template_name: str
+
+
+class CodeSandboxTemplateResponse(BaseModel):
+    files: dict

@@ -18,10 +18,10 @@ import Tooltip from '@mui/material/Tooltip';
 import CircularProgress from '@mui/material/CircularProgress';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
-import CodeSandboxer from 'react-codesandboxer';
 import { getParameters } from "codesandbox/lib/api/define";
 import CodeIcon from '@mui/icons-material/Code';
 import CodeOffIcon from '@mui/icons-material/CodeOff';
+import "./DecisionTree.css"
 
 const parameters = getParameters({
   files: {
@@ -33,18 +33,7 @@ const parameters = getParameters({
     }
   }
 });
-const parameters2 = getParameters({
-  files: {
-    "index.js": {
-      content: "console.log('hello1')"
-    },
-    "package.json": {
-      content: { dependencies: {} }
-    }
-  }
-});
 let url = `https://codesandbox.io/api/v1/sandboxes/define?parameters=${parameters}`;
-let url2 = `https://codesandbox.io/api/v1/sandboxes/define?parameters=${parameters2}`;
 let decision_tree_data = {};
 function buildTree(node_id) {
   if (!node_id || !Object.keys(decision_tree_data).includes(node_id)) return;
@@ -188,6 +177,8 @@ function get_mermaid_text(nodes) {
   console.log(mermaid_texts.join("\n"));
   return mermaid_texts.join("\n");
 }
+
+
 const GlowingButton = styled(IconButton)(({ theme, is_clicked }) => ({
   color: is_clicked ? '#8076c8' : 'default',
 }));
@@ -214,6 +205,35 @@ export default function DecisionTree() {
   const [stateHistory, setStateHistory] = React.useState([]);
   const [currentIndexInHistory, setCurrentIndexInHistory] = React.useState(0);
 
+  function handleUpdateUrl(solution){
+    const mermaid_text = get_mermaid_text(solution)
+    fetch("http://localhost:8000/v1/solution-builder/get-code-sandbox-template",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        template_name:"react-ai-chatbot"
+      }),
+    }
+    )
+    .then((response) => response.json())
+    .then((data) => {
+      fetch('https://codesandbox.io/api/v1/sandboxes/define?json=1', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ parameters:getParameters(data) })
+  }).then(response=>response.json()).then(data=>{
+      // const paramseters = 
+      console.log(data)
+      const url = `https://codesandbox.io/p/sandbox/${data.sandbox_id}`;
+      setCodeSandboxUrl(url)
+  })
+    })
+  }
 
   const toggleView = () => {
     if (questionView === "one_by_one") {
@@ -375,6 +395,7 @@ export default function DecisionTree() {
     const new_node_stack = [...nodeStack.slice(0,-1), ...children];
     setNodeStack(new_node_stack);
     setSolutionPath(new_solution);
+    handleUpdateUrl(new_solution);
     const new_architecture = get_mermaid_text(new_solution);
     setArchitectureDiagram(new_architecture);
     updateDiagram(new_architecture);
@@ -413,7 +434,7 @@ export default function DecisionTree() {
   popNodeStackOnInvalidNode(current_node);
 
   return (
-    <Box sx={{ display: "flex" }} minHeight="100vh">
+    <Box className={layout === uiLayout.WITHOUT_CODE_EDITOR?"container-without-code-editor":"container"} sx={{ display: "flex" }} minHeight="100vh" minWidth="100vw">
       
       <Box sx={{ position: "fixed", bottom: "10px", left: "10px" }}>
         <IconButton onClick={toggleView}>
@@ -427,7 +448,7 @@ export default function DecisionTree() {
           {layout===uiLayout.WITHOUT_CODE_EDITOR && <CodeIcon/>}
         </IconButton>
       </Box>
-      <Box sx={{ display: "flex", flexDirection: layout === uiLayout.WITHOUT_CODE_EDITOR?"row":"column" }}>
+      <Box sx={{ display: "flex", flexDirection: layout === uiLayout.WITHOUT_CODE_EDITOR?"row":"column", flexGrow:1 }}>
       {questionView === "one_by_one" && (
         <Box
           display="flex"
@@ -539,6 +560,7 @@ export default function DecisionTree() {
         flexGrow={1}
         maxWidth="50vw"
         sx={{ borderLeft: "2px solid grey" }}
+        className="diagram"
       >
         {questionView === "tree" && (
           <h3>Block diagram not supported in tree view</h3>
