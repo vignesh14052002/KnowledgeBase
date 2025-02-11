@@ -68,7 +68,7 @@ The following items will get dynamically updated on every push to `master` branc
         </tr>
         <tr>
             <td>Time period</td>
-            <td>7 months and 28 days</td>
+            <td>8 months and 15 days</td>
         </tr>
     </tbody>
 </table>
