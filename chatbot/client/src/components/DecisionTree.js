@@ -207,6 +207,9 @@ export default function DecisionTree() {
 
   function handleUpdateUrl(solution){
     const mermaid_text = get_mermaid_text(solution)
+    const last_node = solution[solution.length-1]
+    const template_name = last_node.template
+    if(!template_name) return
     fetch("http://localhost:8000/v1/solution-builder/get-code-sandbox-template",
     {
       method: "POST",
@@ -214,7 +217,7 @@ export default function DecisionTree() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        template_name:"react-ai-chatbot"
+        template_name:template_name
       }),
     }
     )

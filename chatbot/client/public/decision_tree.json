@@ -35,8 +35,16 @@
       {
         "choice": "Data Classification",
         "next": 5
+      },
+      {
+        "choice": "Trading Bot",
+        "next": "trading_bot"
       }
     ]
+  },
+  "trading_bot": {
+    "solution": "Sample project got generated",
+    "template": "stock-market-bot"
   },
   "4": {
     "question": "is the data structured or unstructured?",
@@ -58,6 +66,7 @@
     },
     "solution": "You can use Generative AI based system",
     "question": "Is the data is complex and interdependent?",
+    "template": "react-ai-chatbot",
     "choices": [
       {
         "choice": "yes",

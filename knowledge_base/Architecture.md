@@ -43,6 +43,7 @@
         - how public key private key works?
         - service discovery, service mesh
         - when to use time series database?
+        - pg 265 : how seperate db for read and writes
         
 
 ## Explore
