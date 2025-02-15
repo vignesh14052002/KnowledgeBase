@@ -41,11 +41,11 @@ The following items will get dynamically updated on every push to `master` branc
     <tbody>
         <tr>
             <td>Documents</td>
-            <td>47</td>
+            <td>48</td>
         </tr>
         <tr>
             <td>Average lines per document</td>
-            <td>39</td>
+            <td>38</td>
         </tr>
         <tr>
             <td><details>
@@ -54,21 +54,21 @@ The following items will get dynamically updated on every push to `master` branc
 <tr><td><details><summary><a href='https://github.com'>github.com</a></summary><table>
 <tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/OpenSourceContributions.md>OpenSourceContributions.md</a></td><td>10</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/OpensourceProjects.md>OpensourceProjects.md</a></td><td>7</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/Frameworks.md>Frameworks.md</a></td><td>4</td></tr>
 </table></details></td><td>35</td></tr><tr><td><details><summary><a href='https://www.youtube.com'>youtube.com</a></summary><table>
-<tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Python/Resources.md>Resources.md</a></td><td>15</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Web/ThinkPad.md>ThinkPad.md</a></td><td>5</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/old_notes/GameDevelopment.md>GameDevelopment.md</a></td><td>4</td></tr>
+<tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Web/Resources.md>Resources.md</a></td><td>15</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Web/ThinkPad.md>ThinkPad.md</a></td><td>5</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/old_notes/GameDevelopment.md>GameDevelopment.md</a></td><td>4</td></tr>
 </table></details></td><td>28</td></tr><tr><td><details><summary><a href='https://youtu.be'>youtu.be</a></summary><table>
 <tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/Discussions.md>Discussions.md</a></td><td>6</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/ThinkPad.md>ThinkPad.md</a></td><td>4</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Devops.md>Devops.md</a></td><td>3</td></tr>
 </table></details></td><td>27</td></tr><tr><td><details><summary><a href='https://reddit.com'>reddit.com</a></summary><table>
-<tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Python/Resources.md>Resources.md</a></td><td>4</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Good_blogs.md>Good_blogs.md</a></td><td>3</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Problems.md>Problems.md</a></td><td>1</td></tr>
+<tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Python/Resources.md>Resources.md</a></td><td>4</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Good_blogs.md>Good_blogs.md</a></td><td>3</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/CanvasGraphics.md>CanvasGraphics.md</a></td><td>1</td></tr>
 </table></details></td><td>11</td></tr><tr><td><details><summary><a href='https://python.langchain.com'>python.langchain.com</a></summary><table>
 <tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/Frameworks.md>Frameworks.md</a></td><td>5</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/Testing/General.md>General.md</a></td><td>2</td></tr><tr><td><a href=https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/AI/Retrieval.md>Retrieval.md</a></td><td>1</td></tr>
 </table></details></td><td>8</td></tr>
 </table></details>
             </td>
-            <td>173</td>
+            <td>177</td>
         </tr>
         <tr>
             <td>Time period</td>
-            <td>8 months and 15 days</td>
+            <td>8 months and 19 days</td>
         </tr>
     </tbody>
 </table>
