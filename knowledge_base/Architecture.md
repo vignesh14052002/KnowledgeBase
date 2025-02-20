@@ -12,7 +12,6 @@
 - if two columns looks similar, then they are tightly coupled
 
 ## [ByteByteGo 2023 System Design PDF](https://blog.bytebytego.com/p/free-system-design-pdf-158-pages)
-    - progress pg 259/344
     - Explore
         - pg 25: software architecture styles
         - pg 31: api protocols
@@ -38,12 +37,29 @@
         - pg 228: REST API design
         - pg 233: Payments ecosystem
         - pg 249: event sourcing
+        - pg 284: 10 principles for building resilient payment systems (by Shopify).
+        - pg 286: kubernetis periodic table
+        - pg 289: where do we cache data?
+        - pg 291: distributed system patterns
+        - pg 296: most used algorithms
+        - pg 307: HTTP header details
+        - pg 311: choosing the right DB
+        - pg 316: design effective API's
+        - pg 318: data processing models
+        - pg 320: architectural characteristics
+        - pg 325: How does Twitter recommend “For You” Timeline in 1.5 seconds
+        - pg 331: Possible Experiment Platform Architecture
     - doubts
         - url, urn, uri?
         - how public key private key works?
         - service discovery, service mesh
         - when to use time series database?
-        - pg 265 : how seperate db for read and writes
+        - pg 265 : how seperate db for read and write
+        - federated gateway
+        - db
+          - wide column
+          - time series
+          - serverless : amazon aurora serverless
         
 
 ## Explore
@@ -54,3 +70,5 @@
 - [cloud diagram as code](https://github.com/mingrammer/diagrams)
 - git sub module
 - microfrontend
+- sidecar pattern
+- apbit bayani youtube channel

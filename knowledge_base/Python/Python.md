@@ -129,3 +129,6 @@ version = ["auto"] in fastapi toml?
   - mutation testing - mutmut
   - property based testing - hypothesis
   - toolz, pyrsistent, hissp, subrepls
+
+# Explore
+- go over asyncio cheatsheet

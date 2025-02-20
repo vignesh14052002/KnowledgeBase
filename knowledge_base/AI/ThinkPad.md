@@ -106,3 +106,25 @@
     - hidden custom instructions are provided when description is copied
     - when those are identified in the generated code while submitting, the code will be rejected
     - ![Leetcode hidden instruction](./img/leetcode_ai_instruction.png)
+  
+## Anthropic economic index
+[blog](https://www.anthropic.com/news/the-anthropic-economic-index)
+- analyzed over a million conversations with claude
+- main findings
+  - most of the users are software engineers (36%)
+  - usage slightly leaning towards augumentation rather than automation
+  - usage is more common in mid to high pay jobs, not in lowest or highest pay jobs
+  - only 4% of the jobs use AI more than 75% of their tasks
+    - 36% of jobs have AI usage atleast 25% of their tasks
+- how conversations are analyzed
+  - using clio : a bot to classify conversations
+  - classified conversations into occupational tasks
+
+# claude new features
+ - Citations API - https://www.anthropic.com/news/introducing-citations-api
+   - provides source information for each block of generated text
+   - under the hood : additional instructions are added in system message
+- Model Context protocol - https://docs.anthropic.com/en/docs/build-with-claude/mcp
+  - similar to agent protocol
+# explore
+- anthropic prompt improver and prompt evaluator
