@@ -5,10 +5,11 @@ import LeftSide from "./LeftSide.js";
 import RightSide from "./RightSide.js";
 import ChatBotSocket from "./useSocket.js";
 import { v4 as uuidv4 } from 'uuid'
+import "./App.css";
 
 let timeoutId;
 function App() {
-  const [sessions, setSessions] = useState([{id:uuidv4(),title:"New session",history:[]}]);
+  const [sessions, setSessions] = useState([{index:0,id:uuidv4(),title:"New session",history:[]}]);
   const [typing, setTyping] = useState([]);
   const [selectedSessionIndex, setSelectedSessionIndex] = useState(0);
   const [socket, setSocket] = useState(null);
@@ -27,9 +28,10 @@ function App() {
 function createNewSession(){
   setSessions((prev) => {
     let newSessions = [...prev];
-    newSessions.push({id:uuidv4(),title:"New session",history:[]});
+    newSessions.push({index:prev.length, id:uuidv4(),title:"New session",history:[]});
     return newSessions;
   })
+  setSelectedSessionIndex(sessions.length)
 }
 
   let states = {
@@ -58,6 +60,7 @@ function createNewSession(){
         let newSessions = [...prev];
         for (const session of newSessions) {
           if (session.id === data["sessionID"]) {
+            session.title = data["title"];
             session.history.push({
               message: data.answer,
               sender: "Bot",

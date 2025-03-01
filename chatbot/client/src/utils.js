@@ -1,5 +1,6 @@
 const CONSTS = {
   global: "Global",
+  randomInt: Math.floor(Math.random() * 100),
 };
 
 function handleAddContact(states) {

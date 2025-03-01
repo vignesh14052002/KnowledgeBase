@@ -50,7 +50,8 @@ Explore how popular open-source libraries write tests:
       - http interaction will be cached using pytest-vcr - [ref](https://python.langchain.com/v0.1/docs/contributing/testing/#recording-http-interactions-with-pytest-vcr)
     - llm is mocked while testing agents
 
-## Pytest : Documentaion notes
+## Pytest
+### Documentaion notes
   - Use builtin temp dir fixture for file paths 
   - Fixture results will be cached in a scope and can be modified  
   - Fixture with params 
@@ -66,6 +67,11 @@ Explore how popular open-source libraries write tests:
     - `-sw` - stops at first failing test 
   - Diff between scope module,package,session? 
   - Hooks vs autouse fixtures? 
+## Tips
+ - use pytest.register_assert_rewrite("tests.assertions") when defining custom assertions
+ - use respx mocking for HTTP requests in tests
+ - class can be parametrized
+ - use `-s` to see print statements during test execution
 
 ## Explore
 - Qmetry

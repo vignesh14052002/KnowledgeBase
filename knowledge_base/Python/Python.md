@@ -132,3 +132,8 @@ version = ["auto"] in fastapi toml?
 
 # Explore
 - go over asyncio cheatsheet
+
+Asyncio cheat sheet doubts
+- current task
+- all tasks
+- to_thread

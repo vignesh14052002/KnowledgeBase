@@ -8,6 +8,7 @@
 - [Issue : Resolved : Bug](https://github.com/run-llama/llama_index/issues/13826)
 - [Issue : Closed as Not planned : Feature Request](https://github.com/run-llama/llama_index/issues/13443)
 - [PR : Merged : Feature Addition](https://github.com/run-llama/llama_index/pull/16374)
+- [Issue : Resolved : Bug](https://github.com/run-llama/llama_index/issues/17597)
 
 ## Pandas
 - [Issue : Closed as Issue in external dependency : Bug](https://github.com/pandas-dev/pandas/issues/60088)

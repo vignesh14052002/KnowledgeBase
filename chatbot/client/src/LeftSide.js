@@ -16,6 +16,7 @@ import {
   handleSearch,
   handleContact,
   getProfileImg,
+  CONSTS,
 } from "./utils.js";
 import SettingsIcon from '@mui/icons-material/Settings';
 import Menu from '@mui/material/Menu';
@@ -73,7 +74,7 @@ export default function LeftSide(props) {
             onClick={() => states.setSelectedSessionIndex(i)}
             selected={selectedSession.title === d.title}
           >
-            <Profilepic src={getProfileImg(50)} />
+            <Profilepic src={getProfileImg(d.index + CONSTS.randomInt)} />
             <div>
               <h2>{d.title}</h2>
               <p>{d.history[0]?.message}</p>

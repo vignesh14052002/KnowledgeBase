@@ -15,7 +15,7 @@ import {
 import { BsEmojiLaughing } from "react-icons/bs";
 import { IoSend } from "react-icons/io5";
 import { useRef } from "react";
-import { getProfileImg } from "./utils.js";
+import { getProfileImg, CONSTS } from "./utils.js";
 import RenderMarkdown from "./components/RenderMarkdown.js";
 export default function RightSide(props) {
   console.log("rightside component");
@@ -49,7 +49,7 @@ export default function RightSide(props) {
   return ( 
     <MessageArea>
       <Header>
-        <Profilepic src={getProfileImg(10)} />
+        <Profilepic src={getProfileImg(states.selectedSessionIndex + CONSTS.randomInt)} />
         <div>
           <h2>{selectedSession.title}</h2>
         </div>
@@ -65,7 +65,7 @@ export default function RightSide(props) {
             {m.referencePaths.length>0 &&
             <>
             <p style={{color:"white",fontSize:"1em"}}>Reference : </p>
-            <p> { m.referencePaths.map((path, i) => <a style={{color:"white"}} key={i} href={path}>#{i}</a>)} </p>
+            <p style={{display:"flex", gap:"1em"}}> { m.referencePaths.map((reference, i) => <a key={i} href={reference.file_path}>  #{reference.file_name}</a>)} </p>
             </>
             }
             </div>

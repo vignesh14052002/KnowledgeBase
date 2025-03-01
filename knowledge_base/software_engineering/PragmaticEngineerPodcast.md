@@ -15,6 +15,15 @@
 
 ## [Observablity : the presence and future with Charity Majors](https://open.spotify.com/episode/1zmtMW9QQQaLzclUVQpYM4) 
 - Three pillars - metrics, logging, tracing 
-Observablity 2.0 - store data in single place 
-Open telemetry 
-Cardinality  
+- Observablity 2.0 - store data in single place 
+- Open telemetry 
+- Cardinality 
+
+## [Shipping code in big tech with Sean Goedecke](https://open.spotify.com/episode/4wRNgNLnL5EjzeCqWDEE9d)
+- Efforts doesn't matter, output do 
+- Rules can be broken on emergency situations (ignoring pipelines) 
+- DRI - directly responsible individual  
+- RFC 
+
+## [Developer productivity with Dr Nicole Forsgren](https://open.spotify.com/episode/7kZtKbs8Up72Dr43uATR3n)
+- DORA, SPACE

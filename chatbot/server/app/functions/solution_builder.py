@@ -30,8 +30,8 @@ User:
 
 
 def get_question(architecture: str, history: list[Message]) -> SolutionBuilderResponse:
+    gemini = get_gemini_llm("gemini-1.5-pro-latest")
     """Get question from the solution builder."""
-    gemini = get_gemini_llm("gemini-pro")
     prompt = ask_question_prompt_template.format(
         architecture=architecture, history=format_history(history)
     )

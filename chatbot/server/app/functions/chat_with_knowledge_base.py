@@ -1,6 +1,6 @@
 from app.llm.gemini import get_gemini_llm
 from app.prompts.chat_with_knowledge_base import (
-    answer_from_knowledge_base_prompt_template,
+    answer_from_knowledge_base_prompt_template,conversation_title_prompt_template
 )
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
@@ -30,7 +30,7 @@ def format_nodes(nodes):
     return result
 
 
-def format_history(history):
+def format_history(history)->str:
     result = ""
     for message in history:
         result += message["sender"] + " : " + message["message"] + "\n"
@@ -39,23 +39,40 @@ def format_history(history):
 
 def get_file_paths_from_nodes(nodes):
     github_repo_path = "https://github.com/vignesh14052002/KnowledgeBase/blob/master/knowledge_base/{file}"
-    return [github_repo_path.format(file=node.metadata["filepath"]) for node in nodes]
+    seen_paths = set()
+    unique_paths = []
+
+    for node in nodes:
+        file_path = node.metadata["filepath"].strip()
+        
+        if file_path not in seen_paths:
+            seen_paths.add(file_path)
+            unique_paths.append({
+                "file_name": file_path.split('/')[-1],
+                "file_path": github_repo_path.format(file=file_path)
+            })
+
+    return unique_paths
 
 
 def get_answer(question: str, history: list[str] = []) -> dict[str, Any]:
     """Get answer from the knowledge base."""
-    gemini = get_gemini_llm("gemini-pro")
+    gemini = get_gemini_llm("gemini-1.5-pro-latest")
     nodes = retriever.invoke(question)
     node_text = (
         format_nodes(nodes)
         if len(nodes) > 0
         else "No relevant information found in the knowledge base."
     )
-    prompt = answer_from_knowledge_base_prompt_template.format(
-        question=question, documentation=node_text, history=format_history(history)
+    formatted_history = format_history(history)
+    answer_from_knowledge_base_prompt = answer_from_knowledge_base_prompt_template.format(
+        question=question, documentation=node_text, history=formatted_history
     )
-    response = gemini.invoke(prompt)
+    answer_response = gemini.invoke(answer_from_knowledge_base_prompt)
+    conversation_title_prompt = conversation_title_prompt_template.format(history=formatted_history+"\nBot: "+answer_response.content)
+    title_response = gemini.invoke(conversation_title_prompt)
     return {
-        "answer": response.content,
+        "answer": answer_response.content,
         "reference_filepaths": get_file_paths_from_nodes(nodes),
+        "title": title_response.content,
     }
