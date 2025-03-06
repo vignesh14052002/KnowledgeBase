@@ -88,6 +88,36 @@ function buildTree(node_id) {
   }
   return _node;
 }
+function calculateDepths(node, currentDepth = 0, offset = 0) {
+  // Set the current node depth
+  node.depth = currentDepth;
+
+  if (node.children.length === 0) {
+    // If the node is a leaf, its longest leaf node depth is its own depth
+    node.longestLeafNodeDepth = currentDepth + offset;
+    return currentDepth;
+  }
+    // Recurse into children to get their longestLeafNodeDepth
+    let maxDepth = currentDepth;
+    const offsetArray = [];
+    node.children.forEach(child => {
+      const childLongestLeafDepth = calculateDepths(child, currentDepth + (node.question?1:0), offset);
+      if (!node.stages) {
+        maxDepth = Math.max(childLongestLeafDepth,maxDepth);
+      }
+      else{
+        console.log(node,child,maxDepth, childLongestLeafDepth, currentDepth);
+        const _offset = childLongestLeafDepth - currentDepth;
+        offsetArray.push(_offset);
+        const stageLongestLeafDepth = calculateDepths(child, currentDepth + (node.question?1:0), _offset + offset);
+        maxDepth = Math.max(stageLongestLeafDepth,maxDepth);
+        maxDepth += _offset;
+      }
+    });
+    node.longestLeafNodeDepth = maxDepth + offset;
+    return maxDepth;
+}
+
 function CustomLabel(props) {
   const { children, ...other } = props;
   return (
@@ -282,6 +312,7 @@ export default function DecisionTree() {
         decision_tree_data = data;
         console.log(data);
         root_node = buildTree("1");
+        calculateDepths(root_node);
         reset_root_node(root_node);
       });
   }, []);
@@ -521,6 +552,7 @@ export default function DecisionTree() {
                 sx={{ marginBottom: "20px" }}
                 variant="h4"
               >
+                {/* ({current_node.depth}/{current_node.longestLeafNodeDepth})  */}
                 {current_node.question}
               </Typography>
 
@@ -572,7 +604,7 @@ export default function DecisionTree() {
       </Box>
       </Box>
       {layout === uiLayout.WITH_CODE_EDITOR && 
-      <iframe style={{width:"100%"}} src={codeSandboxUrl}></iframe>}
+      <iframe title="codeSandbox" style={{width:"100%"}} src={codeSandboxUrl}></iframe>}
     </Box>
   );
 }
