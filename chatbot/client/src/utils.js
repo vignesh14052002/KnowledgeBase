@@ -1,8 +1,3 @@
-const CONSTS = {
-  global: "Global",
-  randomInt: Math.floor(Math.random() * 100),
-};
-
 function handleAddContact(states) {
   let val = document.querySelector("#addcontact").value;
   console.log(val);
@@ -37,7 +32,6 @@ function getProfileImg(imageNumber) {
 
 
 export {
-  CONSTS,
   handleAddContact,
   handleSearch,
   getProfileImg,

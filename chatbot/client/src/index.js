@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
 import Graph from "./Graph.js";
 
 import App from "./App";
-import DecisionTree from "./components/DecisionTree.js";
+import SolutionBuilder from "./pages/SolutionBuilder/SolutionBuilder.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -13,7 +13,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/graph" element={<Graph />} />
-      <Route path="/decision-tree" element={<DecisionTree />} />
+      <Route path="/solution-builder" element={<SolutionBuilder />} />
     </Routes>
   </BrowserRouter>
 );

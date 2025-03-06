@@ -15,7 +15,8 @@ import {
 import { BsEmojiLaughing } from "react-icons/bs";
 import { IoSend } from "react-icons/io5";
 import { useRef } from "react";
-import { getProfileImg, CONSTS } from "./utils.js";
+import { getProfileImg } from "./utils.js";
+import { RANDOM_INT } from "./constants.js";
 import RenderMarkdown from "./components/RenderMarkdown.js";
 export default function RightSide(props) {
   console.log("rightside component");
@@ -49,7 +50,7 @@ export default function RightSide(props) {
   return ( 
     <MessageArea>
       <Header>
-        <Profilepic src={getProfileImg(states.selectedSessionIndex + CONSTS.randomInt)} />
+        <Profilepic src={getProfileImg(states.selectedSessionIndex + RANDOM_INT)} />
         <div>
           <h2>{selectedSession.title}</h2>
         </div>
