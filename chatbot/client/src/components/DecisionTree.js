@@ -311,7 +311,7 @@ export default function DecisionTree() {
       .then((data) => {
         decision_tree_data = data;
         console.log(data);
-        root_node = buildTree("1");
+        root_node = buildTree("start");
         calculateDepths(root_node);
         reset_root_node(root_node);
       });

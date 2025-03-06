@@ -1,18 +1,18 @@
 {
-  "1": {
+  "start": {
     "question": "Is your problem requires intelligence to solve?",
     "choices": [
       {
         "choice": "Yes",
-        "next": 3
+        "next": "ai_based_system"
       },
       {
         "choice": "No",
-        "next": 2
+        "next": "rule_based_system"
       }
     ]
   },
-  "2": {
+  "rule_based_system": {
     "block": {
       "type": "replace",
       "text": "Rule based system"
@@ -20,7 +20,7 @@
     "solution": "You can use rule based systems to solve your problem.",
     "next": null
   },
-  "3": {
+  "ai_based_system": {
     "solution": "You can use AI based system",
     "block": {
       "type": "replace",
@@ -30,11 +30,11 @@
     "choices": [
       {
         "choice": "Question Answering",
-        "next": 14
+        "next": "generative_ai_system"
       },
       {
         "choice": "Data Classification",
-        "next": 5
+        "next": "gen_ai_or_classification_algorithm"
       },
       {
         "choice": "Trading Bot",
@@ -46,20 +46,20 @@
     "solution": "Sample project got generated",
     "template": "stock-market-bot"
   },
-  "4": {
+  "data_structure_question": {
     "question": "is the data structured or unstructured?",
     "choices": [
       {
         "choice": "structured",
-        "next": 8
+        "next": "structured_data_type"
       },
       {
         "choice": "unstructured",
-        "next": 10
+        "next": "etl_pipeline"
       }
     ]
   },
-  "14": {
+  "generative_ai_system": {
     "block": {
       "type": "replace",
       "text": "Generative AI System"
@@ -70,15 +70,15 @@
     "choices": [
       {
         "choice": "yes",
-        "next": 12
+        "next": "fine_tuning"
       },
       {
         "choice": "no",
-        "next": 13
+        "next": "rag_stages"
       }
     ]
   },
-  "13": {
+  "rag_stages": {
     "block": {
       "type": "append",
       "text": "RAG Stages"
@@ -93,7 +93,7 @@
           "parent": "RAG Stages",
           "text": "Indexing"
         },
-        "next": 4
+        "next": "data_structure_question"
       },
       {
         "stage": "Retrieval",
@@ -148,7 +148,7 @@
       "text": "Query Decomposition"
     }
   },
-  "10": {
+  "etl_pipeline": {
     "solution": "You can use a ETL pipeline to process",
     "block": {
       "type": "append",
@@ -159,24 +159,24 @@
     "choices": [
       {
         "choice": "fixed",
-        "next": 6
+        "next": "etl_data_preprocess"
       },
       {
         "choice": "might get updated",
-        "next": 7
+        "next": "etl_trigger_on_update"
       }
     ]
   },
-  "5": {
+  "gen_ai_or_classification_algorithm": {
     "solution": "You can use Generative AI / Conventional Classification Algorithms"
   },
-  "6": {
+  "etl_data_preprocess": {
     "solution": "Preprocess the data (with ETL)",
-    "next": 11
+    "next": "stages_of_ingestion"
   },
-  "7": {
+  "etl_trigger_on_update": {
     "solution": "Trigger ETL on each data updation",
-    "next": 11
+    "next": "stages_of_ingestion"
   },
   "chunking": {
     "chunking": "Chunking is the process of dividing text into smaller pieces called chunks",
@@ -188,7 +188,7 @@
       },
       {
         "choice": "No",
-        "next": 18
+        "next": null
       }
     ]
   },
@@ -220,7 +220,7 @@
       "text": "Image Parsing with OCR / AI"
     }
   },
-  "11": {
+  "stages_of_ingestion": {
     "title": "Stages of Ingestion",
     "block": {
       "type": "append",
@@ -256,26 +256,26 @@
       }
     ]
   },
-  "12": {
+  "fine_tuning": {
     "title": "Fine Tuning"
   },
-  "8": {
+  "structured_data_type": {
     "question": "What is the data structure?",
     "choices": [
       {
         "choice": "table",
-        "next": 15
+        "next": "llm_query_framing"
       },
       {
         "choice": "graph",
-        "next": 16
+        "next": "knowledge_graphs"
       }
     ]
   },
-  "15": {
+  "llm_query_framing": {
     "solution": "You can frame queries using LLM and get the required data"
   },
-  "16": {
+  "knowledge_graphs": {
     "solution": "You can use Knowledge Graphs"
   }
 }
