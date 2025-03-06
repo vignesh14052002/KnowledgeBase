@@ -51,7 +51,6 @@
         - pg 331: Possible Experiment Platform Architecture
     - doubts
         - url, urn, uri?
-        - how public key private key works?
         - service discovery, service mesh
         - when to use time series database?
         - pg 265 : how seperate db for read and write
@@ -60,8 +59,6 @@
           - wide column
           - time series
           - serverless : amazon aurora serverless
-        
-
 ## Explore
 - OWASP api security risks
 - kafka
@@ -70,5 +67,16 @@
 - [cloud diagram as code](https://github.com/mingrammer/diagrams)
 - git sub module
 - microfrontend
-- sidecar pattern
 - apbit bayani youtube channel
+- [practical TLS](https://www.youtube.com/playlist?list=PLIFyRwBY_4bTwRX__Zn4-letrtpSj1mzY)
+
+## Cryptography        
+- [how public key private key works?](https://youtu.be/_zyKvPvh808?si=3iPbs3GOSwp4dhkb)
+
+
+## Microservices
+### Explore
+- Service Discovery
+- Service Mesh
+- Router on HTTP layer
+- sidecar pattern
