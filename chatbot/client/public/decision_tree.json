@@ -1,6 +1,7 @@
 {
   "start": {
     "question": "Is your problem requires intelligence to solve?",
+    "question_info": "If you have no access to AI, is it possible to solve the problem with all combinations of inputs",
     "choices": [
       {
         "choice": "Yes",

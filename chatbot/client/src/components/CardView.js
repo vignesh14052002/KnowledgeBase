@@ -12,6 +12,7 @@ import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import Tooltip from '@mui/material/Tooltip';
 import CircularProgress from '@mui/material/CircularProgress';
 import IconButton from "@mui/material/IconButton";
+import InfoIcon from '@mui/icons-material/Info';
 
 import { getMermaidText,updateDiagram } from "../pages/SolutionBuilder/mermaidText";
 
@@ -242,8 +243,12 @@ export default function CardView({rootNode,updateCodeSandbox}) {
         marginBottom: "20px"
       }} variant="h4">
           ({currentIndexInHistory + 1}/{getLongestLeafNodeDepth() + currentIndexInHistory + 1}) {current_node.question}
+              {current_node.question_info && 
+              <Tooltip title={current_node.question_info} placement="top">
+                <InfoIcon sx={{marginLeft:1}}/>
+                </Tooltip>
+              }
               </Typography>
-
               <Box display="flex" flexDirection="column">
                 {current_node.children.map(child => <Button color="inherit" key={child.id} onClick={() => handleOnChoiceClick(child)}>
                     {child.label}

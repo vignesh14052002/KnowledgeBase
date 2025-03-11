@@ -81,16 +81,19 @@
 - Add Support for openai (get key from user)
 - Add semantic search page
 
-## Desicion tree improvements
-- Case study: Search if there are solution builders available online
-- Split the UI into two parts vertically 
-    - Ask questions on left side (google video style)
-    - Build a flowchart/block diagram on right side
-        - frame datastructure of diagram
-        - decide which one to use, PUML/mermaid or custom
-- Add a search bar to start from a particular node
-- Show progress bar, based on longest path from current node to leaf
-- Optional : Convert the chosen path from tree to code
+## Solution Builder Improvements
+- Completed : Show progress, based on longest path from current node to leaf
+- Completed : Add info icon for complex questions
+- Not Started | Moderate | : Move Solution Builder to a separate repo
+- Not Started | Difficuilt | : create a template system storage (to convert tree path to code)
+  - use Git
+    - how to propagate changes?
+- Not Started | Dont know about possiblity | : Disable Preview from codesandbox
+- Not Started | Moderate | : Update the tree data with good questions and choices
+- Not Started | Easy | : Add a search bar to start from a particular node
+- Not Started | Moderate | : Record a video on how things work
+- Not Started | Difficuilty Based on Feature |: make the diagrams interactive
+  - Brainstorm
 
 ## Sort todos 
 - Daily/frequent habits 

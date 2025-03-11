@@ -27,3 +27,7 @@ from pstats import Stats
 stats = Stats('./profile.stats')
 stats.sort_stats('cumulative').print_stats("app") # filter by module path `app`
 ```
+
+## Explore
+- memory profiling
+- llama index workflow memory leak
