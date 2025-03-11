@@ -57,31 +57,17 @@ function buildTree(node_id,decision_tree_data) {
   }
   return _node;
 }
-export function calculateDepths(node, currentDepth = 0, offset = 0) {
-  // Set the current node depth
-  node.depth = currentDepth;
-
-  if (node.children.length === 0) {
-    // If the node is a leaf, its longest leaf node depth is its own depth
-    node.longestLeafNodeDepth = currentDepth + offset;
-    return currentDepth;
-  }
-  // Recurse into children to get their longestLeafNodeDepth
-  let maxDepth = currentDepth;
-  const offsetArray = [];
+export function calculateDepths(node) {
+   let allDepth = 0;
   node.children.forEach(child => {
-    const childLongestLeafDepth = calculateDepths(child, currentDepth + (node.question ? 1 : 0), offset);
-    if (!node.stages) {
-      maxDepth = Math.max(childLongestLeafDepth, maxDepth);
+    child.longestLeafNodeDepth = (node.question ? 1 : 0) + calculateDepths(child);
+    if (node.stages){
+      allDepth += child.longestLeafNodeDepth;
     }
-    else {
-      const _offset = childLongestLeafDepth - currentDepth;
-      offsetArray.push(_offset);
-      const stageLongestLeafDepth = calculateDepths(child, currentDepth + (node.question ? 1 : 0), _offset + offset);
-      maxDepth = Math.max(stageLongestLeafDepth, maxDepth);
-      maxDepth += _offset;
+    else{
+      allDepth = Math.max(allDepth, child.longestLeafNodeDepth);
     }
   });
-  node.longestLeafNodeDepth = maxDepth + offset;
-  return maxDepth;
+  node.longestLeafNodeDepth = allDepth;
+  return allDepth;  
 }

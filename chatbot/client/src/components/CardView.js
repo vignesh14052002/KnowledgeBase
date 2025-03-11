@@ -30,7 +30,7 @@ export default function CardView({rootNode,updateCodeSandbox}) {
   
     const [stateHistory, setStateHistory] = React.useState([]);
     const [currentIndexInHistory, setCurrentIndexInHistory] = React.useState(0);
-  
+
     useEffect(() => {
         if (!rootNode) return;
         resetRootNode(rootNode);
@@ -175,6 +175,13 @@ export default function CardView({rootNode,updateCodeSandbox}) {
     const current_node = nodeStack.length>0?nodeStack[nodeStack.length - 1]:null;
     popNodeStackOnInvalidNode(current_node);
   
+  const getLongestLeafNodeDepth = () => {
+    if (!current_node) return 0;
+    return nodeStack.reduce((allDepth, node) => {
+      return allDepth + node.longestLeafNodeDepth;
+    }, 0);
+  }
+
   return <Box display="flex" justifyContent="center" alignItems="center" flexGrow={1} maxWidth="50vw">
            <Box sx={{
       position: "fixed",
@@ -234,10 +241,7 @@ export default function CardView({rootNode,updateCodeSandbox}) {
               <Typography textAlign="center" sx={{
         marginBottom: "20px"
       }} variant="h4">
-                {
-          /* ({current_node.depth}/{current_node.longestLeafNodeDepth})  */
-        }
-                {current_node.question}
+          ({currentIndexInHistory + 1}/{getLongestLeafNodeDepth() + currentIndexInHistory + 1}) {current_node.question}
               </Typography>
 
               <Box display="flex" flexDirection="column">
