@@ -53,3 +53,7 @@
 - Reddit
   - r/productivity
   - r/getdisciplined
+  
+# Explore
+ - https://code.visualstudio.com/updates/v1_98#_more-advanced-codebase-search-in-copilot-chat
+ - 

@@ -1,5 +1,6 @@
-Measure Application Performance
+# Measure Application Performance
 
+## Time Profiling
 [Blog](https://realpython.com/python-profiling/)
 - time module
     - time.perf_counter() : gives wall clock time
@@ -30,4 +31,3 @@ stats.sort_stats('cumulative').print_stats("app") # filter by module path `app`
 
 ## Explore
 - memory profiling
-- llama index workflow memory leak

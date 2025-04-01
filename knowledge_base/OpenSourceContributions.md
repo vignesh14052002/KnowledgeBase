@@ -5,13 +5,13 @@
 - [PR : Merged : Feature Addition](https://github.com/langchain-ai/langchain/pull/27135)
 
 ## LLama Index
-- [Issue : Resolved : Bug](https://github.com/run-llama/llama_index/issues/13826)
-- [Issue : Closed as Not planned : Feature Request](https://github.com/run-llama/llama_index/issues/13443)
 - [PR : Merged : Feature Addition](https://github.com/run-llama/llama_index/pull/16374)
+- [Issue : Resolved : Bug](https://github.com/run-llama/llama_index/issues/13826)
 - [Issue : Resolved : Bug](https://github.com/run-llama/llama_index/issues/17597)
+- [Issue : Closed as Not planned : Feature Request](https://github.com/run-llama/llama_index/issues/13443)
 
 ## Pandas
-- [Issue : Closed as Issue in external dependency : Bug](https://github.com/pandas-dev/pandas/issues/60088)
+- [Issue : Open : Bug](https://github.com/pandas-dev/pandas/issues/60088)
 
 ## Py2puml
 - [PR : Open : Feature Addition](https://github.com/lucsorel/py2puml/pull/108)
@@ -28,3 +28,6 @@
 
 ## TODO
 - raise issue in openpyxl
+  - https://foss.heptapod.net/openpyxl/openpyxl/-/issues
+- raise PR to support sync and async client like qdrant
+  - https://github.com/run-llama/llama_index/blob/main/llama-index-integrations/vector_stores/llama-index-vector-stores-weaviate/llama_index/vector_stores/weaviate/base.py

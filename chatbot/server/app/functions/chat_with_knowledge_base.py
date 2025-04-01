@@ -58,12 +58,7 @@ def get_file_paths_from_nodes(nodes):
 def get_answer(question: str, history: list[str] = []) -> dict[str, Any]:
     """Get answer from the knowledge base."""
     gemini = get_gemini_llm("gemini-1.5-pro-latest")
-    nodes = retriever.invoke(question)
-    node_text = (
-        format_nodes(nodes)
-        if len(nodes) > 0
-        else "No relevant information found in the knowledge base."
-    )
+    nodes, node_text = _retrieve_from_knowledge_base(question)
     formatted_history = format_history(history)
     answer_from_knowledge_base_prompt = answer_from_knowledge_base_prompt_template.format(
         question=question, documentation=node_text, history=formatted_history
@@ -76,3 +71,13 @@ def get_answer(question: str, history: list[str] = []) -> dict[str, Any]:
         "reference_filepaths": get_file_paths_from_nodes(nodes),
         "title": title_response.content,
     }
+
+def _retrieve_from_knowledge_base(question):
+    nodes = retriever.invoke(question)
+    node_text = (
+        format_nodes(nodes)
+        if len(nodes) > 0
+        else "No relevant information found in the knowledge base."
+    )
+    
+    return nodes,node_text

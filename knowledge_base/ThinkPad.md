@@ -90,10 +90,12 @@
     - how to propagate changes?
 - Not Started | Dont know about possiblity | : Disable Preview from codesandbox
 - Not Started | Moderate | : Update the tree data with good questions and choices
-- Not Started | Easy | : Add a search bar to start from a particular node
+- Not Started | Moderate | : Add a search bar to start from a particular node
 - Not Started | Moderate | : Record a video on how things work
 - Not Started | Difficuilty Based on Feature |: make the diagrams interactive
   - Brainstorm
+- Not Started | Moderate | : add Edit mode (add nodes from UI)
+  - Auth for admin?
 
 ## Sort todos 
 - Daily/frequent habits 
