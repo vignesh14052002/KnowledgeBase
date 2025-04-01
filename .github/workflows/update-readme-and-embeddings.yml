@@ -21,7 +21,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.11'
+          python-version: '3.13'
       
       - name: Checkout code
         uses: actions/checkout@v2
@@ -35,11 +35,11 @@ jobs:
         uses: snok/install-poetry@v1
       
       - name: Install dependencies with Poetry
-        run: poetry install
+        run: uv lock
         working-directory: chatbot/server
       
       - name: Run Update Embeddings script
-        run: poetry run python scripts/update_embeddings.py
+        run: python scripts/update_embeddings.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         working-directory: chatbot/server
