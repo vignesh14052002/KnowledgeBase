@@ -33,22 +33,6 @@ Finding Code:
 Code inspection
  - openai
     - every gen call triggers a new request, this will add prompt input token cost
-  
-## SWE Bench : AI Agent benchmarking
-[site](https://www.swebench.com/),[paper](https://arxiv.org/pdf/2310.06770v2)
-- resolve github issues with language models
-  - Input : Issue, Code base snapshot
-  - Output : PR (Code)
-  - Evaluation : pre configured unit tests
-- 2294 problems took from github issues of 12 popular python repos (django, flask, matplotlib etc)
-- Benchmark construction pipeline (getting high quality PR)
-  - Extract Closed PR and Issue that is being addressed 
-  - Only include PRs that modifies test cases
-  - Only include PRs where the closed PR's snapshot is in a runnable state without any errors
-  - Filter by increase in test fail-to-pass ratio
-  - After filtering, out of 90000 problems, 2294 were selected
-- [openai](https://openai.com/index/introducing-swe-bench-verified) partnered to verify the benchmark
-  - makes sure the tests captures that the Issue is fixed and are not dependent on the implementation details (follows BDD)
 
 ## SWE Agent
 [site](https://github.com/princeton-nlp/SWE-agent),[paper](https://arxiv.org/pdf/2405.15793v2)
@@ -85,3 +69,11 @@ Paper
 
 Explore
 - [genie scored 30%](https://cosine.sh/blog/genie-technical-report)
+
+# llama index repo understanding
+- see https://huntr.com/repos/run-llama/llama_index
+- explore on build backend in pyproject toml
+- see ruff lint ignore list
+- Make file?
+- look into precommit file
+

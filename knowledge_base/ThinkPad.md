@@ -109,3 +109,17 @@
         - AI system to understand people's opinion - YouTube comments, reddit thread 
     - In progress
         - Stock advice scrapper 
+
+
+## Bookes to read
+Aakash kumar
+- Hit Refresh - Satya Nadella - Helped me get a new perspective on both work and personal life. 
+ranjith
+- Software engineering at Google - by Titus Winters (and other Googlers) — a must read for any software engineer: talks about how to efficiently and sustainably develop software.
+- Fundamentals of Software Architecture and Software Architecture: the hard parts by Neal Ford and Mark Richards — a must read for any budding Architect
+- The 6 types of working Genius by Patrick Lencioni — a must read on forming teams and enabling the team members to play to their strengths. Will make you reconsider the perspective you currently have on your team.
+- Upstream by Dan Heath — on how to solve a problem before it happens
+- Ready. Fire. Aim by Michael Masterson — talks about different challenges an organisation would go through from 0 -> $1M -> $10M -> $100M
+- The Unicorn within by Linda Yates — all about intrapreneurship and creating new ventures within an organisation
+Aghilan amar
+- "Thinking, Fast and Slow" by Daniel Kahneman.

@@ -92,5 +92,8 @@ I usually skip points that are already known to me, so i would recommend reading
     - Low level - technical aspects (network protocol etc) 
  - Persistence ignorant code 
 
+## Effective Python: 125 Specific Ways to Write Better Python
+[Book](https://www.amazon.in/Effective-Python-Specific-Software-Development/dp/0138172188)
+  - Use walrus operator to avoid repeated calculations in comprehensions
 ## Books i might read
 - [Intermediate to Advanced Books mentioned in realpython](https://realpython.com/best-python-books/#best-intermediate-and-advanced-python-books)

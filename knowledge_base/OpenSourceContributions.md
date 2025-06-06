@@ -1,3 +1,5 @@
+[Closed PRs](https://github.com/pulls?q=is%3Apr+author%3Avignesh14052002+is%3Aclosed+)
+
 ## Microsoft Lida
 - [PR : Merged : BugFix](https://github.com/microsoft/lida/pull/90)
 
@@ -26,8 +28,3 @@
 - [PR : Merged : Community Contribution](https://github.com/CodingTrain/website-archive/pull/3477)
 
 
-## TODO
-- raise issue in openpyxl
-  - https://foss.heptapod.net/openpyxl/openpyxl/-/issues
-- raise PR to support sync and async client like qdrant
-  - https://github.com/run-llama/llama_index/blob/main/llama-index-integrations/vector_stores/llama-index-vector-stores-weaviate/llama_index/vector_stores/weaviate/base.py

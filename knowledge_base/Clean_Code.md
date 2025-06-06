@@ -10,4 +10,4 @@
 
 - Use Functions on action based code and Class on state based code
 
-
+- Move all constants to the top

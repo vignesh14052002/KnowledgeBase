@@ -67,7 +67,10 @@
 - [cloud diagram as code](https://github.com/mingrammer/diagrams)
 - git sub module
 - microfrontend
-- apbit bayani youtube channel
+- arpbit bayani
+  - youtube channel
+  - [knowledgebase](https://github.com/arpitbbhayani/knowledge-base?tab=readme-ov-file)
+  - [blogs and papers](https://arpitbhayani.me/)
 - [practical TLS](https://www.youtube.com/playlist?list=PLIFyRwBY_4bTwRX__Zn4-letrtpSj1mzY)
 
 ## Cryptography        
