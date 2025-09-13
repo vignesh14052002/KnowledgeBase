@@ -137,3 +137,17 @@ Asyncio cheat sheet doubts
 - current task
 - all tasks
 - to_thread
+
+## plantuml
+## Creating Diagrams
+### Sequency Diagrams
+- footer can be removed
+- participants
+  - order can be changed
+  - actor, queue, database can be specified
+- indicate concurrency with `teoz &`
+- grouping
+  - participants can be grouped with `box`
+  - messages can be grouped with `group`
+- notes can be added
+- delimiters can be added

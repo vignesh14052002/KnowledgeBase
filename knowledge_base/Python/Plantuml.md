@@ -1,10 +1,22 @@
-# PlantUML
-A tool that can render text as diagram - [example](https://www.plantuml.com/plantuml/uml/SoWkIImgAStDuNBCoKnELT2rKt3AJx9IS2mjoKZDAybCJYp9pCzJ24ejB4qjBk42oYde0jM05MDHLLoGdrUSoeLkM5u-K5sHGY9MGw6ARNHryQb66EwGcfS2T300)
+# Automatically convert your code base into class diagrams
+The following example uses python, but this is language agnostic
+
+## Steps
+1. Install py2puml `pip install py2puml`
+2. Copy [generate_uml_diagram.py](./scripts/generate_uml_diagram.py) to target codebase
+3. [Optional] to convert puml code to png image offline
+   3.1 Install Java
+   3.2 Download [plantuml-mit-1.2025.7.jar](https://github.com/plantuml/plantuml/releases/download/v1.2025.7/plantuml-mit-1.2025.7.jar)
+4. Configure module_name in `generate_uml_diagram` script and run it
+5. The Output puml code and png diagram will be stored in the specified directory
 
 ## Purpose
-- It is better to make architecture diagrams undergo PR review process
+- Helps Understand opensource projects
+- class diagrams will be in sync with codebase always
+- It is better to make class diagrams undergo PR review process
   - comments can be included and changes can be easily made on the text representation
-- version control helps visualize, how our architecture changes over time
+- Enforces clean code and clean architecture
+- version control helps visualize, how our class changes over time
 
 # Related Tools
 ## py2puml
@@ -20,7 +32,7 @@ A tool that can render text as diagram - [example](https://www.plantuml.com/plan
 
 ### Pros
 - Get architecture diagram of your entire application quickly with a single command
-- Enforces best practices (namin conventions, type hints) to get better architecture diagram
+- Enforces best practices (naming conventions, type hints) to get better architecture diagram
 
 ## plantuml
 - python library that converts plantuml text into png, so that it can be viewed in unsupported platforms like azdo
@@ -32,18 +44,4 @@ A tool that can render text as diagram - [example](https://www.plantuml.com/plan
 # tplant
 - [repo](https://github.com/bafolts/tplant)
 - typescript to plantuml
-
-
-# Creating Diagrams
-## Sequency Diagrams
-- footer can be removed
-- participants
-  - order can be changed
-  - actor, queue, database can be specified
-- indicate concurrency with `teoz &`
-- grouping
-  - participants can be grouped with `box`
-  - messages can be grouped with `group`
-- notes can be added
-- delimiters can be added
 
