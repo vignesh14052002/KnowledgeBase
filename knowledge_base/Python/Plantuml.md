@@ -5,8 +5,10 @@ The following example uses python, but this is language agnostic
 1. Install py2puml `pip install py2puml`
 2. Copy [generate_uml_diagram.py](./scripts/generate_uml_diagram.py) to target codebase
 3. [Optional] to convert puml code to png image offline
-   3.1 Install Java
-   3.2 Download [plantuml-mit-1.2025.7.jar](https://github.com/plantuml/plantuml/releases/download/v1.2025.7/plantuml-mit-1.2025.7.jar)
+    
+    3.1 Install Java
+    
+    3.2 Download [plantuml-mit-1.2025.7.jar](https://github.com/plantuml/plantuml/releases/download/v1.2025.7/plantuml-mit-1.2025.7.jar)
 4. Configure module_name in `generate_uml_diagram` script and run it
 5. The Output puml code and png diagram will be stored in the specified directory
 
