@@ -53,7 +53,7 @@ If i search for "Animal" with search depth of 2, sematically Cat is similar, Cat
 This is the most popular method of retrieval, the natural language query is converted to cypher query using AI provided the knowledge graph schema
 
 ### Agentic Retrieval
-This is an extension of cypher Query retrieval technique, when the agent is not satisfied with the retrieved nodes, it can regenerate the cypher query, or nativate to nodes relative to retrieved nodes
+This is an extension of cypher Query retrieval technique, when the agent is not satisfied with the retrieved nodes, it can regenerate the cypher query, or navigate to nodes relative to retrieved nodes
 
 ### Heirachical Retrieval
 When the knowledge graph grows, the schema of the knowledge graph too grows depending on the type of data that were are storing, the llm which converts natural language query to cypher query maynot be able to interpret such large schema
@@ -61,38 +61,28 @@ So in heirarchical Retrieval, the knowledge graph is built in a way that has hig
 The schema of high level communities can alone be used in first stage of cypher query generation and the iteration continues for subsequent levels with it's respective schema
 This technique was used in [microsoft graphRAG](https://microsoft.github.io/graphrag/)
 
-### Graph Properties for better querying
-- Direction
-    - Unidirectional
-    - Bidirectional
-- Weight : How strong is the relationship
-- Traversing Algorithm
-    - BFS
-    - DFS
+### Cypher Queries are powerful - Neo4j
+ - [neo4j Cypher manual](https://neo4j.com/docs/cypher-manual/current/introduction/)
+ - Flexible filtering of nodes, using node properties and relationships
+ - Use Semantic search as part of cypher query - [ref](https://neo4j.com/blog/genai/vector-search-deeper-insights/)
+ - Use builtin 65+ Advanced [Neo4j Graph Algorithms](https://neo4j.com/docs/graph-data-science/current/algorithms/) like shortest path between nodes, community detection, topological sorting etc
+
+## Tips to Build knowledge graphs
+- Build a single knowledge graph instead of multiple small ones
+- Use flexible schema while doing LLM extraction and do cleanup later to avoid dataloss
 
 ## Limitations
-- Data Cleaning process is difficuilt
+- Data Cleaning process is difficuilt, different nodes with same meaning etc
+- When the graph size increases the schema size will increase too, difficuilt to get cypher query from LLM with large schema in context
 
 ## Libraries
 ### Neo4j
 - graph database
-- use cypher query language
+- uses cypher query language
 
 ### Microsoft GraphRAG
 - [Repo](https://github.com/microsoft/graphrag?tab=readme-ov-file),[White Paper](https://arxiv.org/pdf/2404.16130),[Demo Video](https://youtu.be/jCjyaQL-7mA?si=PTPT9XdJdX-2wbdi)
 - Good for QFS (Query Focused Summarization) (eg: What is this document about?)
   - get answer with score for a query parallely in local communities
   - filter by score and combine them and give to global community for final answer
-
-#### Doubts
-precision and recall?
-gleanings?
-logitbias?
-community detection algorithms? Leiden algorithm?
-
-### Explore
-- In Datasheets
-- Structured DB vs knowledge graphs
-- neo4j repos
-
 
