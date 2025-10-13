@@ -39,6 +39,7 @@ If we need to create a knowledge graph for the above data, it is as simple as cr
 But if we need to represent in SQL table, we need to create 4 individual tables, which is not efficient to query
 
 ## Retrieval techniques
+[Graph RAG](https://graphrag.com/concepts/intro-to-graphrag/) has an entensive set of techniques, below are some of them
 ### Semantic search with search depth
 Since each node in knowledge graph will also have an embedding, retrieval is carried out same as naive RAG, but on top of the retieved nodes, the connected nodes will also be retrieved based on search depth
 example
@@ -75,10 +76,19 @@ This technique was used in [microsoft graphRAG](https://microsoft.github.io/grap
 - Data Cleaning process is difficuilt, different nodes with same meaning etc
 - When the graph size increases the schema size will increase too, difficuilt to get cypher query from LLM with large schema in context
 
+### Overcoming Schema Expansion
+As new nodes keep on getting into the graph, over the time the schema will be huge making it difficuilt for LLM to identify and query them, there are few techniques to overcome this
+ - Do a postprocessing of graph to combine similar nodes and relationships using [machine learning algorithms](https://neo4j.com/docs/graph-data-science/current/machine-learning/machine-learning/) or [gen ai prompts](https://github.com/neo4j-labs/llm-graph-builder/blob/4d7bb5e83dd8aeb0e708a7488ae383301944689f/backend/src/shared/constants.py#L833C1-L833C22)
+ - Form communities and do Heirarcical retrieval, once a sub community is found, give the specific community schema to LLM to generate queries
+ - Filter the Schema based on user query
+    - Only include nodes and relation labels which are in query - [ref](https://arxiv.org/html/2505.05118v1#:~:text=3.1%20Static%20Schemas-,Report%20issue%20for%20preceding%20element,Report%20issue%20for%20preceding%20element)
+    - Ask Predefined questions and Get Filters from LLM.
+
 ## Libraries
 ### Neo4j
 - graph database
-- uses cypher query language
+- uses [cypher query language](https://neo4j.com/docs/cypher-manual/current/introduction/)
+
 
 ### Microsoft GraphRAG
 - [Repo](https://github.com/microsoft/graphrag?tab=readme-ov-file),[White Paper](https://arxiv.org/pdf/2404.16130),[Demo Video](https://youtu.be/jCjyaQL-7mA?si=PTPT9XdJdX-2wbdi)
@@ -86,3 +96,57 @@ This technique was used in [microsoft graphRAG](https://microsoft.github.io/grap
   - get answer with score for a query parallely in local communities
   - filter by score and combine them and give to global community for final answer
 
+### APIs
+- [Diffbot](https://www.diffbot.com/products/knowledge-graph/)
+
+### Finetuned models
+- [GliNER](https://github.com/urchade/GLiNER)
+- [GLiREL](https://github.com/jackboyla/GLiREL/tree/main)
+- [Relik](https://github.com/SapienzaNLP/relik)
+
+
+## Understanding Neo4j LLM Graph Builder
+
+Source code - [Github](https://github.com/neo4j-labs/llm-graph-builder/tree/main)
+
+### How KG is built while uploading documents
+- Each page is tokenized and chunked based on `token_chunk_size`
+  - metadata as page_number
+- Chunks are pushed to DB
+  - Document -[FIRST_CHUNK]-> Chunk1
+  - Chunk<i> -[NEXT_CHUNK]-> Chunk<i+1>
+  - Chunk<i> -[PART_OF]-> Document
+- Langchain `LLMGraphTransformer` is used to extract triplets from Chunks
+  - The LLM response will get [nodes and relationships seperately](https://medium.com/data-science/building-knowledge-graphs-with-llm-graph-transformer-a91045c49b59#:~:text=The%20response%20from%20the%20LLM%20Graph%20Transformer%20will%20be%20a%20graph%20document%2C%20which%20has%20the%20following%20structure) instead of triplets
+- Nodes are pushed to DB
+  - LLM Extracted nodes and relationships
+  - Chunk -["HAS_ENTITY"]-> Node
+
+#### PostProcessing
+- Each chunk is connected to 5 semantically similar chunks
+  - Chunk<i> -[SIMILAR]-> Chunk<j>
+- vector index and full text indexes were created
+  - explore [full text index](https://neo4j.com/docs/cypher-manual/current/indexes/semantic-indexes/full-text-indexes/)
+- llm call is made to merge similar nodes and relationships
+- communities were formed using leiden algorithm and community summaries are generated using LLM
+  - explore how leiden algo works
+
+### RAG
+#### Graph + Vector + FullText
+Semantic retrieval
+langchain `Neo4jVector` retriever is used
+config
+  - top k = 5
+  - score threshold = 0.5
+
+Flow
+ - LLM Query Generation
+ - [Compression Document retriever](https://python.langchain.com/docs/how_to/contextual_compression/)
+
+Don't know how they are combining with graph results, seems they are doing only vector search
+
+# Applications using KG
+- [Claude MCP Memory](https://github.com/modelcontextprotocol/servers/tree/main/src/memory)
+
+# References
+- [graphrag.com](https://graphrag.com/concepts/intro-to-graphrag/)
