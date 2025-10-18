@@ -89,3 +89,4 @@
   
 # explore
 - anthropic prompt improver and prompt evaluator
+- neo4j certification
