@@ -44,7 +44,7 @@ for root, dirs, files in os.walk(KNOWLEDGE_BASE_PATH):
         if not file.endswith(".md"):
             continue
         file_path = os.path.join(root, file)
-        with open(file_path, "r") as f:
+        with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
         pattern = re.compile(r"\[(.*?)\]\((http.*?)\)")
         hyperlinks = pattern.findall(content)

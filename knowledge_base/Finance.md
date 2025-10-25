@@ -15,8 +15,29 @@
 
 > Ref - [forbes](https://www.forbes.com/advisor/in/investing/xirr-in-mutual-fund/#:~:text=XIRR%20or%20extended%20internal%20rate,transactions%20happen%20during%20a%20period.) [grow](https://groww.in/p/xirr-in-mutual-funds)
 
+### Passive Income
+- Content Creation 
+  - YouTube channel 
+  - Blogging
+- Investing
+  - Fixed returns
+    - FD
+    - Corporate Bonds
+  - Variable returns
+    - stocks
+    - gold
+    - Mutual Funds
+
+### Tools
+- [SGB Analyzer](https://sgbanalyzer.com/home)
+   - government stopped issuing SGB
+- [Screener](https://www.screener.in/)
+- [Opstra](https://opstra.definedge.com/strategy-builder) - Options Strategy Builder
+- [AlgoTest](https://algotest.in/backtest) - Backtest trading strategies
+
+
 ### Doubts
-- Why do we pay incometax? Can they just deduct some portion while giving the salary itself
+- Why do we pay incometax? Can't they just deduct some portion while giving the salary itself
   - Answer: Because the tax is calculated based on the total income of the person, not just the salary.Let's say income stream 1 is 5LPA and stream 2 is 5LPA, then the tax has to be calculated for 10LPA not two 5LPA separately.
 - Why do we pay income tax as well as GST?
 
@@ -25,22 +46,4 @@
   - How slots are allocated (random or first come first serve)? - Random 
   - How listing price is calculated 
   - Compare history of grey market predictions and actual listing gains , can I blindly trust grey market? 
-
-### Explore
-- Fiat currency
-
-### Passive Income 
-- YouTube channel 
-- Blogging 
-- Investing
-  - Fixed returns
-    - FD
-    - Corporate Bonds
-  - Variable returns
-    - stocks
-    - Mutual Funds
-
-### Tools
-[SGB Analyzer](https://sgbanalyzer.com/home)
-
 

@@ -1,3 +1,4 @@
+## Plugins
 [Husky](https://typicode.github.io/husky/)
 [pre commit](https://pre-commit.com/)
 

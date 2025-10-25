@@ -5,6 +5,6 @@
   - reply for each part of question (for each ping, do a pong)
 - Learn to write mail
 - C4 model
-- Don't use fillers while speaking
+- Don't use fillers while speaking (Literally, Like, So, Actually etc)
 - Prefer async chat instead of calling
 - Avoid texting for quick calls, explain the problem

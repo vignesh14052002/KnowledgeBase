@@ -9,6 +9,8 @@
     - Banana
     - Guava
     - Papaya
+- Vegetables to eat raw
+    - Beetroot
 
 ## Fitness
 - Do strength training
@@ -16,12 +18,8 @@
 - Progress overload for muscle gain
 - Mind muscle connection
 - Sleep 8 hours a day
-- Get 30 minutes of sunlight from 11am to 2pm
+- Get 30 minutes of sunlight (preferred time from 11am to 2pm)
 - Drink 3 litres of water
-- 30 minute nap from 1pm to 3pm
-
-### GYM
-- 
 
 ## Mind
 - Practice doing hard things

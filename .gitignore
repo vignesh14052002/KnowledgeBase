@@ -1,4 +1,3 @@
-Soliton.md
 temp/
 # ignore all files that starts with temp
 temp*
@@ -20,6 +19,7 @@ coverage/
 
 # production
 build/
+static/
 
 # misc
 .DS_Store
