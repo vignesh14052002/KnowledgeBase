@@ -17,11 +17,12 @@ The goal is to improve the valset performance using the feedbacks from trainset
 ### Terminologies
 
 Program - An entire system with one or more predictors
+
 Predictor - The prompt
 
 ### Workflow
 - State Initialization
-    - Best programs on Valset - [{P0},{P0},{P0}]
+    - Best programs on Valset - `[{P0},{P0},{P0}]`
 - While Budget available, do the following steps
     1) Pareto Selection (Select Program)
     2) Mini batch Selection from trainset (random sampling by default)
@@ -76,8 +77,9 @@ these programs will be evaluated and if there is a best performer, it will be ad
 - try your best to come up with a good base prompt
 - It is preferred to have a SOTA reflection model
 - validation dataset should be minimal and diverse
-- more iterations you run the better the results will be
+- more iterations you run, better the results will be
 - review the optimized prompt
+- configure `log_dir` so that if you accidentaly cancelled the optimization, you can resume
 
 ## References
 - [Research Paper](https://arxiv.org/pdf/2507.19457)
